@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module4
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 
+    description: "There are two types of storage devices used with computers: a primary
+      storage device, such as RAM (random-access memory), and a secondary storage
+      device, such as a hard disk drive (HDD) and solid-state drive (SSD). Secondary
+      storage can be removable, internal, or external.\r\n \r\nRAM is usually associated
+      with DRAM (Dynamic Random-Access Memory), a type of memory module. RAM is a
+      volatile memory and requires power to keep the data accessible. If the computer
+      is turned off, all data contained in RAM is lost.\r\nOver the evolution of
+      the computer, there have been different variations of RAM. Today, as solid-state
+      memory developed into (DRAM) then it became DDR, DDR2, DDR3, DDR4.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: db02038ca6cc2f6439917b6e4ab43274, type: 3}
+    titleName: 
+    description: "Three basic types of RAM:\r\n1.     Dynamic RAM (DRAM) \u2013 This
+      kind of RAM needs to be recharged by the CPU. If not, it loses its contents.
+      There are many variations of DRAM such as:\n\no Synchronous DRAM (SDRAM) \u2013
+      faster than DRAM because it is synchronized to the system clock\r\no Double
+      Data Rate (DDR) SDRAM \u2013 faster than SDRAM because they transfer data twice
+      for each clock cycle\r\no DDR2 and DDR3 SDRAM \u2013 faster than DDR SDRAM\r\no 
+      ambus DRAM (RDRAM) \u2013 type of DRAM faster than SDRAM that uses pipelining
+      techniques\r\n2.     Static RAM (SRAM) \u2013 This kind is faster and more
+      reliable than any form of DRAM. Unlike the DRAM, this does not need to be re-energized.
+      However, it is much more expensive and it used for special purposes.\r\n3.    
+      Magnetoresistive RAM (MRAM) \u2013 This kind stores data using magnetic charges
+      instead of electrical charges. It has greater storage capacity, consume less
+      power, and faster access times.\r\n\r\n"
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: edf67964a0dddef4eb88bc21559f1bcf, type: 3}
+    titleName: The RAM chips are housed in a small circuit board called the memory
+      module, which is inserted into the motherboard.
+    description: "Three types of memory modules:\r\n1.     Single Inline Memory Module
+      (SIMM) \u2013 this has pins on opposite sides of the circuit board which connect
+      together to form a single set of contacts. This houses SDRAM chips along with
+      DIMMs.\r\n2.     Dual Inline Memory Module (DIMM) \u2013 the pins on the opposite
+      sides of the circuit board do not connect and form two sets of contacts. This
+      houses SDRAM chips along with SIMMs.\r\n3.     Rambus Inline Memory Module
+      (RIMM) \u2013 this houses RDRAM chips\r\n \r\n \r\nThe computer will need a
+      certain amount of memory to be able to handle programs, data, and information,
+      depending on the types of applications used. \r\nThe more RAM a computer has,
+      the faster the computer will be. \r\n\xB7         To be able to use basic application
+      software such as Office Suite, one needs at least 1GB of RAM. \r\n"
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 6f4e10d26fd9ba04387f37ba4e6a035a, type: 3}
+    titleName: 
+    description: "  Using programs and multimedia should have at least 4GB. \r\n\xB7        
+      Playing modern games or using editing software will require at least 8GB. \r\nToday
+      the RAM ranges up to 64GB depending on the programs that will be used for the
+      computer.\r\n"
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: bdc6fb62dad2109488afdfeaeda90586, type: 3}
+    titleName: 
+    description: "Secondary Storage device is a non-volatile device that holds data
+      until it is deleted or overwritten. A computer may not have to use secondary
+      storage. However, the need to save the required data before the power turned
+      off would be able to recover the last saved version of the file.\n\nExamples
+      of secondary storage\r\n\xB7         Hard Disk Drive (HHD) \u2013 often called
+      hard drive or hard disk. This is the most common storage device that do not
+      need power to maintain data; these store data through spinning platters or
+      magnetic disks, recording individual bits written into the disk.\r\n"
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 64842c90d5cbd4343a4681fd1f32b94f, type: 3}
+    titleName: 
+    description: " Solid State Drive (SSD) \u2013 mass storage device that stores
+      data in a permanent state even without power. Similar to an HDD\u2019s function,
+      only the internal components are different. SSDs do not have moving parts but
+      store data on magnetic platters making use of flash memory.\r\n"
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 8e950ef1599779246a4e7d34ac4fc558, type: 3}
+    titleName: 
+    description: "  Flash Drive \u2013 highly portable small data storage devices
+      making use of flash memory and a Universal Serial Bus (USB) port connection\r\n"
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: fd3dcb7b274a04342a8b0f1634e4e040, type: 3}
+    titleName: 
+    description: '  SD (Secure Digital) card is a compact, removable flash memory
+      card used to store and transfer digital data in portable electronic devices,
+      such as digital cameras, smartphones, tablets, drones, and gaming consoles.'
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: ef9ac5a1bf781854ebf98e1809a81f4c, type: 3}
+    titleName: 
+    description: "CD \u2013 \u201Ccompact disc\u201D, this storage device can hold
+      up to 700 MB; it is read by an optical drive through a laser\r\n"
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 5ada54e0c942bbe4980248712b861cd2, type: 3}
+    titleName: 
+    description: 'DVD (digital versatile disc) this storage device can hold up to
+      4.7 GB, while dual-layer discs can store up to 8.5 GB of data or video
+
+
+
+      HDD
+      vs. SSD: Key Differences
+
+      a. HDDs (Hard Disk Drives) are traditional
+      storage devices that use spinning disks and a moving read/write head to store
+      and retrieve data.
+
+      b. SSDs (Solid State Drives) use newer technology,
+      storing data on memory chips that can be accessed instantly.
+
+      Speed:
+      SSDs are much faster.
+
+      Noise: SSDs are quieter.
+
+      Size and Durability:
+      SSDs are smaller, more durable, and use less energy.
+
+      Cost and Capacity:
+      HDDs are cheaper and provide more storage space but are more prone to damage
+      and have easier data recovery.
+
+      Summary: HDDs are cost-effective for
+      large storage, while SSDs offer better performance and durability.
+
+'
+    has3dView: 1

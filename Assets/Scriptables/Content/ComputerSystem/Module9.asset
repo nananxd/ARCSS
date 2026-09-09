@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module9
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: c9701f6c47f4cf2469237abe2c58ae75, type: 3}
+    titleName: Creating ISO Image File
+    description: "Introduction\r\n \r\nAn ISO file is essentially a digital replica
+      of an entire optical disc (CD, DVD, Blu-ray) compressed into a single file.
+      This \"ISO image\" serves as a smaller, more manageable copy of the original
+      disc's contents.\r\n \r\nHow ISO Files Work:\r\nTo utilize the data within
+      an ISO file, it needs to be \"mounted\", meaning it's virtually opened and
+      accessed as if it were the original physical disc.\r\n \r\nUses of ISO Files:\r\n\xB7        
+      Data Backup: ISO files are commonly used for backing up optical discs, ensuring
+      data preservation in a compact and readily accessible format.\r\n\xB7        
+      Data Storage: They offer a convenient and efficient way to store large datasets,
+      like game files or operating systems, in a single, portable file.\r\n\xB7        
+      Disc Replication: ISO files are the primary tool for cloning optical discs,
+      allowing users to create identical copies of their content. This is useful
+      for replacing damaged discs or transferring data from old discs to newer ones.\r\n\xB7        
+      Operating System Distribution: ISO files play a vital role in the distribution
+      of operating systems (OS). They provide a single, comprehensive file containing
+      all necessary OS components for download, installation, or burning onto a physical
+      disc.\r\n \r\n \r\nHow to Create ISO image File\r\n \r\nYou can easily create
+      ISO images of a physical disk using the pre-installed tools that come with
+      operating systems like MacOS and Linux.\r\nHowever, that is not the case with
+      the Windows operating system, so you will need to use third-party apps. These
+      apps can be found all over the internet so you can pick and choose the one
+      that works best for you. (e.g. PowerISO, ImgBurn, Rufus)\r\nFor this lesson,
+      we will utilize the Rufus Software to create an ISO Image of Windows 10 from
+      a disk.\r\n \r\n \r\nMaterials, tools and Equipment to prepare:\r\n\xB7        
+      A USB flash drive with good storage capacity; preferably 8GB or more.\r\n\xB7        
+      Access to a computer running Windows 8 or Windows 10.\r\n\xB7         A CD
+      or DVD containing .iso image of an operating system.\r\n \r\n \r\n \r\n \r\n
+      \r\n \r\n \r\n \r\n \r\n1. Download Rufus from this Website and install it.
+      (https://rufus.ie/)\r\n2.  Run Rufus.\r\n3. Click SELECT dropdown and another
+      window will pop upto  where you can select the the drive that holds the disc
+      of your operating system. It will now appear on your rufus application.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: b2398cb2d61547a449d434fc401d085c, type: 3}
+    titleName: 
+    description: '4. Under the Partitioning Scheme select MBR and Under Target System
+      select BIOS
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: b376110d03b266a46beaf6d96ad70c76, type: 3}
+    titleName: 
+    description: '5. Click Start to begin copying file from your disc to your thumb
+      drive (or USB drive)
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 7ab4136c54a71d0418657d439de948ff, type: 3}
+    titleName: 
+    description: '6. After making iso file completes successfully, you should receive
+      a message, "Creating image file completed successfully". You can open the created
+      iso file with Rufus and browse files in the ISO file.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'File System Types
+
+'
+    description: "File systems are categorized based on their functionalities and
+      underlying technologies. Here are some common types:\r\n\xB7         File Allocation
+      Table (FAT)\r\nFAT is an old, simple, and reliable file system that was used
+      widely in early Windows computers. It started with floppy disks and later worked
+      with hard disks, evolving from an 8-bit system to FAT32. While it\u2019s still
+      compatible with many systems, it doesn\u2019t perform as well as newer file
+      systems.\r\n \r\n\xB7         Extended File Allocation Table (exFAT)\r\nexFAT
+      is the improved version of FAT32, supporting larger storage and files. It\u2019s
+      still simple and easy to use but is designed for bigger capacity and modern
+      applications.\r\n \r\n\xB7         New Technology File System (NTFS)\r\nNTFS
+      has been the default file system for Windows since the early 90s. It offers
+      better performance, supports large files, and includes additional features
+      for security and data integrity. It\u2019s compatible with Linux and Mac in
+      read-only mode.\r\n \r\n\xB7         Resilient File System (ReFS)\r\nReFS is
+      a newer file system from Microsoft, designed for better scalability and performance
+      than NTFS. However, it doesn\u2019t support some NTFS features and requires
+      more system resources.\r\n \r\n\xB7         Universal Disk Format (UDF)\r\nUDF
+      is a universal file system for optical media like DVDs and Blu-ray discs, replacing
+      the older ISO 9660 system. It\u2019s widely used for storing video and audio
+      content on discs.\r\n \r\n \r\nCreating Bootable Device\r\nWHY IS BOOTING REQUIRED?\r\n\xB7        
+      Hardware doesn\u2019t know where the operating system resides and how to load
+      it.\r\n\xB7         Need a special program to do this job \u2013 Bootstrap
+      loader.\r\n(e.g. BIOS \u2013 Boot Input Output System)\r\n\xB7         Bootstrap
+      loader locates the kernel, loads it into main memory and starts its execution.\r\n\xB7        
+      In some systems, a simple bootstrap loader fetches a more complex boot program
+      from disk, which in turn loads the kernel.\r\n \r\nBootable Devices\r\n1.   
+      Booting is a startup sequence that launches the operating system of a computer
+      when it is turned on.\r\n2.    A boot sequence is the initial set of operations
+      that the computer performs when it is switched on. Every computer has a boot
+      sequence.\r\n3.    A boot device is any device or drive that has the required
+      boot files that allows the computer to start.\r\n \r\nIn this case, if we are
+      building a PC from scratch, usually there is still no operating system. With
+      this, an operating system can be booted or installed from a boot device.\r\n
+      \r\nA boot drive commonly used is the hard drive. Usually, an operating system
+      like Microsoft Windows is installed in a hard drive to load Windows.\r\n"
+    has3dView: 0

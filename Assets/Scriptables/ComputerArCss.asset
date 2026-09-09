@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topic: 4
   modules:
-  - content: 0
+  - content: 2
     moduleName: 3212
     moduleDescription: qweqwe
+    videoClipName: 
+    modelNames: 000000000100000003000000
     moduleSprite:
     - {fileID: 21300000, guid: 0570fd1b41a32d14db52f46b87b3e1b6, type: 3}
     - {fileID: 21300000, guid: 8e1f4123f1f7cc143ae32dcf1456c1d0, type: 3}
@@ -26,6 +28,8 @@ MonoBehaviour:
   - content: 0
     moduleName: 2323
     moduleDescription: qweasdasdasd
+    videoClipName: 
+    modelNames: 
     moduleSprite:
     - {fileID: 21300000, guid: ba2e0cff26f10b145ae5a916d26b7356, type: 3}
     - {fileID: 21300000, guid: 9a8e593e71ce317478af3e6dd8ab5dcc, type: 3}

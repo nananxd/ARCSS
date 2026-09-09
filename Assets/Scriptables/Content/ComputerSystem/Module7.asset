@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module7
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'SYSTEM SOFTWARE AND APPLICATION SOFTWARE
+
+'
+    description: "Introduction\r\n \r\nA fundamental layer of software, system software
+      lets the hardware parts of a computer interact and run together. It guarantees
+      that the computer system runs effectively and without faults by acting as a
+      middle between the user and the actual hardware. Operating and managing hardware
+      as well as application software depends on system software.\r\n \r\nSystem
+      Software\r\n \r\nSystem software is vital because it ensures that the computer
+      hardware and software work together harmoniously. Without system software,
+      users would not be able to operate their computers or run applications effectively.
+      It provides the foundational framework that supports all other software, from
+      basic utilities to complex application programs. By managing hardware resources,
+      system software optimizes the performance and security of the computer system,
+      making it an indispensable component of modern computing.\r\n \r\nThe Operating
+      System (OS) is like the conductor of an orchestra, ensuring all parts of the
+      computer work together harmoniously. It manages hardware, software resources,
+      and provides common services for computer programs. Examples include Windows,
+      macOS, and Linux.\r\nOperating System is the most important type of system
+      software. It is responsible for managing all other software and hardware on
+      a computer. The OS provides a user interface, enabling users to interact with
+      the computer without needing to understand the underlying hardware complexities.\r\n
+      \r\nFunctions:\r\n\xB7         Resource Management: Allocates CPU time, memory
+      space, and storage for various applications and processes.\r\n\xB7        
+      User Interface: Offers graphical user interfaces (GUIs) or command-line interfaces
+      (CLIs) to facilitate user interaction.\r\n\xB7         Application Execution:
+      Supports the running and management of software applications.\r\n\xB7        
+      Device Coordination: Manages communication between hardware devices, ensuring
+      they work together seamlessly.\r\n \r\nDevice Drivers\r\nDevice Drivers act
+      as translators that enable the Operating System to communicate with hardware
+      devices like printers, graphics cards, and keyboards. Each hardware component
+      requires a specific driver to function correctly\r\n \r\nFunctions:\r\n\xB7        
+      Hardware Communication: Converts OS instructions into device-specific commands,
+      allowing the hardware to perform tasks.\r\n\xB7         Performance Optimization:
+      Ensures devices operate efficiently and correctly by providing the necessary
+      instructions for hardware functionality.\r\n\xB7         Examples: Printer
+      drivers, graphics card drivers, network drivers\r\n \r\nFirmware\r\nFirmware
+      is low-level software embedded directly into hardware devices. It provides
+      essential control and instructions for the device's operation, typically stored
+      in read-only memory (ROM) or flash memory. Firmware is like the DNA of hardware
+      devices, providing low-level control and instructions. It is embedded in devices
+      like routers and BIOS chips.\r\n \r\nFunctions:\r\n\xB7         Initialization:
+      Starts up hardware components and prepares the system for use.\r\n\xB7        
+      Control: Manages basic operations and settings of the hardware.\r\n\xB7        
+      Examples: BIOS/UEFI in computers, firmware in smartphones, embedded systems
+      in appliances\r\n \r\nUtility Software\r\n\xB7         Utility Software acts
+      as the janitor, keeping the system clean and running smoothly. Examples include
+      antivirus programs, disk cleanup tools, and backup software.\r\n\xB7        
+      Utility software consists of programs designed to assist in managing, maintaining,
+      and optimizing computer resources. They perform specific tasks to ensure the
+      system operates efficiently and securely.\r\n \r\nFunctions of Utility Software:\r\n\xB7        
+      Maintenance: Tasks like disk defragmentation, disk cleanup, and system optimization.\r\n\xB7        
+      Protection: against malware and other security threats.\r\n\xB7         Backup:
+      Ensuring data is safely copied and recoverable in case of system failure.\r\n\xB7        
+      Examples: Antivirus programs, disk cleanup tools, backup software, system monitoring
+      tools\r\n \r\nApplication Software\r\n \r\nApplication software, often referred
+      to simply as \"apps\" or \"programs,\" is a type of software designed to perform
+      specific tasks or applications for users. Unlike system software, which manages
+      and supports the computer system itself, application software is intended to
+      meet the needs and preferences of individual users. It is highly diverse and
+      can range from basic productivity tools to complex specialized programs for
+      various purposes.\r\n \r\nCharacteristics of Application Software:\r\n\xB7        
+      Task-Oriented: Application software is designed to accomplish specific tasks
+      or functions, such as word processing, spreadsheet calculations, graphic design,
+      or video editing.\r\n\xB7         User-Friendly Interfaces: Application software
+      typically includes intuitive user interfaces (UIs) that enable users to interact
+      with the program easily. This may include graphical interfaces with menus,
+      buttons, and dialog boxes, or command-line interfaces for more technical users.\r\n\xB7        
+      Customization and Personalization: Many application software programs offer
+      customization options to tailor the software to individual preferences and
+      requirements. Users can often adjust settings, layouts, and features to suit
+      their needs.\r\n\xB7         Specialized Functionality: Application software
+      is often specialized for particular industries, professions, or tasks. For
+      example, there are accounting software packages for financial management, CAD
+      (Computer-Aided Design) software for engineering and architecture, and medical
+      software for healthcare professionals.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: fcd11632e9d655542b810f0776ba4cb7, type: 3}
+    titleName: 'Categories of Application Software
+
+'
+    description: '         Productivity Software: This category includes software
+      tools designed to enhance productivity and facilitate common tasks in various
+      domains. Examples include word processors (e.g., Microsoft Word, Google Docs),
+      spreadsheets (e.g., Microsoft Excel, Google Sheets), presentation software
+      (e.g., Microsoft PowerPoint, Keynote), and email clients (e.g., Microsoft Outlook,
+      Gmail).
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 360672a5ee97f064aa21e4b3845619bd, type: 3}
+    titleName: 
+    description: '    Creative and Multimedia Software: These applications are used
+      for creating and editing multimedia content such as images, videos, and audio
+      files. Examples include graphic design software (e.g., Adobe Photoshop, GIMP),
+      video editing software (e.g., Adobe Premiere Pro, Final Cut Pro), and audio
+      editing software (e.g., Audacity, Adobe Audition).
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 32f7e4b567370b844a184ece721fea9d, type: 3}
+    titleName: 
+    description: '     Database Software: Database software is used for organizing,
+      managing, and manipulating large volumes of data. Examples include relational
+      database management systems (RDBMS) like MySQL, Microsoft Access, and Oracle
+      Database.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: a4eb2769497558a46a568ce8897ba297, type: 3}
+    titleName: 
+    description: '   Web Browsers: Web browsers are software applications used to
+      access and view websites on the internet. Examples include Google Chrome, Mozilla
+      Firefox, Microsoft Edge, and Apple Safari.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 80877ff40e792414996325d45f485896, type: 3}
+    titleName: 
+    description: '       Communication Software: These applications facilitate communication
+      and collaboration among users. Examples include email clients, instant messaging
+      apps (e.g., Slack, Microsoft Teams), and video conferencing software (e.g.,
+      Zoom, Skype).'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 
+    description: '  Specialized Industry Software: There are numerous specialized
+      software applications designed for specific industries or professions, such
+      as accounting software (e.g., QuickBooks, Xero), engineering software (e.g.,
+      AutoCAD, SolidWorks), and medical software (e.g., electronic health record
+      systems, medical imaging software).
+
+'
+    has3dView: 0

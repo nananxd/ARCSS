@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module6
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'DISASSEMBLING AND ASSEMBLING A COMPUTER
+
+'
+    description: "Introduction\r\n \r\nYou might be wondering why the lesson  starts
+      with disassembly and not assembly itself? Simply because we want to learn how
+      to disassemble so we can assemble it again from how we took out the parts.\r\n
+      \r\n \r\nIt is because in the industry, you will be performing disassembly
+      especially in servicing, compared to building a new computer and repairing
+      and maintaining the computers in the workplace. You will have to be familiar
+      especially first with the system unit. We want you to learn how to assemble
+      what you've taken out (disassembled).\r\n \r\n \r\nIt is important that you
+      have taken and reviewed the prerequisite module (Intro to CSS) before going
+      into this hands-on MODULE.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 8256683e3102f354f9f6a4352d4e6faa, type: 3}
+    titleName: 'Preparing for Disassembly
+
+'
+    description: 'Before going into the disassembly proper, you will have to prepare
+      all the materials that you will need.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Computer Disassembly Procedure
+
+'
+    description: "a.  Gather all the necessary tools first on the work area.\r\nyou
+      will be needing the following tools:\r\n1. Screwdriver\r\n2. Flashligth\r\n3.Electrostatic
+      Mat\r\n4. Anti Static Wrist Wrap\r\n5. Thermal Paste\r\nb. Unplug the device
+      from the wall or power source.\r\nc. first, place the electrotastic mat on
+      the work place\r\nd. Wrap or attach an anti-static wrist strap and connect
+      it to an unpainted metal surface. This will prevent static electricity from
+      damaging the components.\r\n \r\ne. Open the case: Remove the side panel from
+      the computer case. (Note: The exact method might look different depending on
+      your case style). Make sure to check the system case for all installed devices.\r\n
+      \r\nf. Remove all internal power connections inside, starting with the main
+      power connectors (such as the 24-pin volts power connector) and any Molex or
+      SATA power cables.\r\ng. To remove the power supply from the case, hold the
+      power supply securely. Unscrew the mounting screws holding the power supply
+      and carefully pull it out. (Keep track of the screws so you won't misplace
+      them).\r\nh. Remove the drive bays / optical drives, Look at the upper portion
+      of the case. Remove the bolts/screws securing the drive to the system case.
+      Slide the drive out to remove it.\r\n \r\ni. Remove the hard disk drive (HDD/SSD),
+      Locate the drive based at the bottom or middle sections. Unscrew the hard disk
+      from the bay. Slide the drive out to remove it.\r\n \r\nj.  Remove the bolts/screws
+      that secure your motherboard to the system case.\r\nK. Remove the RAM (Memory
+      Modules), locate the RAM slots on the motherboard.\r\npush down the tabs or
+      clips on both ends of the slots. slowly pull out the memory stick once it is
+      released from its place.\r\n \r\nL Remove the CPU Fan & Processor, detach the
+      CPU fan from its mounting on the motherboard. Lift the metal retention lever
+      on the CPU socket that holds the processor. Look closely at the arrow indicators
+      on the processor and the socket. Take care when lifting the processor out of
+      the socket.\r\n \r\nm. Final steps: Once you've safely removed these components,
+      document the state of each component for storage or cleaning.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 26a98c76641dda14199b8c581c51901e, type: 3}
+    - {fileID: 21300000, guid: 4ab2aea5d4852694385b4b0546dc633c, type: 3}
+    titleName: 'Performance Checklist
+
+'
+    description: "If you tried disassembling a computer on your own, this checklist
+      might be able to help you if you've done the job correctly.\r\n \r\nCheck the
+      following if you've met the criteria:\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 24db688d7cfd19b43bd85ce50fb6a1e0, type: 3}
+    titleName: 'Assembling a Computer
+
+'
+    description: "Introduction\r\n \r\n \r\nNow that you've learned how to disassemble
+      a PC, we are now going to proceed to assembling what we just disassembled.
+      Ideally, as seen in the last part of the disassembly video, you need to document
+      the specifications/status of the components before putting back the system
+      unit together again.\r\n \r\nA helpful tip is since you worked your way part
+      by part in disassembly, now you are just going to retrace your steps in assembling
+      it.\r\n \r\nBefore going into the assembly proper, you will have to prepare
+      all the materials that you will need.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 24db688d7cfd19b43bd85ce50fb6a1e0, type: 3}
+    titleName: 'Computer Assembly Procedure
+
+'
+    description: "a.  Gather all the necessary tools first on the work area.\r\nyou
+      will be needing the following tools:\r\n1. Screwdriver\r\n2. Flashligth\r\n3.Electrostatic
+      Mat\r\n4. Anti Static Wrist Wrap\r\n5. Thermal Paste\r\n \r\nb. first, place
+      the electrotastic mat on the work place\r\nc. Wrap or attach an anti-static
+      wrist strap and connect it to an unpainted metal surface. This will prevent
+      static electricity from damaging the components.\r\nd. Remove the side panels
+      and lift them away from the computer case. (Check the case manual first, as
+      different cases open differently).\r\n \r\ne. Check the brand-specific information
+      for your processor before installing.\r\nf. Clean the CPU fan and the heatsink
+      with a brush.\r\ng. Lift the metal load rod next to the CPU socket.Find the
+      alignment mark on the corner of the CPU and carefully insert it into the socket,
+      lining up the markings.\r\nH. Push the metal rod back down to lock the processor
+      securely into place.\r\ni. Following the instructions provided, place a small
+      amount of thermal compound onto the CPU and the heatsink.\r\n \r\nj. Align
+      the CPU fan on the mounting tabs over the socket. Screw the fan to the motherboard
+      and pull down its locking rod to secure it.\r\nk. : Connect the fan's power
+      cable to the CPU fan header on the motherboard.\r\nl. Locate the memory slots
+      on the motherboard. Align the RAM stick notches with the slot and gently push
+      down from both ends until the tabs click and lock the RAM into place.\r\n \r\nm.
+      Screw the standoffs into the side of the system case. Align the motherboard's
+      ports with the I/O bezel, place it onto the standoffs, and screw it down tightly.\r\n
+      \r\nn. Locate the hard drive bays in the system case. Slide the hard disk into
+      the bay until the screw holes on both the drive and the case line up, then
+      screw them tightly.\r\n \r\no. \u2022 \tLocate the drive bay usually found
+      on the upper portion of the case. From the outside, slide the optical drive
+      in until the screw holes align, then screw it tightly into place.\r\n \r\np.
+      \u2022\tMount the power supply into its designated large box area in the case
+      (placement varies by brand). Align the screw holes of the PSU with the case
+      and screw them tightly.\r\n \r\nq. Connect all front panel connectors. Carefully
+      read your case and motherboard manuals for proper cable placement instructions.\r\n
+      \r\nr. Connect all power supply cables to their respective devices and motherboard
+      headers. Carefully read your case and motherboard manuals for proper cable
+      placement instructions.\r\n \r\n \r\ns.  Attach the system unit to a monitor,
+      keyboard, and mouse.\r\n      \ti. Installing Keyboard\r\n               \t\r\n\xB7        
+      Make sure to read the instruction manual of your keyboard first.\r\n\xB7        
+      Check whether the keyboard has a USB (flat, rectangular shape) or PS/2 (typically
+      round and purple colored) connector.\r\n \r\n\xB7         Install the keyboard
+      by connecting it to its proper port.\r\n\xB7         Do not install the keyboard
+      while the computer is powered on. Do not remove the keyboard while the computer
+      is running.\r\n \r\n      \tii. Mouse\r\n\xB7         The process to installing
+      this device is similar to that of the keyboard. Check whether your mouse is
+      using a PS/2 Connector or a USB connector then connect it to its proper port.\r\n\xB7        
+      For bluetooth mouse, kindly follow the manufacturer manual\r\n \r\n      \tiii.
+      Monitor\r\n\xB7         Identify the connection type that will connect the
+      monitor to the  motherboard or the graphics card.\r\n\xB7         A DVI, VGA,
+      or HDMI are common ports in the monitor and  used  to produce best picture
+      qualities.\r\n\xB7         Once the display is plugged to its proper connector
+      on the video card or the motherboard, the display is ready. Most of the time,
+      drivers are not required but it should be downloaded to utilize a maximum resolution.\r\n
+      \r\n      \tiv. Speakers\r\n\xB7         Determine the type of speaker and
+      its connector.\r\n\xB7         Connect the cable (usually a 3.5mm jack) to
+      the line-out jack of the computer sound card or on the system unit.\r\n\xB7        
+      Plug in the power cord.\r\n \r\n      \tv. Webcam\r\n\xB7         Common webcams
+      can be simply plugged into the USB port and you will be prompted to install
+      their drivers. Some webcams would need to have its driver installed first.
+      Make sure to read the manufacturer\u2019s instruction manual first.\r\n \r\n     
+      \tvi. Printer\r\n\xB7         Make sure to have the printer and power cable.\r\n\xB7        
+      Connect the printer connector to the unit.\r\n\xB7         Insert the ink or
+      toner cartridge to the printer.\r\n\xB7         Turn the printer on.\r\n\xB7        
+      Power the computer.\r\n\xB7         Start the Printer Install Wizard.\r\n\xB7        
+      Follow the instructions to install the Printer Driver.\r\n\xB7         Run
+      a test print to check if the printer isinstalled correctly.\r\n \r\nt.   Turn
+      on the computer and press the designated key to run the BIOS setup (usually
+      Delete, F2, or F12). Verify that all connected devices are visible in the BIOS.
+      Once verified, you have successfully assembled the computer and can proceed
+      to configure the BIOS and install the operating system.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 850b9183b843d31498fefd1e257b4120, type: 3}
+    titleName: 'Performance Checklist
+
+'
+    description: "If you tried assembling a computer on your own, this checklist
+      might be able to help you if you've done the job correctly.\r\n \r\nCheck the
+      following if you've met the criteria:\r\n"
+    has3dView: 0

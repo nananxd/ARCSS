@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module8
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: d33aa96233e8d0d41a38360dfc31153c, type: 3}
+    titleName: 'BIOS / UIEF CONFIGURATION
+
+'
+    description: "Introduction\r\n \r\nThe BIOS (pronounced as \"bay-os\") or the
+      basic input/output system of the computer, is responsible in making sure that
+      all the other chips, hard drives, ports, and the CPU function together.\r\nThe
+      BIOS basically sets up your computer -- it loads your drivers and boots the
+      operating system.\r\n\n\nThe BIOS is a software usually built onto the motherboard
+      that shows the major hardware components of your computer with the operating
+      system.\r\n \r\nIt is usually stored on a Flash memory chip on the motherboard,
+      but sometimes the chip is another type of ROM.\r\n \r\nWhen you turn on your
+      computer, the BIOS does several things. The sequence is as follows:\r\n \r\n1. 
+      Check the CMOS Setup for custom settings\r\n2.  Load the interrupt handlers
+      and device drivers\r\n3.  Initialize registers and power management\r\n4. 
+      Perform the power-on self-test (POST)\r\n5.  Display system settings\r\n6. 
+      Determine which devices are bootable\r\n7.   Initiate the bootstrap sequence\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 884747b1ad71bf44b8ffdc84af7857c3, type: 3}
+    titleName: 
+    description: 'Configuring the BIOS
+
+      By default, the first boot of the
+      newly installed computer is on the hard disk--may it be on a laptop or a desktop
+      computer. When installing an operating system, the BIOS should be configured
+      to set the system to boot on the operating system to be installed. It should
+      boot first on the USB installer.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 9f08b107c8ceff04ead0bc7529ae36a7, type: 3}
+    titleName: 
+    description: 'Running the BIOS
+
+      Upon turning the computer on, press the
+      keys that would run Setup. On most computers, it would be keys: ESC, DEL, F1,
+      F2, F12, Ctrl-Esc, or Ctrl-Alt-Esc to enter setup. There is usually a line
+      of text at the bottom of the display that tells you "Press ___ to Enter Setup."
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: e6c91a80d502a4a4bb640348cc21a9d7, type: 3}
+    - {fileID: 21300000, guid: 1487c9d411d30e8489f0c243b70497b0, type: 3}
+    titleName: 
+    description: 'BIOS setup would depend on the motherboard manufacturer. However,
+      these are the common, standard options you may see in the BIOS setup:
+
+      1.   
+      If you would like to boot from a certain device, say a USB Flash Drive to install
+      an Operating System (which we will demonstrate later), click advanced set-up
+      and look for the first, second, and third boot device.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: a4088dd65ac3fec43afc91aa89e7eb11, type: 3}
+    - {fileID: 21300000, guid: d4a3c32160073dc408ed4602849bb7c3, type: 3}
+    - {fileID: 21300000, guid: 15d54609b35f0a441b208dc4484c765f, type: 3}
+    titleName: 
+    description: 2.    Select first boot device. By default, it would be the hard
+      drive on the installed computer.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 4af000f598742c94499bb73c89bf07f8, type: 3}
+    titleName: 
+    description: "3.    Make sure to choose \"Save Changes\" when you are changing
+      settings in the BIOS. Afterwards, this will restart the computer so the new
+      settings take effect.\n\n\n\xB7         System Time/Date - Set the system time
+      and date\r\n\xB7         Boot Sequence - The order that BIOS will try to load
+      the operating system\r\n\xB7         Plug and Play - A standard for auto-detecting
+      connected devices; should be set to \"Yes\" if your computer and operating
+      system both support it\r\n\xB7         Mouse/Keyboard - \"Enable Num Lock,\"
+      \"Enable the Keyboard,\" \"Auto-Detect Mouse\"...\r\n\xB7         Drive Configuration
+      - Configure hard drives, CD-ROM and floppy drives\r\n\xB7         Memory -
+      Direct the BIOS to shadow to a specific memory address\r\n\xB7         Security
+      - Set a password for accessing the computer\r\n\xB7         Power Management
+      - Select whether to use power management, as well as set the amount of time
+      for standby and suspend\r\n\xB7         Exit - Save your changes, discard your
+      changes or restore default settings\r\n"
+    has3dView: 0

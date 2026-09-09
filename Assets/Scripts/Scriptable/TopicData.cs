@@ -13,11 +13,16 @@ public class Module
 {
     public ModuleContent content;
     public string moduleName;
+    [TextArea(3,1)]
     public string moduleDescription;
     public string videoClipName;
+    public PhotoTextContentData data;
+    public List<ModelsName> modelNames; // refactor to enum later
     public List<Sprite> moduleSprite;
     public bool isAssesment;
     public bool isDoneReading;
+    
+    
 }
 
 public enum ModuleContent
@@ -36,4 +41,15 @@ public enum ArTopics
     ArCSS,
     ComputerMaintenance,
     BuisnessAndCareer
+}
+
+public enum ModelsName
+{
+    cube,
+    testCube,
+    ram,
+    cpu,
+    motherboard,
+    fan,
+    gpu
 }

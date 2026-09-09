@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module2
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 4f12abf2b49167f45b7f0df2a1e8cdc0, type: 3}
+    titleName: POWER SUPPLY UNIT (PSU)
+    description: A Power Supply in a computer is a hardware component that provides
+      electrical power to the other components in the computer. It converts AC power
+      from your wall outlet into DC power that can be used by the computer's components.
+      The power supply typically has several connectors that provide power to the
+      motherboard, CPU, graphics card, drives, and other components in the computer.
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 5fe83ac6dc90ed042889f9a47ff58e7f, type: 3}
+    titleName: 
+    description: 'Attached are vital hardware cables and buses for transferring power
+      to various components in the computer. '
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 39d9593dcf3b83e44ac4c57756740905, type: 3}
+    titleName: 
+    description: " While most power supply units (PSUs) follow standardized designs
+      for easy installation, there are specific variations suited for different purposes.\r\n
+      \r\n\xB7         ATX 24 pin main power connector is the standard motherboard
+      power connector used in nearly every computer.\r\n\xB7         SATA 15 pin
+      power supply connector is one of several standard peripheral power connectors.
+      SATA power connectors only connect to SATA drives like hard drives and optical
+      drives. SATA power connectors do not work with older PATA devices.\r\n\xB7        
+      Molex 4 pin power supply connector is a standard peripheral power connector.
+      Molex power connectors connect to many different kinds of internal peripherals
+      including PATA hard drives and optical drives, some video cards, and even some
+      other devices.\r\n\xB7         Floppy drive 4 pin power supply connector is
+      the standard floppy drive power connector. The floppy power connector, also
+      called a Berg connector or Mini-Molex connector, is included in even the newest
+      power supplies even though floppy drives are becoming obsolete.\r\n\xB7        
+      ATX 4 pin power supply connector is a standard motherboard power connector
+      used to provide +12 VDC to the processor voltage regulator. This small connector
+      usually attaches to the motherboard near the CPU.\r\n\xB7         ATX 6 pin
+      power supply connector is a motherboard power connector used to provide +12
+      VDC to the processor voltage regulator but the 4-pin variety is the more commonly
+      used connector. This small connector usually attaches to the motherboard near
+      the CPU.\r\n"
+    has3dView: 1

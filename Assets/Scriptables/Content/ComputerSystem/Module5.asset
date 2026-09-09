@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module5
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: a1ee4619de1d41040856357710498a10, type: 3}
+    - {fileID: 21300000, guid: 26a4aa98be8fb6e4999afef33fd15887, type: 3}
+    titleName: 
+    description: "Central Processing Unit (CPU)\r\nCommonly known as the CPU or processor,
+      this is the brain of the computer. It interprets and carries out the basic
+      instructions to operate a computer. \r\nIt impacts overall computing power
+      and manages most of the computer operations. The motherboard contains a socket
+      to hold the processor or CPU. The central processing unit (CPU), also called
+      the processor or microprocessor, does most of the processing of data and instructions
+      for the entire system. Because the CPU generates heat, a fan and heat sink
+      might be installed on top to keep it cool.\r\nNowadays, processors have multiple
+      cores called multi-core processors. This means that the processor is a single
+      chips that has two or more separate processors. In multi-core processors, each
+      of the processors run at a slower clock speed as compared to a single-core
+      processor, but this efficient process typically increases performance. There
+      are two kinds of common multi-core processors today:\r\n1.     Dual Core Processor
+      \u2013 chip that contains two separate processors\r\n2.     Quad Core Processor
+      \u2013 chip with four separate processors\n\n\nAMD and Intel are the two most
+      popular brands of processors in the market nowadays.\r\nBundled with the processors
+      are the heat sinks.  A heat sink consists of metal fins that draw heat away
+      from a component. The fan and heat sink together are called the processor cooler.
+      The photo below shows a CPU with a heat sink mounted on the motherboard.\r\n\r\n"
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 8758bd2176ba76b4db94244245ed097a, type: 3}
+    - {fileID: 21300000, guid: 752f59a543746f84aaed56ce9d59583a, type: 3}
+    titleName: 'Cooling Technology
+
+'
+    description: "Cooling technologies are essential in avoiding the computer from
+      overheating and maintaining a good, well-ventilated system.\n\nSeveral cooling
+      technologies are present throughout the system unit:\r\n o    Fans are also
+      present in several components such as the power supply, ports, processor, hard
+      disk etc.\r\no    Heat sink, on another hand, is a small metal or ceramic component
+      with fins on the surface which absorbs and distributes heat produced by electrical
+      components.\r\no    Heat pipe is used on smaller devices like notebook computers
+      since this is smaller in size.\r\n\r\n"
+    has3dView: 1
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: b427f0da091c09742a128a81485de5e5, type: 3}
+    - {fileID: 21300000, guid: b404d2289d1401f4b94a0f5ae0932ac3, type: 3}
+    titleName: 'Cables
+
+'
+    description: "There are two main types of computer cables: a data cable and a
+      power cable.\r\n A data cable is a cable that provides communication between
+      devices. For example, the data cable (i.e., DVI, HDMI, or VGA) that connects
+      your monitor to your computer to create a picture on the monitor. Other popular
+      examples of data cables include the CAT5, IDE/EIDE, SATA, and USB cables.\r\n\n\n
+      A power cable is any cable that powers the device. For example, the power cord
+      that connects to your computer and a Molex cable inside the computer are examples
+      of power cables.\r\n"
+    has3dView: 0

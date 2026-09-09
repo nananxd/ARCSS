@@ -12,15 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b581bfcfc2df1444495a193fc5f6f08b, type: 3}
   m_Name: ComputerBuisnessCareer
   m_EditorClassIdentifier: 
-  topic: 1
+  topic: 6
   modules:
-  - moduleName: 
+  - content: 0
+    moduleName: 
     moduleDescription: 
-    moduleSprite: {fileID: 0}
+    videoClipName: 
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
     isAssesment: 0
     isDoneReading: 0
-  - moduleName: 
+  - content: 0
+    moduleName: 
     moduleDescription: 
-    moduleSprite: {fileID: 0}
+    videoClipName: 
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
     isAssesment: 0
     isDoneReading: 0

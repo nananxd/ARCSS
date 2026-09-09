@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module1
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    display:
+    - {fileID: 21300000, guid: c032c439ddfaea84aafe7a7cafe1096e, type: 3}
+    titleName: 'Motherboard '
+    description: 'The motherboard is also known as mainboard, system board, logic
+      board, or MOBO. It holds and allows communication between the crucial components
+      of the computer such as the CPU and memory. It also provides connection for
+      other peripherals. This provides the path which the processor (CPU) communicates
+      with all the components of the computer.
+
+'
+    has3dView: 1
+  - contentName: 0
+    display: []
+    titleName: 'There are several components that are attached to the motherboard.
+      These include: '
+    description: "1.     Chip \u2013 small piece of semiconducting material, where
+      more integrated circuits are embedded. They have standard-sized pin connectors
+      that allows them to be attached to the motherboard.\r\n2.     Bus - an electrical
+      path that enables data flow between various system components.\r\n3.     Integrated
+      Circuit (IC) \u2013 contains microscopic pathways that carry electric current.
+      The IC contains millions of elements such as resistors, capacitators, and transistors.
+      Many different kinds of chips are located in the motherboard\r\n4.     Microprocessor
+      \u2013 this is the central processing unit on a chip.\r\n"
+    has3dView: 0
+  - contentName: 0
+    display:
+    - {fileID: 21300000, guid: adc84ad0ab469eb44b8bef56c2bf5cab, type: 3}
+    titleName: 'Different variety of chip packages: '
+    description: "1.     Dual Inline Package (DIP) \u2013 this has two parallel rows
+      of pints that attach the chip package to the circuit board\r\n2.     Pin Grid
+      Array (PGA) \u2013 holds a larger number of pins because the pins are mounted
+      on the surface of the package.\r\n3.     Flip Chip-PGA (CF-PGA) Package \u2013
+      higher performance PGA packaging that places the chip on the opposite sides
+      of the pins.\r\n4.     Single Edge Contact (SEC) Cartridge \u2013 does not
+      use pins but connects to one of the edges in the motherboard.\r\n"
+    has3dView: 0
+  - contentName: 0
+    display: []
+    titleName: 
+    description: "The form factor of motherboards pertains to the size and shape
+      of the board.  It also describes the physical layout of the different components
+      and devices on the motherboard.  Various form factors exist for motherboards:\r\nAT
+      \u2013 Advanced Technology\r\nATX \u2013 Advanced Technology Extended\r\nMini-ATX
+      \u2013 Smaller footprint of ATX\r\nMicro-ATX \u2013 Smaller footprint of ATX\r\nLPX
+      \u2013 Low-profile Extended\r\nNLX \u2013 New Low-profile Extended\r\nBTX \u2013
+      Balanced Technology Extended\r\n"
+    has3dView: 0
+  - contentName: 0
+    display:
+    - {fileID: 21300000, guid: 75444d9ffad20fa4f9eb09ab6addd413, type: 3}
+    titleName: 'COMPONENTS OF MOTHERBOARD '
+    description: 'A. Central Processing Unit (CPU) Also known as the microprocessor
+      or the processor, the CPU is the computer''s brain. It is responsible for fetching,
+      decoding, and executing program instructions. It also performs mathematical
+      and logical calculations. B. BIOS Basic Input/Output System.   BIOS stands
+      for Basic Input/Output System. The BIOS is read-only memory that controls system
+      hardware and connects it to the operating system. Often called drivers, the
+      BIOS links the computer''s hardware and software. Every motherboard has a small
+      ROM chip with the BIOS, which contains the code to control the keyboard, screen,
+      disk drives, and more. UEFI (Unified Extensible Firmware Interface) comes with
+      more features. It is a newer firmware interface that is designed to address
+      the limitations of BIOS. It offers faster boot times, support for larger hard
+      drives, modern hardware, and additional security features. '
+    has3dView: 0
+  - contentName: 0
+    display:
+    - {fileID: 21300000, guid: 8522804768f84e04aa83a3e670093677, type: 3}
+    - {fileID: 21300000, guid: d59b1bb354cb30d47b7cef0185667910, type: 3}
+    - {fileID: 21300000, guid: 848d4bcab47a6544f8be65904f77387d, type: 3}
+    - {fileID: 21300000, guid: f70cbbde18ac3ad41ac271a09258850d, type: 3}
+    titleName: C. SLOTS
+    description: 'PCI Slot or Expansion Bus   PCI stands for Peripheral Component
+      Interconnect, and it is a type of computer bus for attaching hardware devices
+      in a computer. It allows for high-speed data transfer between the devices and
+      the computer''s processor. Expansion buses enhance the PC''s capabilities by
+      allowing users to add missing features to their computers by slotting adapter
+      cards into expansion slots. '
+    has3dView: 0
+  - contentName: 0
+    display:
+    - {fileID: 21300000, guid: 696d020a4b67dbd4bb77930bc9318a0a, type: 3}
+    titleName: 'D. CHIPSET NORTH AND SOUTH BRIDGE
+
+'
+    description: "The Chipsets\r\n \r\nA chipset is a group of small circuits that
+      coordinate the flow of data to and from a PC's key components. These key components
+      include the CPU itself, the main memory, the secondary cache, and any devices
+      located on the buses.\r\nA computer has two main chipsets:\r\nThe function
+      of the northbridge is primarily a fast path between the CPU and the video bus
+      and system RAM. While the southbridge connects with the slow hardware/components
+      of the system. \r\n  Flow Diagram of two bridges:\r\n "
+    has3dView: 0
+  - contentName: 0
+    display:
+    - {fileID: 21300000, guid: 44ea3d78230096d4391475b84c8c327e, type: 3}
+    - {fileID: 21300000, guid: 208fe7d818dad4647bb0d9ef577e1a89, type: 3}
+    - {fileID: 21300000, guid: ae6dfc14c6675f44caec71b315219a0e, type: 3}
+    - {fileID: 21300000, guid: 4c12aa2b1c52f7740a0fdb1ba7009f97, type: 3}
+    titleName: 'E.  PORTS , SOCKETS , AND CONNECTORS
+
+'
+    description: "Storage connectors\r\n \r\nThe motherboard has several ports, sockets,
+      slots, and connectors that link the computers' components, input, and output
+      devices among each other. First we'll look at the port which are usually found
+      at the side of the motherboard or the back of the system case.\r\nThe port
+      basically serves as an interface between the computer and other computers or
+      peripheral devices. \r\nA port generally refers to the female part of connection.
+      Computer ports have many uses, to connect a monitor, webcam, speakers, or other
+      peripheral devices. \r\nOn the physical layer, a computer port is a specialized
+      outlet on a piece of equipment to which a plug or cable connects. Electronically,
+      the several conductors where the port and cable contacts connect, provide a
+      method to transfer signals between devices.\r\nFamiliarize yourself with the
+      following ports usually found with computer systems below:\r\n"
+    has3dView: 0
+  - contentName: 0
+    display:
+    - {fileID: 21300000, guid: f6d477ad9baf74b4eaff04ddb7675031, type: 3}
+    - {fileID: 21300000, guid: e63b02689be44744b90842c209bc4410, type: 3}
+    titleName: Sockets
+    description: 'The following are the most common sockets found in the motherboard.
+      The CPU socket where the CPU itself is inserted and the CMOS slot where the
+      CMOS battery (which lets the motherboard remember the date and time of the
+      computer) that is replaced after it has worn out.
+
+
+'
+    has3dView: 0
+  - contentName: 0
+    display:
+    - {fileID: 21300000, guid: 19534abeee2c59d468f357c6c4d0e3f9, type: 3}
+    - {fileID: 21300000, guid: 8e8fabaa42ae379429e39913a65bc47f, type: 3}
+    - {fileID: 21300000, guid: ddb217665d9d3d64982b908a59b7b735, type: 3}
+    - {fileID: 21300000, guid: bcaa99357fc5b104aa7216422bb7ae09, type: 3}
+    - {fileID: 21300000, guid: 572ecdfa416209f4c867d5cf54a8c25a, type: 3}
+    - {fileID: 21300000, guid: 668fa3d9c3f221f44957c30f1cfbcb5d, type: 3}
+    - {fileID: 21300000, guid: 251dcd6febcb0fc40b1565d7dc3f8417, type: 3}
+    - {fileID: 21300000, guid: 66b6f922f16cb4c4baf6b37d940c2e60, type: 3}
+    - {fileID: 21300000, guid: ad3cd6a65925e3148b94077b91cf9990, type: 3}
+    - {fileID: 21300000, guid: 5ed59a4718f08e64ca45aa921e9f6386, type: 3}
+    - {fileID: 21300000, guid: 555f4f89d3f77a446823f01febf569c7, type: 3}
+    - {fileID: 21300000, guid: 6f0647c249486b04091f557939732966, type: 3}
+    - {fileID: 21300000, guid: 3136f0497c4c623478a9a2a5d3a1cda6, type: 3}
+    - {fileID: 21300000, guid: 39f56898b28f8834ca5b2c5e5bce4e99, type: 3}
+    titleName: Connectors
+    description: "Storage connectors are for mechanical hard disks, solid-state storage
+      devices (SSDs) and optical storage devices, such as DVD writers. There are
+      two types of Storage connector: 1.            IDE (Integrated Drive Electronics)
+      A standard interface for connecting a motherboard to storage devices such as
+      hard drives and CD-ROM/DVD drives. In most older motherboards, there used to
+      be 2 IDE channels where drives were connected via a ribbon cable. 2.           
+      Serial ATA (Serial Advanced Technology Attachment or SATA) is a command and
+      transport protocol that defines how data is transferred between a computer's
+      motherboard and mass storage devices, such as hard disk drives (HDDs), optical
+      drives and solid-state drives (SSDs). This is now commonly used in newer motherboards.  
+      .               I/O Ports or Connectors .               Keyboard and mouse
+      PS/2 connectors   While most keyboards and mice now connect over USB, some
+      models still use the older PS/2 connector, which is still featured on some
+      new motherboards. .               Graphics (monitor connectors)   If you have
+      a CPU that has built-in graphics, you will use these connectors to plug into
+      your monitor. If you have a dedicated graphics card (see Expansion slots above)
+      you will use the connectors on the back of that instead. Different motherboards
+      have different connectors, such as DisplayPort, HDMI, DVI, and sometimes the
+      older VGA. You\u2019ll need a port that matches the one on your monitor, but
+      bear in mind a DVI port can be used with an HDMI monitor and vice versa by
+      using cheap adaptors (but it won\u2019t transmit any sound). .              
+      USB ports Almost anything that connects to your PC from the outside, including
+      keyboards, mice, printers and gaming peripherals, will be plugged into some
+      variation of USB. Network port   While not all laptops come with wired network
+      ports, they are still very common on desktop PCs. Network ports work by plugging
+      in an Ethernet (network) cable to create a wired network connection to your
+      internet, as opposed to wireless. "
+    has3dView: 0

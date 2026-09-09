@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module10
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 391f79cd63f7f3c48a05d57f9cb3bb7b, type: 3}
+    titleName: 'Installing Operating System and Device Driver
+
+'
+    description: "Introduction\r\n \r\nWhen you open a computer, usually this will
+      either be a Windows PC or a Macintosh computer. They will have different user
+      interfaces or applications that may be specific to that computer. The Windows
+      or the Mac are called operating systems.\r\n \r\nThe Operating System (OS)
+      is a layer of software which is used to manage computer resources. It also
+      provides an interface, so that users can utilize computer resources. It configures
+      and manages hardware to connect the components and the applications.\r\n \r\n
+      \r\nDifferent Operating System\r\n \r\nThe three most popular operating systems
+      are Windows, MAC, and Linux.\r\n\n\n\xB7         Windows is the dominant over
+      the other two. 90% of computer users use Windows operating system.\r\n\xB7        
+      Windows and MAC are expensive operating systems however, MAC OS requires the
+      users to buy the MAC systems (Macbook, Mac) built by Apple.\r\n\xB7        
+      On the other hand, Linux is a free operating system.\r\n\xB7         Windows
+      and MAC have similar file structures while Linux has a different code base
+      (single file tree compared to Windows and MAC's many directories)\r\n\xB7        
+      Windows interface has a Start menu, Taskbar, System Tray, and the Windows Explore
+      while Linux has easy to switch interfaces.\r\n\xB7         Linux is most preferred
+      by programmers, MAC is preferred by graphic artists, and Windows is perferred
+      by gamers.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 2fda0dccea68124488ee38ea4bd9303d, type: 3}
+    titleName: 
+    description: "Common Operating Systems\r\n \r\nThe following are common operating
+      systems being used today:\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 31cc5a8721be6ba48a46231800a6de5e, type: 3}
+    titleName: 'Steps to Install Windows 10 on a New Computer
+
+'
+    description: "1.Unbox and Assemble the Hardware\r\nCarefully unbox and assemble
+      all components if your new computer requires manual assembly. Ensure that all
+      cables are properly connected, and peripherals such as keyboard, mouse, and
+      monitor are set up.\r\n2.Connect to Power and Internet\r\nPlug in your computer
+      and connect to the internet if possible. A wired connection is preferable for
+      faster and more reliable access during installation.\r\n3.Prepare Installation
+      Media\r\nDownload the Windows 10 Media Creation Tool from the official Microsoft
+      website on another computer.\r\nUse the tool to create a bootable USB drive
+      or DVD with the Windows 10 installation files.\r\n4.Insert Installation Media\r\nInsert
+      the bootable USB drive or DVD into the new computer\r\n \r\n5.Turn On the Computer
+      and Enter BIOS/UEFI\r\nTurn on the computer and immediately press a key such
+      as F2, F12, DEL, or ESC to enter the BIOS/UEFI setup. The specific key will
+      depend on your motherboard manufacturer.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: b9c9dc1542620c34887c5acf6651b75a, type: 3}
+    titleName: 
+    description: '6.Configure Boot Order
+
+      In the BIOS/UEFI settings, locate
+      the boot order menu.
+
+      Set the USB drive or DVD as the primary boot device.
+      Save the changes and exit BIOS/UEFI
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 9f7aa07bca1f4a3459950cf699870345, type: 3}
+    titleName: 
+    description: " 7.Boot from Installation Media .The computer should now boot from
+      the installation media. You may be prompted to press a key to confirm this
+      action.\r\n8.Start Windows 10 Installation\r\nSelect your language, time, and
+      keyboard preferences, then click \u201CNext.\u201D\r\nClick \u201CInstall Now\u201D
+      to begin the installation process.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 52e42a7603aaee94d8fddb7fdb72712d, type: 3}
+    titleName: 
+    description: "9.Enter Product Key\r\nEnter the Windows 10 product key when prompted.
+      If you don't have one, you can select \u201CI don\u2019t have a product key\u201D
+      to continue. Windows will prompt for activation later.\r\n10.Accept License
+      Terms\r\nReview and accept the Microsoft Software License Terms, then click
+      \u201CNext.\u201D\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 6e5858ab8a866174d9e940a67506f6e8, type: 3}
+    titleName: 
+    description: "11.Choose Installation Type\r\nSelect \u201CCustom: Install Windows
+      only (advanced)\u201D for a clean installation on a new system.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 6154f37f31acba14ca482d0e87707330, type: 3}
+    titleName: 
+    description: "12.Partition the Drive\r\nChoose the drive you want to install
+      Windows on. Since this is a new computer, there may be no existing partitions.\r\nCreate
+      a new partition for Windows by selecting the unallocated space and clicking
+      \u201CNew.\u201D The installer will automatically create additional necessary
+      partitions for system files.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: b1dccf36a1c7efc46b9cd520dbfa5db6, type: 3}
+    titleName: 
+    description: "13.Begin Installation\r\nClick \u201CNext\u201D to start the installation.
+      Windows will copy files, install features, and complete the setup. This process
+      may take some time, depending on your system's specifications.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 5b200368c65cb6f478268605374a735d, type: 3}
+    - {fileID: 21300000, guid: b16d779fa8070de4fb63b8ed32768f04, type: 3}
+    titleName: 
+    description: '14. Set up initial configuration of the operating system. Choose
+      the right region.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 7beeb51ca613ec24e8a06b2a1a564f09, type: 3}
+    titleName: 'Installing Device Drivers
+
+'
+    description: "There are several ways to install device drivers for your newly
+      installed components:\r\n1. Manufacturer\u2019s DVD Installer \u2013 Provided
+      upon buying a computer, laptop, device\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 22447092045915540a45419367158b11, type: 3}
+    titleName: 
+    description: " 2. Driverpack Solution \u2013 A free tool which automatically
+      finds proper drivers for a computer, then downloads and installs it without
+      wizards or installation prompts"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 5a10b63f8a994a84e85a8db9e3288aa5, type: 3}
+    titleName: 
+    description: "3. Device Manager (Driver Update) \u2013 Can be accessed by clicking
+      Start > Computer > Manage > Device Manager. From here, each component can have
+      the option to install a driver through a CD or through searching automatically
+      online."
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: 9250c6366e656e143b4be74d87321d9b, type: 3}
+    titleName: 
+    description: "4. Download Online \u2013 Look for unit\u2019s Model Name and Number\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display:
+    - {fileID: 21300000, guid: e46c124be0e2c1b429419bd5e2d7a000, type: 3}
+    titleName: 'Checking Device Driver Installation
+
+'
+    description: "After installation, you would want to see if you've installed the
+      correct device drivers to avoid any issues that may hinder the component from
+      running in its full performance.\r\n \r\nIn this simple procedure, we are looking
+      if there drivers are already installed. If the device driver is installed,
+      updating it through the device manager would prompt to say that the drivers
+      are installed.\r\n \r\n1. Open the Control Panel.\r\n2. Select System and Security.\r\n3.
+      Click System and select Device Manager from the left side.\r\n4. Click \u201CMonitor\u201D 
+      and you will see that a genetic monitor is installed.\r\n"
+    has3dView: 0
