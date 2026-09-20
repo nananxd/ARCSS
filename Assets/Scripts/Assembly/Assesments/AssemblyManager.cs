@@ -37,6 +37,15 @@ public class AssemblyManager : MonoBehaviour
     private void Start()
     {
         SetCurrentAssesment();
+        SetupParts();
+    }
+
+    public void SetupParts()
+    {
+        foreach (var item in parts)
+        {
+            item.SetupSlot();
+        }
     }
 
     #region Assesment
@@ -57,11 +66,24 @@ public class AssemblyManager : MonoBehaviour
 
     public void CheckIfAllAssesmentsFinish()
     {
-        if (assesmentCounter  >= assesments.Count - 1)
+        //if (assesmentCounter  >= assesments.Count - 1)
+        //{
+        //    Debug.Log("Finished Assemble Assesment");
+        //    assemblyUIManager.ShowEndScreenUI();
+        //    // Assesment finished proceed to disassembly
+        //}
+
+        if (CheckIfAllFinished())
         {
             Debug.Log("Finished Assemble Assesment");
-            // Assesment finished proceed to disassembly
+            assemblyUIManager.ShowEndScreenUI();
         }
+    }
+
+    public bool CheckIfAllFinished()
+    {
+        var isAllDone = assesments.All(x => x.parts.All(y => y.isDone));
+        return isAllDone;
     }
 
     // Current assesment

@@ -23,6 +23,11 @@ public class AssemblyPart : MonoBehaviour
 
     private void Start()
     {
+        //correctSlot = AssemblyManager.Instance.assembleAssesment.GetSlotById(partID);
+    }
+
+    public void SetupSlot()
+    {
         correctSlot = AssemblyManager.Instance.assembleAssesment.GetSlotById(partID);
     }
 

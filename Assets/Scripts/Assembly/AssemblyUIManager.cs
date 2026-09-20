@@ -16,6 +16,8 @@ public class AssemblyUIManager : MonoBehaviour
     [Header("End Screen UI")]
     [SerializeField] private GameObject endScreenUI;
 
+
+
     public ErrorFeedbackUI errorFeedbackUI;
 
     private void Awake()
@@ -67,6 +69,13 @@ public class AssemblyUIManager : MonoBehaviour
         AssemblyManager.Instance.CheckIfAllAssesmentsFinish();
         AssemblyManager.Instance.SetNextCurrentAssesment();
         
+    }
+    #endregion
+
+    #region End Screen UI
+    public void ShowEndScreenUI()
+    {
+        endScreenUI.transform.localScale = Vector3.one;
     }
     #endregion
 }

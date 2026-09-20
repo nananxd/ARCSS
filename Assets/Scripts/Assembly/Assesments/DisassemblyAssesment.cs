@@ -22,35 +22,35 @@ public class DisassemblyAssesment : MonoBehaviour
         if (part == null)
             return;
 
-        if (assessmentData == null)
-        {
-            Debug.LogError("Assessment Data is not assigned.");
-            return;
-        }
+        //if (assessmentData == null)
+        //{
+        //    Debug.LogError("Assessment Data is not assigned.");
+        //    return;
+        //}
 
-        if (currentStep >= assessmentData.disassemblySteps.Count)
-        {
-            Debug.Log("Disassembly assessment already completed.");
-            return;
-        }
+        //if (currentStep >= assessmentData.disassemblySteps.Count)
+        //{
+        //    Debug.Log("Disassembly assessment already completed.");
+        //    return;
+        //}
 
 
         // -----------------------------------------
         // CHECK CORRECT PART
         // -----------------------------------------
 
-        AssemblyStep expectedStep = assessmentData.disassemblySteps[currentStep];
+       // AssemblyStep expectedStep = assessmentData.disassemblySteps[currentStep];
 
-        if (part.partID != expectedStep.partID)
-        {
-            Debug.Log(
-                $"WRONG PART! " +
-                $"Expected: {expectedStep.partID}, " +
-                $"Selected: {part.partID}"
-            );
+        //if (part.partID != expectedStep.partID)
+        //{
+        //    Debug.Log(
+        //        $"WRONG PART! " +
+        //        $"Expected: {expectedStep.partID}, " +
+        //        $"Selected: {part.partID}"
+        //    );
 
-            return;
-        }
+        //    return;
+        //}
 
 
         // -----------------------------------------
@@ -84,14 +84,14 @@ public class DisassemblyAssesment : MonoBehaviour
         // -----------------------------------------
 
         part.Disassemble();
-
+        DisassemblyManager.instance.DisablePart(part.partID);
        
-        currentStep++;
+       // currentStep++;
 
         Debug.Log( $"Correct! {part.partID} disassembled.");
 
 
-        CheckAssessmentComplete();
+        //CheckAssessmentComplete();
     }
 
     private void CheckAssessmentComplete()
