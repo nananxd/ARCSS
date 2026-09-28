@@ -20,9 +20,25 @@ public class Module
     public List<ModelsName> modelNames; // refactor to enum later
     public List<Sprite> moduleSprite;
     public bool isAssesment;
+    public AssesmentDetails assesmentDetails;
     public bool isDoneReading;
     
     
+}
+
+[System.Serializable]
+public class AssesmentDetails
+{
+    public bool isQuizAssesment;
+    public QuizId quizId;
+    public AssesmentSceneName sceneName;
+}
+
+public enum AssesmentSceneName
+{
+    Assembly,
+    Disassembly,
+    NetworkAssesment
 }
 
 public enum ModuleContent

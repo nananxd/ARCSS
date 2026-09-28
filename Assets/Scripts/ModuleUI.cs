@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ModuleUI : MonoBehaviour,IInitializer
 {
@@ -18,7 +19,12 @@ public class ModuleUI : MonoBehaviour,IInitializer
     public bool isAssesment;
     public bool isDoneReading;
 
-   
+    [Header("Assesment Details")]
+    public bool isQuizAssesment;
+    public QuizId quizId;
+    public AssesmentSceneName sceneName;
+
+
     public void Initialize()
     {
         moduleBtn = GetComponent<Button>();
@@ -33,7 +39,26 @@ public class ModuleUI : MonoBehaviour,IInitializer
             GameManager.instance.uiManager.InitializeModuleContent(data);
             GameManager.instance.moduleContentController.SetCurrentActiveModuleContent(moduleName, topic);
         }
-       
+        else
+        {
+
+            AssesmentSetup();
+        }
+
+    }
+
+    private void AssesmentSetup()
+    {
+        if (isQuizAssesment)
+        {
+            GameManager.instance.multipleChoiceManager.GetQuizById(quizId);
+            GameManager.instance.multipleChoiceManager.InitializeQuestions();
+            GameManager.instance.uiManager.ShowAssesmentScreen();
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneName.ToString());
+        }
     }
 
     public void Setup(Module module)
@@ -47,6 +72,10 @@ public class ModuleUI : MonoBehaviour,IInitializer
         modelNames = module.modelNames;
         isAssesment = module.isAssesment;
         isDoneReading = module.isDoneReading;
+
+        isQuizAssesment = module.assesmentDetails.isQuizAssesment;
+        sceneName = module.assesmentDetails.sceneName;
+
        
     }
 

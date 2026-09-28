@@ -23,6 +23,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 2
     moduleName: powerSupply
@@ -33,6 +37,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: expansionCard
@@ -43,6 +51,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: storage
@@ -53,6 +65,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: cpu
@@ -63,6 +79,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: Assesment1
@@ -72,6 +92,10 @@ MonoBehaviour:
     modelNames: 
     moduleSprite: []
     isAssesment: 1
+    assesmentDetails:
+      isQuizAssesment: 1
+      quizId: 2
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: dac
@@ -82,6 +106,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: Assesment2
@@ -92,6 +120,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 1
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: systemSoftware
@@ -102,6 +134,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: bios
@@ -112,6 +148,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: iso
@@ -122,6 +162,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: operatingSystem
@@ -132,6 +176,10 @@ MonoBehaviour:
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0
   - content: 0
     moduleName: Assesment3
@@ -141,4 +189,8 @@ MonoBehaviour:
     modelNames: 
     moduleSprite: []
     isAssesment: 1
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
     isDoneReading: 0

@@ -60,10 +60,21 @@ public class UIManager : MonoBehaviour
     public GameObject profilePanel;
     public GameObject loginPanel;
 
-   
+    [Header("Quiz| Assesment")]
+    public RectTransform assesmentRect;
+    public RectTransform assesmentResultRect;
+    public TextMeshProUGUI resultText;
+    public TextMeshProUGUI resultTitleTxt;
+    public Button closeResultBtn;
 
-    
-    
+
+
+
+    private void Awake()
+    {
+        closeResultBtn.onClick.AddListener(CloseResultScreen);
+    }
+
 
     void Start()
     {
@@ -312,6 +323,37 @@ public class UIManager : MonoBehaviour
         threeDContentRect.transform.localScale = Vector3.zero;
     }
 
+
+    #endregion
+
+
+    #region Assesment/ Quiz / Summative Test
+
+    public void SetResultUI(int score,int items)
+    {
+        resultText.text = $"{score}/{items}";
+    }
+
+    public void ShowResultScreen()
+    {
+        assesmentResultRect.localScale = Vector3.one;
+    }
+
+    public void CloseResultScreen()
+    {
+        assesmentResultRect.localScale = Vector3.zero;
+        CloseAssesmentScreen();
+    }
+
+    public void ShowAssesmentScreen()
+    {
+        assesmentRect.localScale = Vector3.one;
+    }
+
+    public void CloseAssesmentScreen()
+    {
+        assesmentRect.localScale = Vector3.zero;
+    }
 
     #endregion
 
