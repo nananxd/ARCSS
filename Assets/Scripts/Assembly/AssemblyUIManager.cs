@@ -16,6 +16,9 @@ public class AssemblyUIManager : MonoBehaviour
     [Header("End Screen UI")]
     [SerializeField] private GameObject endScreenUI;
 
+    [Header("Fader")]
+    [SerializeField] private CanvasGroup faderCanvasGroup;
+
 
 
     public ErrorFeedbackUI errorFeedbackUI;
@@ -76,6 +79,15 @@ public class AssemblyUIManager : MonoBehaviour
     public void ShowEndScreenUI()
     {
         endScreenUI.transform.localScale = Vector3.one;
+    }
+    #endregion
+
+    #region Fader
+    public void Fade(bool isVisible)
+    {
+        TweenHelper.Fade(faderCanvasGroup, isVisible ? 1f:0);
+        faderCanvasGroup.blocksRaycasts = isVisible;
+        faderCanvasGroup.interactable = isVisible;
     }
     #endregion
 }

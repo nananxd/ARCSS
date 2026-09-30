@@ -101,10 +101,11 @@ public class AssemblyPart : MonoBehaviour
         {
             transform.position = correctSlot.snapPoint.position;
             transform.rotation = correctSlot.snapPoint.rotation;
+            AssemblyManager.Instance.assemblyUIManager.Fade(true);
         }
-
+       
         IsAssembled = true;
-
+        AssemblyManager.Instance.assemblyUIManager.Fade(false);
         Debug.Log($"{partID} assembled.");
     }
 

@@ -59,13 +59,15 @@ public class ModuleInitializer : MonoBehaviour
                     text.text = "ASSESMENT";
                    
                 }
-                else
-                {
-                   
-                    ui.Initialize();
-                    ui.Setup(item);
-                }
+                //else
+                //{
 
+                //    ui.Initialize();
+                //    ui.Setup(item);
+                //}
+
+                ui.Setup(item);
+                ui.Initialize();               
                 modulesUI.Add(ui);
 
 

@@ -20,7 +20,7 @@ public class MultipleChoiceManager : MonoBehaviour
 
     private void Start()
     {
-        InitializeQuestions();
+        //InitializeQuestions();
     }
 
     #region GetQuiz
@@ -44,6 +44,7 @@ public class MultipleChoiceManager : MonoBehaviour
             GameObject go = Instantiate(questionPrefab);
             go.transform.SetParent(parent);
             go.SetActive(true);
+            go.transform.localScale = Vector3.one;
             MultipleChoiceController choiceControl = go.GetComponent<MultipleChoiceController>();
             choicesController.Add(choiceControl);
             choiceControl.Setup(currentQuiz.quizzes[i]);

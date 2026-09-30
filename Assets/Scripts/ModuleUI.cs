@@ -29,6 +29,7 @@ public class ModuleUI : MonoBehaviour,IInitializer
     {
         moduleBtn = GetComponent<Button>();
         moduleBtn.onClick.AddListener(OnClickModule);
+        
     }
 
     public void OnClickModule()
@@ -41,7 +42,7 @@ public class ModuleUI : MonoBehaviour,IInitializer
         }
         else
         {
-
+           
             AssesmentSetup();
         }
 
@@ -57,7 +58,7 @@ public class ModuleUI : MonoBehaviour,IInitializer
         }
         else
         {
-            SceneManager.LoadScene(sceneName.ToString());
+            SceneManager.LoadScene(sceneName.ToString().Replace(" ",""));
         }
     }
 
@@ -75,6 +76,7 @@ public class ModuleUI : MonoBehaviour,IInitializer
 
         isQuizAssesment = module.assesmentDetails.isQuizAssesment;
         sceneName = module.assesmentDetails.sceneName;
+        quizId = module.assesmentDetails.quizId;
 
        
     }

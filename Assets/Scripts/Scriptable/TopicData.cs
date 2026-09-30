@@ -36,9 +36,9 @@ public class AssesmentDetails
 
 public enum AssesmentSceneName
 {
-    Assembly,
-    Disassembly,
-    NetworkAssesment
+    AsessmentScene,
+    Disassemble,
+    NetworkingAssesment
 }
 
 public enum ModuleContent
