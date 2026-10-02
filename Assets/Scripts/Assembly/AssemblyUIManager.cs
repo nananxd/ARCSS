@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using System.Collections;
 public class AssemblyUIManager : MonoBehaviour
 {
     [SerializeField] private PointerUI pointerGameobject;
@@ -85,9 +86,22 @@ public class AssemblyUIManager : MonoBehaviour
     #region Fader
     public void Fade(bool isVisible)
     {
-        TweenHelper.Fade(faderCanvasGroup, isVisible ? 1f:0);
+        StartCoroutine(FadeCoroutine(isVisible));
+    }
+
+    private IEnumerator FadeCoroutine(bool isVisible)
+    {
+        TweenHelper.Fade(faderCanvasGroup, isVisible ? 1f : 0,.05f);
         faderCanvasGroup.blocksRaycasts = isVisible;
         faderCanvasGroup.interactable = isVisible;
+
+        yield return new WaitForSeconds(1f);
+
+        TweenHelper.Fade(faderCanvasGroup, !isVisible ? 1f : 0);
+        faderCanvasGroup.blocksRaycasts =! isVisible;
+        faderCanvasGroup.interactable =! isVisible;
+
+        Debug.Log("Fading");
     }
     #endregion
 }

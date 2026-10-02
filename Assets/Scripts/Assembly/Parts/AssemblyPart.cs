@@ -105,7 +105,7 @@ public class AssemblyPart : MonoBehaviour
         }
        
         IsAssembled = true;
-        AssemblyManager.Instance.assemblyUIManager.Fade(false);
+       // AssemblyManager.Instance.assemblyUIManager.Fade(false);
         Debug.Log($"{partID} assembled.");
     }
 
