@@ -8,6 +8,7 @@ public class ModuleInitializer : MonoBehaviour
     public ArTopics topics;
     [SerializeField] private TopicData currentTopic;
     [SerializeField] private Button closeButton;
+    [SerializeField] private bool isArcss;
 
     [Header("UI")]
     [SerializeField] private RectTransform parent;
@@ -28,14 +29,24 @@ public class ModuleInitializer : MonoBehaviour
         //InitializeModules();
     }
 
-    public void InitializeModules()
+    public void InitializeModules() //
     {
         transform.localScale = Vector3.one;
-        currentTopic = GameManager.instance.topicManager.GetTopic(topics);
-        GameManager.instance.uiManager.SetupModuleUI(topics);
-        GameManager.instance.uiManager.EnableModuleUI(topics);
         closeButton.onClick.AddListener(CloseTopic);
-        scrollRect.verticalNormalizedPosition = 1f;
+        if (isArcss)
+        {
+            
+        }
+        else
+        {
+           
+            currentTopic = GameManager.instance.topicManager.GetTopic(topics);
+            GameManager.instance.uiManager.SetupModuleUI(topics);
+            GameManager.instance.uiManager.EnableModuleUI(topics);
+           
+            scrollRect.verticalNormalizedPosition = 1f;
+        }
+       
     }
 
     public void Setup()

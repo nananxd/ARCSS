@@ -54,11 +54,14 @@ public class UIManager : MonoBehaviour
     public Button closeProfileButton;
     public Button saveCreateButton;
 
+    public RectTransform arcssRect;
+
 
     [Header("Accounts Related Panel")]
     public GameObject createAccountPanel;
     public GameObject profilePanel;
     public GameObject loginPanel;
+    public RectTransform accountCreationPopup;
 
     [Header("Quiz| Assesment")]
     public RectTransform assesmentRect;
@@ -95,6 +98,10 @@ public class UIManager : MonoBehaviour
 
     #region ARCSS 
 
+    public void OpenArcss()
+    {
+        arcssRect.localScale = Vector3.one;
+    }
     public void InitializeArcss()
     {
         loginButton.onClick.AddListener(OnLoginClick);
@@ -104,22 +111,36 @@ public class UIManager : MonoBehaviour
     }
     public void OnLoginClick()
     {
-
+        loginPanel.transform.localScale = Vector3.one;
     }
 
     public void OnCreateAccountClick()
     {
-
+        createAccountPanel.transform.localScale = Vector3.one;
     }
 
     public void OnProfileClick()
     {
-
+        profilePanel.transform.localScale = Vector3.one;    
     }
 
     public void OnExitClick()
     {
 
+    }
+
+    public void ShowAccountCreatePopup(bool isShown)
+    {
+        //accountCreationPopup.localScale = isShown ? Vector3.one : Vector3.zero;
+        StartCoroutine(AccountCreationCoroutine(isShown));
+    }
+
+    private IEnumerator AccountCreationCoroutine(bool isShown)
+    {
+        accountCreationPopup.localScale = isShown ? Vector3.one : Vector3.zero;
+        yield return new WaitForSeconds(1f);
+        createAccountPanel.transform.localScale = Vector3.zero;
+        accountCreationPopup.localScale = Vector3.zero;
     }
 
     #endregion

@@ -149,8 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1deea353ebe8b334486875e6d41217e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkCamera
-  cameraId: 4
-  virtualCam: {fileID: 0}
 --- !u!114 &61640621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,8 +432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1deea353ebe8b334486875e6d41217e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkCamera
-  cameraId: 2
-  virtualCam: {fileID: 0}
 --- !u!1 &325729169
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,8 +520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1deea353ebe8b334486875e6d41217e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkCamera
-  cameraId: 1
-  virtualCam: {fileID: 0}
 --- !u!1 &331134991
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,8 +905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ef1b397e8e3774cbd420101d88ce6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RJ45Interaction
-  cameraType: 2
-  connectorType: 1
 --- !u!1 &569333744
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,11 +946,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 569333744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 397e588ec20cee342bdb09e7f8f9d224, type: 3}
+  m_Script: {fileID: 11500000, guid: c2195831e02b6cd47bbdd53377eb55e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AssesmentSaveManager
-  topic: 1
-  assesmentName: Networking
+  topic: 2
+  assesmentName: 
   score: 0
   saveFile:
     players: []
@@ -1133,10 +1125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48387fefc5ff4b44683abfb1f4491ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkAssesment
-  correctStraightSequence: 0200000001000000030000000400000005000000
-  crossOverCorrectSequence: 
-  straightThroughAnswerSequence: 
-  crossOverAnswerSequence: 
 --- !u!1 &699047913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,12 +1717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a700a74b286549c47b9ba76aba028cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkUIManager
-  modeTxt: {fileID: 818702551}
-  startScreenUI: {fileID: 381237771}
-  straightThroughBtn: {fileID: 1379653607}
-  crossOverBtn: {fileID: 1571446857}
-  zoomInScreen: {fileID: 1604117690}
-  zoomInBackBtn: {fileID: 584651994}
 --- !u!1 &1379653605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,8 +2053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1deea353ebe8b334486875e6d41217e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkCamera
-  cameraId: 3
-  virtualCam: {fileID: 0}
 --- !u!1 &1571446855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,9 +2361,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c17395206d1974c9ab7b23de92a0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkAssesmentManager
-  mode: 0
-  networkCamera: {fileID: 2109892890}
-  uiManager: {fileID: 1192832869}
 --- !u!1 &1779026461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2725,8 +2702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ef1b397e8e3774cbd420101d88ce6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RJ45Interaction
-  cameraType: 3
-  connectorType: 2
 --- !u!1 &1933199289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2846,10 +2821,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1458bce9c20114e409390f9a96e2448c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkCameraManager
-  cameras:
-  - {fileID: 325729172}
-  - {fileID: 246528993}
-  - {fileID: 1411648867}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

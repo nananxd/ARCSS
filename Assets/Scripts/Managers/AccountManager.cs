@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -20,6 +21,10 @@ public class AccountManager : MonoBehaviour
     public string avatarName;
     public string playerName;
 
+    public TMP_Dropdown loginNameDropdown;
+
+
+
     private void Awake()
     {
         LoadNames();
@@ -29,12 +34,37 @@ public class AccountManager : MonoBehaviour
     {
         nameInput.onValueChanged.AddListener(SetName);
         saveBtn.onClick.AddListener(SubmitAccountCreation);
+        loginNameDropdown.onValueChanged.AddListener(SetCurrentPlayer);
+        StartCoroutine(DelayInit());
+    }
+
+    private IEnumerator DelayInit()
+    {
+        yield return new WaitForSeconds(1f);
+        LoadAccount();
+    }
+    public void LoadAccount()
+    {
+        loginNameDropdown.ClearOptions();
+        List<string> names = new List<string>();
+        for (int i = 0; i < GameManager.instance.saveFile.players.Count; i++)
+        {
+            var currentName = GameManager.instance.saveFile.players[i];
+            names.Add(currentName.playerName);
+        }
+        loginNameDropdown.AddOptions(names);
     }
 
     public void SetName(string name)
     {
         playerNameText.text = name;
         playerName = name;
+    }
+
+    public void SetCurrentPlayer(int index)
+    {
+        var currentPlayerProfile = GameManager.instance.saveFile.players[index];
+
     }
 
     public void SetProfilePhoto(string photoName)
@@ -50,6 +80,7 @@ public class AccountManager : MonoBehaviour
         {
             Debug.Log("Account Created");
             GameManager.instance.CreatePlayer();
+            GameManager.instance.uiManager.ShowAccountCreatePopup(true);
         }
     }
 

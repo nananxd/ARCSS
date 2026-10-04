@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
         if (player == null)
             return false;
 
+        GeneralUtility.CURRENTPLAYERID = player.playerId;
         currentSelectedPlayer = player;
 
         return true;
