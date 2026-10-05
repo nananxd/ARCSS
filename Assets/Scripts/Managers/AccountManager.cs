@@ -64,6 +64,7 @@ public class AccountManager : MonoBehaviour
     public void SetCurrentPlayer(int index)
     {
         var currentPlayerProfile = GameManager.instance.saveFile.players[index];
+        GameManager.instance.currentSelectedPlayer = currentPlayerProfile;
 
     }
 

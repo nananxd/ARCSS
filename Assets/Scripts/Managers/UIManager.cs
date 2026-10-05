@@ -50,9 +50,12 @@ public class UIManager : MonoBehaviour
     public Button createButton;
     public Button profileButton;
     public Button exitButton;
+    
 
     public Button closeProfileButton;
     public Button saveCreateButton;
+    public Button backCreateAccount;
+    public Button closeLoginButton;
 
     public RectTransform arcssRect;
 
@@ -108,10 +111,18 @@ public class UIManager : MonoBehaviour
         createButton.onClick.AddListener(OnCreateAccountClick);
         profileButton.onClick.AddListener(OnProfileClick);
         exitButton.onClick.AddListener(OnExitClick);
+        closeProfileButton.onClick.AddListener(CloseProfile);
+        backCreateAccount.onClick.AddListener(CloseCreateAccount);
+        closeLoginButton.onClick.AddListener(CloseLogin);
     }
     public void OnLoginClick()
     {
         loginPanel.transform.localScale = Vector3.one;
+    }
+
+    public void CloseLogin()
+    {
+        loginPanel.transform.localScale = Vector3.zero;
     }
 
     public void OnCreateAccountClick()
@@ -119,9 +130,19 @@ public class UIManager : MonoBehaviour
         createAccountPanel.transform.localScale = Vector3.one;
     }
 
+    public void CloseCreateAccount()
+    {
+        createAccountPanel.transform.localScale = Vector3.zero;
+    }
+
     public void OnProfileClick()
     {
         profilePanel.transform.localScale = Vector3.one;    
+    }
+
+    public void CloseProfile()
+    {
+        profilePanel.transform.localScale = Vector3.zero;
     }
 
     public void OnExitClick()
