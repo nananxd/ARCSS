@@ -15,27 +15,28 @@ public class AssesmentSaveManager : MonoBehaviour
 
     public void CompleteAssesment()
     {
-        var progress = currentSelectedPlayer.assesment.Find(x => x.assesmentName == assesmentName);
-        if (progress == null)
-        {
-            progress = new AssesmentProgressData
-            {
-                assesmentName = this.assesmentName,
-                topic = this.topic.ToString(),
-                score = 0,
-                isCompleted = true
+        #region old code
+        //var progress = currentSelectedPlayer.assesment.Find(x => x.assesmentName == assesmentName);
+        //if (progress == null)
+        //{
+        //    progress = new AssesmentProgressData
+        //    {
+        //        assesmentName = this.assesmentName,
+        //        topic = this.topic.ToString(),
+        //        score = 0,
+        //        isCompleted = true
 
-            };
+        //    };
 
-            currentSelectedPlayer.assesment.Add(progress);
-        }
-        else
-        {
-            progress.isCompleted = true;
-        }
+        //    currentSelectedPlayer.assesment.Add(progress);
+        //}
+        //else
+        //{
+        //    progress.isCompleted = true;
+        //}
+        #endregion
+        GeneralUtility.SaveAssesmentProgress(currentSelectedPlayer,assesmentName,topic,10);
         Save();
-       
-
         
     }
 

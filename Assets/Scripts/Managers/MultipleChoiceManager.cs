@@ -75,5 +75,13 @@ public class MultipleChoiceManager : MonoBehaviour
 
         // save score 
 
+        GeneralUtility.SaveAssesmentProgress
+            (
+            GameManager.instance.currentSelectedPlayer,
+            currentQuiz.quizId.ToString(),
+            GameManager.instance.uiManager.currentSelectedTopic,
+            CheckAnswers()
+            );
+
     }
 }

@@ -41,8 +41,8 @@ public class UIManager : MonoBehaviour
     [Header("Spawned ContentUI")]
     [SerializeField] private List<GameObject> contentUISpawned = new List<GameObject>();
 
-    [Header("Login Dropdown")]
-    public TMP_Dropdown loginNameDropdown;
+    //[Header("Login Dropdown")]
+    //public TMP_Dropdown loginNameDropdown;
 
     [Header("ARCSS")]
 
@@ -58,6 +58,10 @@ public class UIManager : MonoBehaviour
     public Button closeLoginButton;
 
     public RectTransform arcssRect;
+
+    [Header("Profile Data")]
+    public Image profilePhoto;
+    public TextMeshProUGUI profileName;
 
 
     [Header("Accounts Related Panel")]
@@ -118,6 +122,7 @@ public class UIManager : MonoBehaviour
     public void OnLoginClick()
     {
         loginPanel.transform.localScale = Vector3.one;
+        GameManager.instance.accountManager.LoadAccount();
     }
 
     public void CloseLogin()
@@ -137,7 +142,15 @@ public class UIManager : MonoBehaviour
 
     public void OnProfileClick()
     {
-        profilePanel.transform.localScale = Vector3.one;    
+        profilePanel.transform.localScale = Vector3.one;
+        if (GameManager.instance.currentSelectedPlayer != null)
+        {
+            profileName.text = GameManager.instance.currentSelectedPlayer.playerName;
+            profilePhoto.sprite = GameManager.instance.accountManager.GetProfilePhoto(GameManager.instance.currentSelectedPlayer.profilePhotoName);
+            // load profile details
+        }
+
+
     }
 
     public void CloseProfile()

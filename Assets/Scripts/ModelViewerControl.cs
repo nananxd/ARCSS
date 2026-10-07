@@ -12,6 +12,11 @@ public class ModelViewerControl : MonoBehaviour,IDragHandler
     float currentDistance;
     private bool isPinching;
 
+    public float currentFOV;
+    [SerializeField] private float minFOV = 20f;
+    [SerializeField] private float maxFOV = 70f;
+    [SerializeField] private float zoomingSpeed = 0.1f;
+
     private void Update()
     {
         //isPinching = Input.touchCount >= 2;
@@ -39,11 +44,16 @@ public class ModelViewerControl : MonoBehaviour,IDragHandler
             float currentDist = Vector2.Distance(t0.position, t1.position);
 
             float delta = currentDist - prevDist;
-            currentDistance += delta * zoomSpeed;
+            currentFOV -= delta * zoomingSpeed;
+            currentFOV = Mathf.Clamp(currentFOV,minFOV,maxFOV);
+            //currentDistance += delta * zoomSpeed;
             currentDistance = Mathf.Clamp(currentDistance, minDistance, maxDistance);
+            GameManager.instance.modelCamera.fieldOfView = currentFOV;
 
-            Vector3 pos = GameManager.instance.modelCamera.transform.localPosition;
-            pos.z = currentDistance;
+            //Vector3 pos = GameManager.instance.modelCamera.transform.localPosition;
+            //pos.z = currentDistance;
+
+           
 
             #region
             //float scale = Mathf.Clamp(
@@ -53,7 +63,7 @@ public class ModelViewerControl : MonoBehaviour,IDragHandler
 
             //targetModel.localScale = Vector3.one * scale;
             #endregion
-            GameManager.instance.modelCamera.transform.localPosition = pos;
+            //GameManager.instance.modelCamera.transform.localPosition = pos;
         }
     }
     public void OnDrag(PointerEventData eventData)

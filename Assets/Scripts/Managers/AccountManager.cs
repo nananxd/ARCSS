@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,7 +35,9 @@ public class AccountManager : MonoBehaviour
     {
         nameInput.onValueChanged.AddListener(SetName);
         saveBtn.onClick.AddListener(SubmitAccountCreation);
-        loginNameDropdown.onValueChanged.AddListener(SetCurrentPlayer);
+        
+       
+        
         StartCoroutine(DelayInit());
     }
 
@@ -42,10 +45,12 @@ public class AccountManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         LoadAccount();
+        loginNameDropdown.onValueChanged.AddListener(SetCurrentPlayer);
     }
     public void LoadAccount()
     {
         loginNameDropdown.ClearOptions();
+        
         List<string> names = new List<string>();
         for (int i = 0; i < GameManager.instance.saveFile.players.Count; i++)
         {
@@ -53,6 +58,11 @@ public class AccountManager : MonoBehaviour
             names.Add(currentName.playerName);
         }
         loginNameDropdown.AddOptions(names);
+
+        if (GameManager.instance.saveFile.players.Count == 1)
+        {
+            SetCurrentPlayer(0);
+        }
     }
 
     public void SetName(string name)
@@ -61,9 +71,10 @@ public class AccountManager : MonoBehaviour
         playerName = name;
     }
 
-    public void SetCurrentPlayer(int index)
+    public void SetCurrentPlayer( int index)
     {
         var currentPlayerProfile = GameManager.instance.saveFile.players[index];
+        Debug.Log($"index:{index}");
         GameManager.instance.currentSelectedPlayer = currentPlayerProfile;
 
     }
@@ -73,6 +84,14 @@ public class AccountManager : MonoBehaviour
         profileImage.sprite = avatarSprites.Find(x => x.name == photoName);
         profileImage.transform.localScale = Vector3.one;
         avatarName = photoName;
+    }
+
+    public Sprite GetProfilePhoto(string photoName)
+    {
+       var foundPhoto = avatarSprites.Find(x => x.name == photoName);
+        //foundPhoto.transform.localScale = Vector3.one;
+        //avatarName = photoName;
+        return foundPhoto;
     }
 
     public void SubmitAccountCreation()

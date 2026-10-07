@@ -18,4 +18,26 @@ public static class GeneralUtility
         string json = File.ReadAllText(PATH);
         return JsonUtility.FromJson<T>(json);
     }
+
+    public static void SaveAssesmentProgress(PlayerSaveData currentSelectedPlayer,string assesmentName,ArTopics topic,int currentScore = 0)
+    {
+        var progress = currentSelectedPlayer.assesment.Find(x => x.assesmentName == assesmentName);
+        if (progress == null)
+        {
+            progress = new AssesmentProgressData
+            {
+                assesmentName = assesmentName,
+                topic = topic.ToString(),
+                score = currentScore,
+                isCompleted = true
+
+            };
+
+            currentSelectedPlayer.assesment.Add(progress);
+        }
+        else
+        {
+            progress.isCompleted = true;
+        }
+    }
 }
