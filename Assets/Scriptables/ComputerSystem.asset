@@ -27,6 +27,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 2
     moduleName: powerSupply
@@ -41,6 +42,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
     moduleName: expansionCard
@@ -55,6 +57,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
     moduleName: storage
@@ -69,6 +72,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
     moduleName: cpu
@@ -83,6 +87,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
     moduleName: Assesment1
@@ -96,6 +101,12 @@ MonoBehaviour:
       isQuizAssesment: 1
       quizId: 2
       sceneName: 0
+      moduleReference:
+      - motherboard
+      - powerSupply
+      - expansionCard
+      - storage
+      - cpu
     isDoneReading: 0
   - content: 0
     moduleName: dac
@@ -110,6 +121,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
     moduleName: Assesment2
@@ -124,6 +136,8 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference:
+      - dac
     isDoneReading: 0
   - content: 0
     moduleName: systemSoftware
@@ -138,6 +152,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
     moduleName: bios
@@ -152,6 +167,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
     moduleName: iso
@@ -166,6 +182,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
     moduleName: operatingSystem
@@ -180,6 +197,7 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
     moduleName: Assesment3
@@ -193,4 +211,9 @@ MonoBehaviour:
       isQuizAssesment: 0
       quizId: 0
       sceneName: 0
+      moduleReference:
+      - systemSoftware
+      - bios
+      - iso
+      - operatingSystem
     isDoneReading: 0

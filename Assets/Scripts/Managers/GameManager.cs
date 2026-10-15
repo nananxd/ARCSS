@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [Header("Controller")]
     public ModelController modelController;
     public ModuleContentController moduleContentController;
+    public ModelViewerControl modelViewControl;
 
     public SaveData saveFile;
     public PlayerSaveData currentSelectedPlayer;

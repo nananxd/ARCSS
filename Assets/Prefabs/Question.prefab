@@ -186,10 +186,10 @@ RectTransform:
   - {fileID: 772607444990850605}
   m_Father: {fileID: 3308295739893222670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 650, y: -527.3167}
+  m_SizeDelta: {x: 1300, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5823645492491549310
 CanvasRenderer:
@@ -290,6 +290,7 @@ MonoBehaviour:
   answer: 
   isCorrectAnswer: 0
   displayTxt: {fileID: 0}
+  choiceBtn: {fileID: 0}
   btnBg: {fileID: 218225974231607856}
   selectedColor: {r: 0.5058824, g: 1, b: 0.34509805, a: 1}
   defaultColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
@@ -358,7 +359,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A.
+  m_text: C.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 94d5b5fad259eb445b520bc256e739af, type: 2}
   m_sharedMaterial: {fileID: 1302972955337965197, guid: 94d5b5fad259eb445b520bc256e739af, type: 2}
@@ -448,7 +449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6831467951557049426
 RectTransform:
   m_ObjectHideFlags: 0
@@ -527,6 +528,11 @@ MonoBehaviour:
   - {fileID: 1219316454329263064}
   - {fileID: 1668050699119493921}
   correctAnswer: 
+  correctLetter: 0
+  submittedAnswer: 
+  submittedLetter: 0
+  isCorrect: 0
+  submittedChoice: {fileID: 0}
 --- !u!1 &5265054004132270680
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,8 +608,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281808695
-  m_fontColor: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -701,10 +707,10 @@ RectTransform:
   - {fileID: 2698450953856706736}
   m_Father: {fileID: 3308295739893222670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 650, y: -382.3167}
+  m_SizeDelta: {x: 1300, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5551784713208301684
 CanvasRenderer:
@@ -805,6 +811,7 @@ MonoBehaviour:
   answer: 
   isCorrectAnswer: 0
   displayTxt: {fileID: 0}
+  choiceBtn: {fileID: 0}
   btnBg: {fileID: 1824511820085832890}
   selectedColor: {r: 0.5058824, g: 1, b: 0.34509805, a: 1}
   defaultColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
@@ -873,7 +880,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A.
+  m_text: B.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 94d5b5fad259eb445b520bc256e739af, type: 2}
   m_sharedMaterial: {fileID: 1302972955337965197, guid: 94d5b5fad259eb445b520bc256e739af, type: 2}
@@ -981,10 +988,10 @@ RectTransform:
   - {fileID: 5572901943452774998}
   m_Father: {fileID: 3308295739893222670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 650, y: -92.31671}
+  m_SizeDelta: {x: 1300, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8247253724361836809
 CanvasRenderer:
@@ -1085,6 +1092,7 @@ MonoBehaviour:
   answer: 
   isCorrectAnswer: 0
   displayTxt: {fileID: 0}
+  choiceBtn: {fileID: 0}
   btnBg: {fileID: 427566896691388911}
   selectedColor: {r: 0.5058824, g: 1, b: 0.34509805, a: 1}
   defaultColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
@@ -1290,7 +1298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A.
+  m_text: D.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 94d5b5fad259eb445b520bc256e739af, type: 2}
   m_sharedMaterial: {fileID: 1302972955337965197, guid: 94d5b5fad259eb445b520bc256e739af, type: 2}
@@ -1398,10 +1406,10 @@ RectTransform:
   - {fileID: 3281400497000440105}
   m_Father: {fileID: 3308295739893222670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 650, y: -237.31671}
+  m_SizeDelta: {x: 1300, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &874248266587444866
 CanvasRenderer:
@@ -1502,6 +1510,7 @@ MonoBehaviour:
   answer: 
   isCorrectAnswer: 0
   displayTxt: {fileID: 0}
+  choiceBtn: {fileID: 0}
   btnBg: {fileID: 6249959927608257960}
   selectedColor: {r: 0.5058824, g: 1, b: 0.34509805, a: 1}
   defaultColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}

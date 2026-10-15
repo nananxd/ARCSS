@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
   data:
   - contentName: 0
+    modelName: 4
     display:
     - {fileID: 21300000, guid: c032c439ddfaea84aafe7a7cafe1096e, type: 3}
     titleName: 'Motherboard '
@@ -26,6 +27,7 @@ MonoBehaviour:
 '
     has3dView: 1
   - contentName: 0
+    modelName: 0
     display: []
     titleName: 'There are several components that are attached to the motherboard.
       These include: '
@@ -39,6 +41,7 @@ MonoBehaviour:
       \u2013 this is the central processing unit on a chip.\r\n"
     has3dView: 0
   - contentName: 0
+    modelName: 0
     display:
     - {fileID: 21300000, guid: adc84ad0ab469eb44b8bef56c2bf5cab, type: 3}
     titleName: 'Different variety of chip packages: '
@@ -51,6 +54,7 @@ MonoBehaviour:
       use pins but connects to one of the edges in the motherboard.\r\n"
     has3dView: 0
   - contentName: 0
+    modelName: 0
     display: []
     titleName: 
     description: "The form factor of motherboards pertains to the size and shape
@@ -62,6 +66,7 @@ MonoBehaviour:
       Balanced Technology Extended\r\n"
     has3dView: 0
   - contentName: 0
+    modelName: 0
     display:
     - {fileID: 21300000, guid: 75444d9ffad20fa4f9eb09ab6addd413, type: 3}
     titleName: 'COMPONENTS OF MOTHERBOARD '
@@ -79,6 +84,7 @@ MonoBehaviour:
       drives, modern hardware, and additional security features. '
     has3dView: 0
   - contentName: 0
+    modelName: 0
     display:
     - {fileID: 21300000, guid: 8522804768f84e04aa83a3e670093677, type: 3}
     - {fileID: 21300000, guid: d59b1bb354cb30d47b7cef0185667910, type: 3}
@@ -93,6 +99,7 @@ MonoBehaviour:
       cards into expansion slots. '
     has3dView: 0
   - contentName: 0
+    modelName: 0
     display:
     - {fileID: 21300000, guid: 696d020a4b67dbd4bb77930bc9318a0a, type: 3}
     titleName: 'D. CHIPSET NORTH AND SOUTH BRIDGE
@@ -107,6 +114,7 @@ MonoBehaviour:
       of the system. \r\n  Flow Diagram of two bridges:\r\n "
     has3dView: 0
   - contentName: 0
+    modelName: 0
     display:
     - {fileID: 21300000, guid: 44ea3d78230096d4391475b84c8c327e, type: 3}
     - {fileID: 21300000, guid: 208fe7d818dad4647bb0d9ef577e1a89, type: 3}
@@ -129,6 +137,7 @@ MonoBehaviour:
       following ports usually found with computer systems below:\r\n"
     has3dView: 0
   - contentName: 0
+    modelName: 0
     display:
     - {fileID: 21300000, guid: f6d477ad9baf74b4eaff04ddb7675031, type: 3}
     - {fileID: 21300000, guid: e63b02689be44744b90842c209bc4410, type: 3}
@@ -142,6 +151,7 @@ MonoBehaviour:
 '
     has3dView: 0
   - contentName: 0
+    modelName: 0
     display:
     - {fileID: 21300000, guid: 19534abeee2c59d468f357c6c4d0e3f9, type: 3}
     - {fileID: 21300000, guid: 8e8fabaa42ae379429e39913a65bc47f, type: 3}

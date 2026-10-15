@@ -101,6 +101,18 @@ public  static class TweenHelper
             .SetEase(ease);
     }
 
+    public static Sequence ScaleYoyo(Transform target, Vector3 destination, float duration = 0.5f, Ease ease = Ease.OutBack)
+    {
+        if (target == null || destination == null)
+            return null;
+
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(target.DOScale(destination,duration).SetEase(ease));
+        sequence.Append(target.DOScale(target.localScale,duration).SetEase(ease));
+
+        return sequence;
+    }
+
 
     // =========================================================
     // MOVE + ROTATE

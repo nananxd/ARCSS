@@ -21,6 +21,7 @@ public class ModuleContentController : MonoBehaviour
         {
             Debug.Log("Content Reached Button");
             GameManager.instance.uiManager.currentModule.CompleteModuleReading(currentModuleName,currentTopic);
+            GameManager.instance.uiManager.currentModule.CheckAssessments(currentModuleName);
         }
     }
    

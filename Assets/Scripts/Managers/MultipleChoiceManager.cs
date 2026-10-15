@@ -83,5 +83,7 @@ public class MultipleChoiceManager : MonoBehaviour
             CheckAnswers()
             );
 
+        GameManager.instance.Save();
+
     }
 }

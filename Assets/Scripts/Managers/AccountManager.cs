@@ -24,6 +24,18 @@ public class AccountManager : MonoBehaviour
 
     public TMP_Dropdown loginNameDropdown;
 
+    [Header("Login")]
+    public GameObject loginAccountPrefab;
+    public RectTransform loginAccountParent;
+    public Image selectedAccountPreview;
+    public TextMeshProUGUI selectedAccountTxt;
+
+    [Header("Top area account profile")]
+    public RectTransform headerAccountRect;
+    public TextMeshProUGUI accountNameTxt;
+    public Image accountHeaderPreview;
+    public Sprite noAccountSprite;
+
 
 
     private void Awake()
@@ -44,8 +56,60 @@ public class AccountManager : MonoBehaviour
     private IEnumerator DelayInit()
     {
         yield return new WaitForSeconds(1f);
-        LoadAccount();
-        loginNameDropdown.onValueChanged.AddListener(SetCurrentPlayer);
+        //LoadAccount();
+        LoadAllAccount();
+        //loginNameDropdown.onValueChanged.AddListener(SetCurrentPlayer);
+    }
+
+    public void LoadAllAccount()
+    {
+        foreach (var player in GameManager.instance.saveFile.players)
+        {
+            var playerGo = Instantiate(loginAccountPrefab);
+            playerGo.transform.SetParent(loginAccountParent, false);
+            playerGo.SetActive(true);
+
+            LoginAccountUI accountUI =playerGo.GetComponent<LoginAccountUI>();
+            if (accountUI != null)
+            {
+                accountUI.Setup(player.playerName,player.playerId,player.profilePhotoName);
+                accountUI.Initialize();
+            }
+        }
+    }
+
+    #region Top/Header Profile
+    public void SetHeaderProfile()
+    {
+        headerAccountRect.localScale = Vector3.one;
+        var currentSelectedPlayer = GameManager.instance.currentSelectedPlayer;
+        if (currentSelectedPlayer != null)
+        {
+            accountNameTxt.text = currentSelectedPlayer.playerName;
+            accountHeaderPreview.sprite = GetProfilePhoto(currentSelectedPlayer.profilePhotoName);
+           
+        }
+        else
+        {
+            accountNameTxt.text= string.Empty;
+            accountHeaderPreview.sprite = noAccountSprite;
+        }
+
+    }
+
+    public void CloseHeaderProfile()
+    {
+        headerAccountRect.localScale = Vector3.zero;
+    }
+
+    #endregion
+
+    public void SetSelectedAccount(string userName, string profileAvatarName)
+    {
+        selectedAccountTxt.text = userName;
+        selectedAccountPreview.sprite = GetProfilePhoto(profileAvatarName);
+      
+
     }
     public void LoadAccount()
     {
@@ -77,6 +141,23 @@ public class AccountManager : MonoBehaviour
         Debug.Log($"index:{index}");
         GameManager.instance.currentSelectedPlayer = currentPlayerProfile;
 
+    }
+
+    public void SetCurrentPlayer(string guid)
+    {
+        var currentPlayerProfile = GameManager.instance.saveFile.players.Find( x => x.playerId == guid);
+        if (currentPlayerProfile != null)
+        {
+            GameManager.instance.currentSelectedPlayer = currentPlayerProfile;
+            PlayerPrefs.SetString(GeneralUtility.LOCAL_SAVE_PLAYERID,currentPlayerProfile.playerId);
+            SetHeaderProfile();
+        }
+    }
+
+    public void LoadLocalSavePlayer()
+    {
+       var saveID = PlayerPrefs.GetString(GeneralUtility.LOCAL_SAVE_PLAYERID);
+        SetCurrentPlayer(saveID);
     }
 
     public void SetProfilePhoto(string photoName)

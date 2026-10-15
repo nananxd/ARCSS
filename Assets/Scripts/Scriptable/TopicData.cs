@@ -32,6 +32,17 @@ public class AssesmentDetails
     public bool isQuizAssesment;
     public QuizId quizId;
     public AssesmentSceneName sceneName;
+    public List<string> moduleReference;
+}
+
+// the module that needs to befinished before unlocking the assesment button
+// using the moduleName property of the module class as id
+public enum AssesmentModuleReference // not use
+{
+    motherboard,
+    cpu,
+    ram,
+    hdd
 }
 
 public enum AssesmentSceneName
@@ -67,5 +78,8 @@ public enum ModelsName
     cpu,
     motherboard,
     fan,
-    gpu
+    gpu,
+    hdd,
+    opticDisk,
+    powerSupply
 }

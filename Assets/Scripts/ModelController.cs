@@ -18,6 +18,7 @@ public class ModelController : MonoBehaviour
         if (foundModel != null) 
         {
            foundModel.SetActive(true);
+            GameManager.instance.modelViewControl.targetModel = foundModel.transform;
         }
 
        

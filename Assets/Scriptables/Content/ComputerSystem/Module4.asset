@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
   data:
   - contentName: 0
-    modelName: 0
+    modelName: 2
     display: []
     titleName: 
     description: "There are two types of storage devices used with computers: a primary

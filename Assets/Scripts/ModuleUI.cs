@@ -23,13 +23,33 @@ public class ModuleUI : MonoBehaviour,IInitializer
     public bool isQuizAssesment;
     public QuizId quizId;
     public AssesmentSceneName sceneName;
+    public List<string> moduleReference = new List<string>();
+
+    [Header("UI")]
+    public Color neutralColor;
+    public Color readColor;
+    public Image moduleUiImage;
+    public GameObject doneReadingIcon;
 
 
     public void Initialize()
     {
         moduleBtn = GetComponent<Button>();
         moduleBtn.onClick.AddListener(OnClickModule);
+        moduleUiImage.color = isDoneReading? readColor: neutralColor;
+        doneReadingIcon.SetActive(isDoneReading? true:false);
+
+        if (isAssesment)
+        {
+            SetInteractable(false);
+        }
+       
         
+    }
+
+    public void SetInteractable(bool isInteractable)
+    {
+        moduleBtn.interactable = isInteractable;    
     }
 
     public void OnClickModule()
@@ -46,6 +66,7 @@ public class ModuleUI : MonoBehaviour,IInitializer
             AssesmentSetup();
         }
 
+        AnimatePress();
     }
 
     private void AssesmentSetup()
@@ -77,8 +98,13 @@ public class ModuleUI : MonoBehaviour,IInitializer
         isQuizAssesment = module.assesmentDetails.isQuizAssesment;
         sceneName = module.assesmentDetails.sceneName;
         quizId = module.assesmentDetails.quizId;
-
+        moduleReference = module.assesmentDetails.moduleReference;
        
+    }
+
+    public void AnimatePress()
+    {
+        TweenHelper.ScaleYoyo(transform,new Vector3(.9f,.9f,.9f),.1f);
     }
 
 }

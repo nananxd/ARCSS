@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
   data:
   - contentName: 0
-    modelName: 0
+    modelName: 3
     display:
     - {fileID: 21300000, guid: a1ee4619de1d41040856357710498a10, type: 3}
     - {fileID: 21300000, guid: 26a4aa98be8fb6e4999afef33fd15887, type: 3}

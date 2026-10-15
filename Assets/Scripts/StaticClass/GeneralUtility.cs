@@ -3,6 +3,7 @@ using UnityEngine;
 
 public static class GeneralUtility
 {
+    public static string LOCAL_SAVE_PLAYERID = "LocalPlayerSave";
     public static string CURRENTPLAYERID;
     public static string PATH = Application.persistentDataPath + "/save.json";
     public static void SaveFile<T>(T data)

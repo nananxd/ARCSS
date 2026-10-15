@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Video;
 using System.Collections;
 
+
 public class UIManager : MonoBehaviour
 {
     public ArTopics currentSelectedTopic;
@@ -77,12 +78,33 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI resultTitleTxt;
     public Button closeResultBtn;
 
+    [Header("Topic and Assesment Details")]
+    public RectTransform topicAssesmentDetailsRect;
+    public RectTransform detailsParent;
+    public TextMeshProUGUI detailText;
+    public GameObject detailPrefab;
 
+    public Button closeTopicAssesementDetailBtn;
+    [SerializeField] private List<GameObject> detailUI = new List<GameObject>();
+
+    [Header("Badge UI")]
+    public RectTransform badgeParent;
+    public RectTransform badgeUIRect;
+    public GameObject badgePrefab;
+    public List<BadgesUI> badgesUIs = new List<BadgesUI>();
+
+
+
+    public void TestDebug()
+    {
+        Debug.Log("Button Press");
+    }
 
 
     private void Awake()
     {
         closeResultBtn.onClick.AddListener(CloseResultScreen);
+        closeTopicAssesementDetailBtn.onClick.AddListener(CloseTopicAssesment);
     }
 
 
@@ -408,6 +430,101 @@ public class UIManager : MonoBehaviour
     public void CloseAssesmentScreen()
     {
         assesmentRect.localScale = Vector3.zero;
+    }
+
+    #endregion
+
+    #region Finished Topics and Assesment
+
+    public void OpenTopicAssesment(bool isAssesment)
+    {
+        var currentPlayer = GameManager.instance.currentSelectedPlayer;
+        topicAssesmentDetailsRect.localScale= Vector3.one;
+        if (isAssesment)
+        {
+            detailText.text = "Finished Assesment";
+            for (int i = 0; i < currentPlayer.assesment.Count; i++)
+            {
+                var currentAssesment = currentPlayer.assesment[i];
+                SpawnDetails(currentAssesment.assesmentName,true,currentAssesment.score);
+            }
+        }
+        else
+        {
+            detailText.text = "Finished Topics";
+
+            for (int i = 0; i < currentPlayer.moduleDatas.Count; i++)
+            {
+                var currentModule = currentPlayer.moduleDatas[i];
+                SpawnDetails(currentModule.moduleName, false);
+            }
+        }
+    }
+
+    public void CloseTopicAssesment()
+    {
+        topicAssesmentDetailsRect.localScale = Vector3.zero;
+        ClearSpawnDetails();
+    }
+
+    private void SpawnDetails(string detail,bool isAssesment,int score = 0,int items = 0)
+    {
+        GameObject go = Instantiate(detailPrefab);
+        go.transform.localScale = Vector3.one;
+        go.SetActive(true);
+        go.transform.SetParent(detailsParent);
+
+        TopicAssesmentUI topic = go.GetComponent<TopicAssesmentUI>();
+        if (isAssesment)
+        {
+            topic.Setup(detail,true,score,items);
+        }
+        else
+        {
+            topic.Setup(detail,false);
+        }
+
+        detailUI.Add(topic.gameObject);
+      
+    }
+
+    private void ClearSpawnDetails()
+    {
+        foreach (var item in detailUI)
+        {
+            Destroy(item);
+        }
+
+        detailUI.Clear();
+    }
+    #endregion
+
+    #region Badge UI
+
+    public void InitializeBadge(ModuleData module)
+    {
+        GameObject go = Instantiate (badgePrefab);
+        go.transform.localScale= Vector3.one;
+        go.SetActive(true);
+        go.transform.SetParent(badgeParent,false);
+
+        BadgesUI badge = go.GetComponent<BadgesUI>();
+        if (badge != null) 
+        {
+            badge.Setup(module.isAssesment,module.isDoneReading,module.moduleName);
+            badge.Initialize();
+            badgesUIs.Add(badge);
+        }
+    }
+
+    public void OpenBadgeUI()
+    {
+        badgeUIRect.localScale = Vector3.one;
+    }
+
+    public void CloseBadgeUI() 
+    {
+        badgeUIRect.localScale = Vector3.zero;
     }
 
     #endregion
