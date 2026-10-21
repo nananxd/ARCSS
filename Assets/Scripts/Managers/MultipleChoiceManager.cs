@@ -11,6 +11,7 @@ public class MultipleChoiceManager : MonoBehaviour
     [SerializeField] private Button submitAnswer;
     [SerializeField] private List<MultipleChoiceController> choicesController = new List<MultipleChoiceController>();
     [SerializeField] private List<QuizData> quizzes = new List<QuizData>();
+    [SerializeField] private GameObject submitButton;
 
 
     private void Awake()
@@ -61,14 +62,32 @@ public class MultipleChoiceManager : MonoBehaviour
         choicesController.Clear();
     }
 
+    public void CheckAllAnsweredQuestions()
+    {
+        if (IsAllQuestionsHaveAnswer())
+        {
+            submitButton.transform.localScale = Vector3.zero;
+        }
+        else
+        {
+            Debug.Log("Some question havent answer yet");
+        }
+    }
+
     public int CheckAnswers()
     {
         var count = choicesController.Count(x => x.IsCorrectAnswer());
         return count;
     }
 
+    private bool IsAllQuestionsHaveAnswer()
+    {
+        return choicesController.All(x => x.hasChosenAnswer);
+    }
+
     public void OnSubmitAnswers()
     {
+
         Debug.Log(CheckAnswers().ToString());
         GameManager.instance.uiManager.SetResultUI(CheckAnswers(),choicesController.Count);
         GameManager.instance.uiManager.ShowResultScreen();

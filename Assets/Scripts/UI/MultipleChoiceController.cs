@@ -16,6 +16,7 @@ public class MultipleChoiceController : MonoBehaviour
     public string submittedAnswer;
     public ChoiceLetter submittedLetter;
     public bool isCorrect;
+    public bool hasChosenAnswer;
 
     public ChoiceButtonUI submittedChoice;
    

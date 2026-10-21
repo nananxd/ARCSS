@@ -225,4 +225,11 @@ public  static class TweenHelper
 
         target.DOKill();
     }
+
+    public static void MoveAndFade(RectTransform target,Vector3 destination,CanvasGroup canvas,float duration = 0.5f,Ease ease = Ease.OutBack)
+    {
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(target.DOAnchorPos(destination,duration).SetEase(ease));
+        sequence.Join(canvas.DOFade(1f,duration).SetEase(ease));
+    }
 }

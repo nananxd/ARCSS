@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ContentUI : MonoBehaviour,IInitializer
 {
     [SerializeField] private Button view3DBtn;
+    [SerializeField] private Button viewVidBtn;
     [SerializeField] private TextMeshProUGUI descriptionTxt;
     [SerializeField] private RectTransform prevImageParent;
     [SerializeField] private Image previewImage;
@@ -14,6 +15,7 @@ public class ContentUI : MonoBehaviour,IInitializer
     [SerializeField] private List<Sprite> sprites = new List<Sprite>();
     public ModelsName model3dName;
     public bool has3dView;
+    public bool hasVid;
 
 
     public void Setup(PhotoTextContent data)
@@ -22,6 +24,7 @@ public class ContentUI : MonoBehaviour,IInitializer
         has3dView = data.has3dView;
         model3dName = data.modelName;
         view3DBtn.gameObject.SetActive(has3dView ? true : false) ;
+        viewVidBtn.gameObject.SetActive(hasVid? true: false);
         foreach (var item in data.display)
         {
             sprites.Add(item);
@@ -61,11 +64,17 @@ public class ContentUI : MonoBehaviour,IInitializer
     public void Initialize()
     {
         view3DBtn.onClick.AddListener(OnViewIn3D);
+        viewVidBtn.onClick.AddListener(OnViewVideo);
     }
 
     public void OnViewIn3D()
     {
         GameManager.instance.uiManager.Open3DView();
         GameManager.instance.modelController.GetModel(model3dName);
+    }
+
+    public void OnViewVideo()
+    {
+
     }
 }

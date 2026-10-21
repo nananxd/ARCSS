@@ -34,6 +34,9 @@ public class ChoiceButtonUI : MonoBehaviour
         choiceBtn.image.color = selectedColor;
         choiceController.SetChoiceButtonUI(this);
         choiceController.SubmitAnswer(this);
+        choiceController.hasChosenAnswer = true;
+
+        GameManager.instance.multipleChoiceManager.CheckAllAnsweredQuestions();
     }
 
     public void ResetColor()
