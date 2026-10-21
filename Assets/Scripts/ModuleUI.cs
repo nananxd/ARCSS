@@ -29,7 +29,12 @@ public class ModuleUI : MonoBehaviour,IInitializer
     public Color neutralColor;
     public Color readColor;
     public Image moduleUiImage;
-    public GameObject doneReadingIcon;
+    public Image doneReadingIcon; // badge ui
+
+    [Header("For Badge UI")]
+    public Color notFinishColor;
+    public Color doneReadingColor;
+    public Sprite moduleBadge, assesmentBadge;
 
 
     public void Initialize()
@@ -37,7 +42,9 @@ public class ModuleUI : MonoBehaviour,IInitializer
         moduleBtn = GetComponent<Button>();
         moduleBtn.onClick.AddListener(OnClickModule);
         moduleUiImage.color = isDoneReading? readColor: neutralColor;
-        doneReadingIcon.SetActive(isDoneReading? true:false);
+        // doneReadingIcon.gameObject.SetActive(isDoneReading? true:false);
+        doneReadingIcon.sprite = isAssesment ? assesmentBadge : moduleBadge;
+        doneReadingIcon.color = isDoneReading ? doneReadingColor : notFinishColor;
 
         if (isAssesment)
         {
