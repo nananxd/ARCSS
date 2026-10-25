@@ -14,13 +14,93 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topic: 5
   modules:
-  - moduleName: 
+  - content: 0
+    moduleName: planning
     moduleDescription: 
-    moduleSprite: {fileID: 0}
+    videoClipName: 
+    data: {fileID: 11400000, guid: 348bf7b379700384a9f3acbcf3eec265, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
     isDoneReading: 0
-  - moduleName: 
+  - content: 0
+    moduleName: maintaining
     moduleDescription: 
-    moduleSprite: {fileID: 0}
+    videoClipName: 
+    data: {fileID: 11400000, guid: 0c55c076862609142a62dbfa9fe10308, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
+    isDoneReading: 0
+  - content: 0
+    moduleName: diagnosing
+    moduleDescription: 
+    videoClipName: 
+    data: {fileID: 11400000, guid: 6fe0bd6dc65cd6447aee34ddaa255953, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
+    isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
+    isDoneReading: 0
+  - content: 0
+    moduleName: testing
+    moduleDescription: 
+    videoClipName: 
+    data: {fileID: 11400000, guid: 08e3eb0c394777d42806a14a22335cc1, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
+    isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
+    isDoneReading: 0
+  - content: 0
+    moduleName: troubleshooting
+    moduleDescription: 
+    videoClipName: 
+    data: {fileID: 11400000, guid: 416a65e6a27ed104baab97b0f9f11601, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
+    isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
+    isDoneReading: 0
+  - content: 0
+    moduleName: maintainingComputer
+    moduleDescription: 
+    videoClipName: 
+    data: {fileID: 11400000, guid: 255804d9030cf7548a3d30f298967f86, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
+    isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
     isDoneReading: 0

@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module3
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Introduction
+    description: 'Software Application for Computer System Servicing
+
+      
+
+      A
+      computer technician is a professional responsible for diagnosing, repairing,
+      and maintaining computer hardware and software systems. Computer system servicing
+      typically involves tasks related to maintaining and optimizing computer hardware
+      and software. To assist with computer system servicing, technicians can use
+      a combination of software tools and applications. Below are some essential
+      software applications and tools that can be helpful for various aspects of
+      computer system servicing:
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Antivirus Software:'
+    description: Protecting the computer from malware and viruses is crucial. Popular
+      antivirus software includes Norton, McAfee, Bitdefender, and Avast.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: CCleaner
+    description: ' Helps remove unnecessary files, clean the registry, and optimize
+      system performance'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Glary Utilities
+    description: 'Offers a suite of tools for system optimization, including disk
+      cleanup and registry repair.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Acronis True Image
+    description: "Creates backups of a system and data for disaster recovery. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: TeamViewer
+    description: 'It is a widely used remote desktop software application that enables
+      users to connect to and control remote computers or devices from a distance.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: NetBalancer
+    description: 'It provides a set of tools for controlling how network bandwidth
+      is allocated among different applications and processes running on a system.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Recuva
+    description: "is designed to help users recover deleted files from their computer's
+      hard drives, external storage devices, and even damaged or formatted disks.
+      \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: TestDisk
+    description: 'is a powerful and free, open-source data recovery software primarily
+      designed to help users recover lost or damaged partitions and make non-booting
+      disks bootable again.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: VirtualBox
+    description: 'It allows users to create and manage virtual machines (VMs) on
+      their computers, which enables the running of multiple operating systems concurrently
+      within isolated environments. '
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Operating System Installer
+    description: 'OS installers are usually distributed as bootable media, such as
+      installation CDs/DVDs, USB flash drives, or downloadable ISO files. Users boot
+      their computers from this media to initiate the installation process.
+
+      
+
+      
+
+      Remember
+      to use these tools responsibly and ethically, especially when accessing or
+      manipulating data on other people''s computers, as some of them can have security
+      implications.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Operating System
+    description: 'An operating system is a fundamental software component that manages
+      and controls the hardware and software resources of a computer or electronic
+      device. It serves as an intermediary between the user and the computer''s hardware,
+      facilitating various tasks and functions. The operating system is responsible
+      for managing processes, memory allocation, file systems, input and output operations,
+      and user interactions. It provides a stable and consistent environment in which
+      applications and software can run, ensuring efficient resource utilization
+      and overall system stability. Here are some operating systems commonly used
+      in ICT.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Windows
+    description: 'A widely used operating system developed by Microsoft, known for
+      its user-friendly interface and compatibility with a wide range of software
+      applications.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: macOS
+    description: ' The operating system developed by Apple Inc. for its Macintosh
+      computers, known for its sleek design, performance, and integration with other
+      Apple devices.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Linux
+    description: 'An open-source operating system kernel that serves as the foundation
+      for various Linux distributions (distros), providing a flexible and customizable
+      platform used in servers, desktops, and embedded systems.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: iOS
+    description: "The mobile operating system developed by Apple for iPhones and
+      iPads, recognized for its security features, app ecosystem, and seamless integration
+      with Apple services. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Android
+    description: "The mobile operating system developed by Google, used in a wide
+      range of smartphones and tablets, known for its customization options and extensive
+      app availability through the Google Play Store. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Computer System Servicing and IT Support:
+
+'
+    description: 'Operating System: Windows or Linux.
+
+      Processor: A capable
+      CPU (e.g., Intel Core i5 or equivalent).
+
+      RAM: 8GB or more for multitasking
+      and running diagnostic tools.
+
+      Storage: Adequate storage for system
+      images and diagnostic software. At least 1 TB
+
+      Diagnostic Tools: Various
+      diagnostic and troubleshooting software, antivirus tools, and system maintenance
+      utilities.
+
+      Network Tools: Tools for network diagnostics and management.
+
+'
+    has3dView: 0

@@ -58,6 +58,7 @@ public class AccountManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         //LoadAccount();
         LoadAllAccount();
+        LoadLocalSavePlayer();
         //loginNameDropdown.onValueChanged.AddListener(SetCurrentPlayer);
     }
 

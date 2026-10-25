@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using System.Collections;
 
 public class AssemblyPart : MonoBehaviour
 {
@@ -99,14 +100,48 @@ public class AssemblyPart : MonoBehaviour
 
         if (correctSlot != null)
         {
-            transform.position = correctSlot.snapPoint.position;
-            transform.rotation = correctSlot.snapPoint.rotation;
-            AssemblyManager.Instance.assemblyUIManager.Fade(true);
+            // animate movement here
+            AnimateMove();
+            //StartCoroutine( AnimateMove());
+            //transform.position = correctSlot.snapPoint.position;
+            //transform.rotation = correctSlot.snapPoint.rotation;
+            //AssemblyManager.Instance.assemblyUIManager.Fade(true);
         }
        
         IsAssembled = true;
        // AssemblyManager.Instance.assemblyUIManager.Fade(false);
         Debug.Log($"{partID} assembled.");
+    }
+
+    private void AnimateMove()
+    {
+        TweenHelper.MoveTo(transform, correctSlot.snapPoint, 1f,Ease.Linear).OnComplete(() =>
+        {
+            
+            DOVirtual.DelayedCall(1f,() => 
+            {
+                AssemblyManager.Instance.assemblyUIManager.Fade(true);
+            });
+            DOVirtual.DelayedCall(2f, () =>
+            {
+                
+                transform.position = correctSlot.snapPoint.position;
+                transform.rotation = correctSlot.snapPoint.rotation;
+                AssemblyManager.Instance.assemblyCameraManager.SetMainCamera(AssemblyManager.Instance.currentAssesment.mainCam);
+                AssemblyManager.Instance.ActivateCorrectPart(AssemblyManager.Instance.currentSelectedPart.partID);
+                AssemblyManager.Instance.cinematicUI.ResetCinematic();
+
+                AssemblyManager.Instance.CheckIfAllAssesmentsFinish();
+                AssemblyManager.Instance.SetNextCurrentAssesment();
+            });
+           
+        });
+
+        Debug.Log("Animate");
+       // yield return new WaitForSeconds(1f);
+       
+        //yield return new WaitForSeconds(1f);
+        //AssemblyManager.Instance.assemblyUIManager.Fade(true);
     }
 
     public void AssemblePartially()

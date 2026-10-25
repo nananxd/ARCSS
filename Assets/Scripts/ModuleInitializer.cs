@@ -34,6 +34,7 @@ public class ModuleInitializer : MonoBehaviour
     public void InitializeModules() //
     {
         transform.localScale = Vector3.one;
+        transform.rotation = Quaternion.identity;
         closeButton.onClick.AddListener(CloseTopic);
         if (isArcss)
         {
@@ -72,12 +73,13 @@ public class ModuleInitializer : MonoBehaviour
                     text.text = "ASSESMENT";
                    
                 }
-                //else
-                //{
-
-                //    ui.Initialize();
-                //    ui.Setup(item);
-                //}
+                else
+                {
+                    var text = moduleGO.GetComponentInChildren<TextMeshProUGUI>();
+                    text.text = $"{item.moduleName.ToUpper()}:MODULE";
+                    //ui.Initialize();
+                    //ui.Setup(item);
+                }
 
                 ui.Setup(item);
                 ui.Initialize();               

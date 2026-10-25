@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module1
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Introduction
+
+'
+    description: 'We aim to understand how computers are connected to each other
+      that is why it is essential that we should be familiar with the different devices
+      found in the workplace to perform network connectivity.
+
+      
+
+      It
+      is important to understand that each workplace has a unique plan/map of how
+      the organization distributes information and who has access.
+
+      
+
+      This
+      module''s goal is to simply familiarize ourselves with the different network
+      devices which we''ll get to connecting later.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Network Devices
+
+      Router '
+    description: 'A device that forwards data packets along networks. A router is
+      connected to at least two networks, commonly two LANs or WANs or a LAN and
+      its ISP''s network. Routers are located at gateways, the places where two or
+      more networks connect. '
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Switch
+    description: A device that filters and forwards packets between LAN segments.
+      Switches operate at the data link layer (layer 2) and sometimes the network
+      layer (layer 3) of the OSI Reference Model and therefore support any packet
+      protocol. LANs that use switches to join segments are called switched LANs
+      or, in the case of Ethernet networks, switched Ethernet LANs.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Hub
+
+'
+    description: 'A common connection point for devices in a network. Hubs are commonly
+      used to connect segments of a LAN. A hub contains multiple ports. When a packet
+      arrives at one port, it is copied to the other ports so that all segments of
+      the LAN can see all packets.
+
+
+      Hubs and switches serve as a central connection
+      for all of your network equipment and handles a data type known as frames.
+      Frames carry your data. When a frame is received, it is amplified and then
+      transmitted on to the port of the destination PC.'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Repeater '
+    description: A network device used to regenerate or replicate a signal. Repeaters
+      are used in transmission systems to regenerate analog or digital signals distorted
+      by transmission loss. Analog repeaters frequently can only amplify the signal
+      while digital repeaters can reconstruct a signal to near its original quality.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: "Bridge \r\n"
+    description: A device that connects two local-area networks (LANs), or two segments
+      of the same LAN that use the same protocol, such as Ethernet or Token-Ring.
+    has3dView: 0

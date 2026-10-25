@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module1
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Introduction
+
+'
+    description: 'Troubleshooting is an approach to locate the cause of faults in
+      a computer system. Not all troubleshooting experiences are the same since technicians
+      acquire this skill based on their knowledge and personal experience.
+
+      
+
+      That
+      is why as a computer technician, you must be knowledgeable in the fundamentals
+      of the computer concepts since your approach to solving a problem may rely
+      heavily on your own knowledge.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Preventing Maintenance
+
+'
+    description: "Preventive maintenance is the regular and systematic inspection,
+      cleaning, and replacement of worn parts, materials, and systems. \r\n\r\nIt
+      is done to prevent failure of parts, materials, and systems by regularly checking
+      whether all parts are in good working order.\r\n\r\nPurpose of Preventive Maintenance\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Conducting Maintenance
+
+'
+    description: "First and foremost, maintenance is important in reducing hardware
+      and software issues. With this, computer downtime and repair costs are reduced.
+      \r\n\r\nPreventive maintenance depends on the needs and specifications of the
+      equipment. For example, a device exposed to a dusty environment such as a construction
+      site would need more maintenance as compare to an office environment. \r\n\r\nHigh
+      traffic networks such as those used in schools would require more extensive
+      scanning and removal of malicious software and unwanted files. \r\n\r\nDo take
+      note that it is important to create documentation for any type of preventive
+      maintenance, so that you can also check how often do certain hardware and software
+      issues occur.\r\n\r\nBesides these, here are more reasons why maintenance should
+      be conducted:\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Maintenance for computer hardware can be done by regularly checking
+      cables, components, and peripherals.
+
+'
+    description: "Regular cleaning of components should also be done to reduce overheating.
+      Replacement of damaged components due to excessive wear should also be conducted.
+      \r\nThe following is a guide on conducting hardware maintenance:\r\nRemove
+      dust from fans.\r\nRemove dust from the power supply.\r\nRemove dust from components
+      inside the computer.\r\nClean the mouse and the keyboard.\r\nCheck cables\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Software maintenance can be done by making sure that updates are current.
+      Follow the policies when installing programs, operating system, and security
+      updates.
+    description: "Testing is done to ensure that minimal problems will be encountered
+      when updating the software and hardware. \r\n\r\nHere are some simple tasks
+      when conducting software maintenance:\r\nReview and check security updates.\r\nReview
+      and check software updates.\r\nReview and check driver updates.\r\nUpdate anti-virus
+      files.\r\nScan for viruses and malware.\r\nRemove unused and unwanted programs.\r\nScan
+      hard drives.\r\nDefragment hard drives.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Troubleshooting
+
+'
+    description: "Although troubleshooting varies and can be modified depending on
+      case and experience, it requires an organized and logical approach when handling
+      computers and components. Doing so will ensure that the process is in systematic
+      order. \r\n\r\nMake sure to ask the right questions, test the right hardware,
+      and examine the correct data in order to detect the issues and resolve them.\r\n\r\n\r\nTroubleshooting
+      is honed over time. Every time an issue is resolved, skills on troubleshooting
+      are also improved. Through troubleshooting experience, one would be able to
+      know the steps needed to resolve an issue quickly.\r\n\r\nThe following is
+      a simple process guideline which can also be modified depending on the situation:\r\n\r\nExplain
+      the purpose of data protection.\r\nIdentify the root of the problem.\r\nList
+      probable causes of the issue.\r\nTest the theory to determine the exact cause.\r\nPlan
+      the course of action to resolve the issue.\r\nImplement the solution.\r\nCheck
+      the system functionality.\r\nIf applicable, implement preventive measures.\r\nCreate
+      documentation of findings, action, and outcomes.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Data Protection
+    description: "Before troubleshooting, follow the necessary precautions in order
+      to handle computer hardware and software properly. \r\n\r\nRepairs such as
+      hard drive replacement and operating system installation are very delicate
+      and may put computer data at risk. \r\n\r\nMake sure to prevent data loss when
+      attempting repairs.\r\n\r\n\tPracticing Caution\r\nData protection is one of
+      the first steps of troubleshooting. \r\nComputer data must first be protected
+      before starting any work on a client or customer\u2019s computer. \r\n\r\nA
+      technician can be blamed or held liable if data loss occurs because of improper
+      data handling.\r\n\tBacking Up Data\r\nBackup is the copy of data on a computer
+      or hard drive that is saved to an external media such as a DVD, CD, or flash
+      drive. \r\n\r\nIn an organization, back-ups are routinely done\u2014may it
+      be daily, weekly, or on a monthly basis. This is to ensure that the organization\u2019s
+      data are protected and are readily available.\r\nIf unsure whether a backup
+      has been done, do not conduct troubleshooting activities on a client\u2019s
+      computer. \r\n\r\nMake sure to verify the following with the customer first:\r\nDate
+      of last backup\r\nContent of backup\r\nData integrity of the backup \u2013
+      Data integrity is the maintenance of the accuracy and consistency of the data.
+      It is making sure that the data can be properly retrieved or restored in its
+      optimum quality.\r\nAvailability of backup media for data restoration\r\n"
+    has3dView: 0

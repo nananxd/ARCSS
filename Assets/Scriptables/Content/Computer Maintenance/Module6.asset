@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module6
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Introduction
+
+'
+    description: Basically, the main task is how to keep the computer system in good
+      working condition. However, on a larger scale, it has multiple varieties of
+      activities. There are three main categories of maintenance.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Categories of Maintenance
+    description: "1.Preventive Maintenance \u2013 consist of avoiding the appearance
+      of the problems before it can obviously affect the regular operation of the
+      computer. This requires regular check-up by scheduling task\r\nThis type of
+      computer maintenance therefore concerns both antivirus software and software
+      updates. It also includes firewall management, temporary file cleaning and
+      hard disk defragmentation.\r\n2.Corrective Maintenance \u2013 means identifying,
+      isolating and rectifying faulty parts to repair or replace the equipment or
+      software and retore to its operational condition.\r\n3.Evolutionary Maintenance
+      \u2013 consists of supporting the computer equipment over time. It may involve
+      offering new hardware or software tools to users based on the latest technological
+      developments. Evolutionary maintenance also includes system updates and upgrades
+      of the computer equipment.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Software Maintenance
+
+'
+    description: 'Software maintenance is the process of modifying and updating software
+      systems to keep them functioning correctly, improve their performance, and
+      adapt them to changing requirements.
+
+      Hence, you need to verify that
+      installed software is current and follow the policies of the organization when
+      installing security updates, operating system, and program updates.
+
+      
+
+      Create
+      a software maintenance schedule to:
+
+      Review and install the appropriate
+      security, software, and driver updates.
+
+      Update the virus definition
+      files and scan for viruses and spyware.
+
+      Remove unwanted or unused programs.
+
+      Scan
+      hard drives for errors and defragment hard drives.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Defragmentation
+
+'
+    description: "Fragmentation causes your hard disk to work harder, slowing down
+      your computer. Removable storage devices like USB flash drives can also become
+      fragmented. Windows\u2019 Disk Defragmenter reorganizes fragmented data, allowing
+      your disks and drives to work more efficiently. While Disk Defragmenter runs
+      on a schedule, you can also manually analyze and defragment your disks and
+      drives by following these steps:\r\n\r\nSteps to defragment your hard disk\r\n1.Open
+      Disk Defragmenter by clicking the Start button icon. In the search box, type
+      Disk Defragmenter, and then, in the list of results, click Disk Defragmenter.\r\n2.Under
+      Current status, select the disk you want to defragment.\r\n\nNote: Disk Defragmenter
+      might take from several minutes to a few hours to finish, depending on the
+      size and degree of fragmentation of your hard disk. You can still use your
+      computer during the defragmentation process.\r\nDefragmentation is not recommended
+      if you are already using SSD (Solid-State Drive)\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Check Disk
+
+'
+    description: "Check Disk \u2013 (Chkdsk) is a command-line utility in Windows
+      that scans and repairs errors on hard drives and file systems. It checks for
+      issues like bad sectors, lost clusters, and directory errors, and can fix them
+      to ensure the drive operates smoothly.\r\n\r\nCHKDSK can fix two types of disk
+      errors: logical errors and physical errors. Based on the disk error types,
+      you can use the different CHKDSK commands and\r\nswitches to fix hard drive
+      errors. CHKDSK /F, CHKDSK /R, and CHKDSK /X are the most used CHKDSK commands.\r\n\r\nSyntax:
+      chkdsk volume: /f /v /r /x /I /c\r\nExample: chkdsk C: /f /v /r\r\n\r\nWhere:\r\nVolume
+      \u2013 specifies the drive letter (followed by a colon), mount point, or volume
+      name.\r\n/F - Check for disk errors, not bad sectors.\r\n/V - on FAT/FAT32:
+      Display the Full path and name of every file on the disk.\r\nOn NTFS: Displays
+      cleanup messages if any.\r\n/R - Locate the bad sectors on the target hard
+      disk and try to recover the readable information from the bad sectors (implies
+      /F).\r\n/X - Forces the volume to dismount first, if necessary. It also includes
+      the functionality of /f.\r\n/I - NRFS ony: Performs a less vigorous check of
+      index entries.\r\n/C - NTFS only: Skips checking of cycles within the folder
+      structure.\r\n/B - NTFS only: Re-evaluate bad clusters on the volume <implies
+      /R>\r\nNote: to run CHKDSK, click Start button then type CMD (Command Prompt)
+      then Command Prompt window will appear. Then type CHKDSK command with proper
+      syntax.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'UNINSTALLING UNNECESSARY APPLICATIONS
+
+'
+    description: "Why should you uninstall unused software from your computer?\r\nUninstalling
+      unused software helps free up valuable storage space on your computer\u2019s
+      hard drive.\r\nIt can also improve system performance by reducing background
+      processes and unnecessary software dependencies.\r\nAdditionally, removing
+      unused software reduces the risk of security vulnerabilities associated with
+      outdated or unpatched programs.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'DISABLING STARTUP APPLICATIONS
+
+'
+    description: 'Startup Programs are programs, applications and services that can
+      automatically launch after you boot up your computer. Some startup programs
+      like Cortana, Microsoft OneDrive, UpdaterStartupUtility, and more usually work
+      in the background. Third-Party software can also be set at the startup boot.
+      You can set your frequently used programs as startup programs.
+
+      
+
+      Startup
+      Programs that are Safe to Disable on Windows 10/11:
+
+      1.Cortana
+
+      2.Microsoft
+      Edge
+
+      3.Google Chrome
+
+      4.Microsoft Team
+
+      5.Chat
+
+      6.Zoom
+
+      7.Skype
+
+      8.iTunes
+      Mobile Helper/iTuneHelper
+
+      9.QuickTime
+
+      10.Adobe Reader
+
+      11.Microsoft
+      Office
+
+      12.Xbox App Services
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Startup Programs that should be Enabled on Windows 10/11
+
+'
+    description: 'Your antivirus software no matter whether it is the Windows built-in
+      tool or third-party software you have downloaded and installed.
+
+      Services,
+      drivers, and applications for audio, wireless devices and touchpads (for laptops).
+
+      Intel,
+      AMD, and Nvidia graphic card services (like Realtek HD Audio Universal Service)
+      and display drivers.
+
+      Automatic data backup software like Dropbox, SugarSync,
+      Google Drive, Microsoft OneDrive, etc.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: "Disabling Startup Applications \u2013There are many reasons why we
+      need to disable startup programs in Windows 10 or 11."
+    description: "Improve Boot time \u2013 Many startup programs run in the background,
+      consuming system resources and slowing down your computer\u2019s boot time.
+      Disabling unnecessary programs can significantly reduce the time it takes for
+      Windows to start up.\r\nIncrease Performance \u2013 Even after booting, unnecessary
+      startup programs can continue to use resources, leading to slower performance
+      and potentially impacting other running applications. Disabling these programs
+      can free up memory and processing power for your primary tasks.\r\nReduce Source
+      Usage \u2013 Some startup programs might be resource-intensive, using a large
+      amount of memory, CPU, or internet bandwidth. Disabling these programs can
+      help reduce overall resource usage, leading to a smoother and more responsive
+      system.\r\nPrevent conflicts: Occasionally, startup programs can conflict with
+      other software or hardware, causing issues like crashes, freezes, or errors.
+      Disabling problematic programs can help resolve these conflicts.\r\nEnhance
+      battery life: Startup programs can drain battery life, especially on laptops.
+      By disabling unnecessary programs, you can extend the battery life of your
+      device.\r\nImprove security: Some startup programs might be malicious or contain
+      vulnerabilities that could compromise your system\u2019s security. Disabling
+      suspicious programs can help protect your computer from potential threats.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: '3 Ways to Disable Startup Programs in Windows 11
+
+'
+    description: 'Disable Startup Programs using the Settings App
+
+      1. In Windows,
+      launch the Settings app.
+
+      2. On the left side of Settings, choose Apps
+      and Select the Startup navigation option.
+
+      3. To disable any startup
+      apps that are now active, click the toggle switches next to them.
+
+      Disable
+      all Starup Programs using the MSConfig App
+
+      1. Open the Run window by
+      pressing Win + R on the keyboard.
+
+      2. In the Run text box, type msconfig.
+
+      3.
+      To open MSConfig, click the OK button.
+
+      4. To disable this feature,
+      uncheck the Load startup items checkbox on the General tab.
+
+      5. To save
+      the updated boot settings, click Apply and select the OK button.
+
+      6.
+      On the dialogue box prompt, click Restart.
+
+      Disable Startup Programs
+      using the Task Manager App
+
+      1. In Windows, launch the Task Manager app.
+
+      2.
+      Navigate to the Startup tab.
+
+      3. Click the Disable option after right-clicking
+      on the enabled application.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Organizing files/folders
+
+'
+    description: "How organized are you? This is a crucial aspect to consider when
+      using a computer. Organizing files and folders on your computer is similar
+      to arranging your clothes in a closet or tidying up your home. If you're good
+      at keeping things organized, you\u2019ll find it easy to apply those same skills
+      to managing your computer files.\r\n\r\nFive Tips to organize your files and
+      folders\r\n1.Establish a Clear hierarchical folder structure \u2013 start your
+      files by creating a logical, hierarchical folder structure. The best folder
+      structure will mimic the way you work.\r\nExample: \r\n2.Use a consistent naming
+      convention \u2013\r\nGive your folders and files specific, logical names\u2014and
+      be consistent. The goal is to use names that clearly indicate what's inside
+      without having to open it. While there's no one-size-fits-all approach to naming
+      conventions, here are some tips to keep in mind.\r\nInclude Keywords. Consider
+      what terms you might search for to retrieve the file. And if you are sharing
+      the file with a client, consider using words that make it clear what\u2019s
+      inside.\r\nAdd a date. By putting a date (e.g. yymmdd) at the beginning of
+      your filename, it\u2019ll automatically be listed chronological order.\r\nInclude
+      the version. If you\u2019re working with multiple versions of a file, include
+      the version number (e.g. Ver4). This will make it easier to identify the most
+      recent version and avoid any costly mixups if there are multiple iterations
+      of the same file.\r\nSequential Numbers. To arrange your files in a specific
+      order, add leading zeros (e.g. 01, 02, and 03) instead of 1, 2, and 3.\r\nKeep
+      it concise. Some software programs have character limits on filenames, or don\u2019t
+      allow certain special characters (e.g. #, @, and &). To keep your file and
+      folder names consistent \u2013 regardless of the program you\u2019re using
+      \u2013 include only necessary information and cut anything spare.\r\n3.Add
+      Tags \u2013 Depending on the number of files you need to organize, you can
+      use a tagging system instead of, or in addition to folder structures. Example,
+      if you are an event photographer, you might tag your photos based on events
+      (e.g. graduation, birthday2024, Opening_Prog_2024)\r\n4.Delete and archive
+      unnecessary files. \u2013 you might consider every month to have time in organizing
+      your files and folders. Make your important files easily accessible by creating
+      shortcut link on your desktop while deleting those files that are not needed
+      and archive those you don\u2019t need right away in external drive or in the
+      cloud drive.\r\n5.File as you go - If you work with a lot of files, organizing
+      your folders once a month may result in an insurmountable pile of chaos. To
+      prevent this, give every file an accurate name and home as soon as you create
+      it.\r\n\r\n\r\nNote: Creating a separate drive for your personal files is a
+      smart practice. Instead of saving everything on Drive C:, which holds your
+      system files, you can create and use a partition like Drive D: for your personal
+      data. This way, if your computer gets a virus or the system crashes and Drive
+      C: needs to be formatted, your files on Drive D: are more likely to remain
+      safe. This setup offers better protection for your important files.\r\n"
+    has3dView: 0

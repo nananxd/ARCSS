@@ -19,6 +19,7 @@ public class PhotoTextContent
     [TextArea(20,5)]
     public string description;
     public bool has3dView;
+    public bool hasVideo;
 }
 
 public enum PhotoTextName

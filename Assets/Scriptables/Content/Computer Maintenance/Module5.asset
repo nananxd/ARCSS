@@ -1,0 +1,328 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module5
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Introduction
+
+'
+    description: 'Whenever you have a problem with your computer, don''t panic! There
+      are many basic troubleshooting techniques you can use to fix issues like this.
+      In this module, we''ll show you some simple things to try when troubleshooting,
+      as well as how to solve common problems you may encounter.
+
+      
+
+      Troubleshooting
+      is a step-by-step process used to determine the source of a problem in a computer
+      system and fix any hardware or software issues. It is important to approach
+      problem-solving in a logical and organized manner in order to effectively resolve
+      the issue. While having experience is helpful in problem-solving, following
+      a troubleshooting model can improve efficiency and speed in finding a solution.
+
+      
+
+      One
+      basic troubleshooting method is to press Control-Alt-Delete on a PC, which
+      opens the Microsoft Windows Task Manager where users can determine which applications
+      have become unresponsive, close them and restart the computer.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: How to Troubleshoot Common Problems in a Computer
+    description: "A. Power \u2013 Power button does not start the computer\r\n1.Check
+      the power strip or surge protector to make sure it is plugged in and turned
+      on. You may have to reset the surge protector by turning it off and then back
+      on. You may also plug other device to verify if it is working properly.\r\n2.Check
+      for loose cables in the back of the computer (especially the main power cable).\r\n3.Check
+      the outlet for power problems or try moving the power cable to a different
+      outlet.\r\n4.Try a different power cable.\r\n5.If you are using a laptop, the
+      battery may not be charged. Plug the AC adapter into the outlet, then try to
+      turn on the laptop. If it still doesn't start up, you may need to wait a few
+      minutes and try again.\r\n6.Discharge the computer:\r\n7.Unplug all cables
+      from the back of the computer (note the positions for all the cables) including
+      power.\r\n8.Leave the computer unplugged with no power to the unit for a minimum
+      of 15 minutes to allow the computer to discharge.\r\n9.After discharging the
+      computer, plug the power cable back in and check for a status light on the
+      power supply. If the status light on the power supply still does not illuminate,
+      the power supply may need to be replaced.\r\n\r\nB. Display/Video \u2013 your
+      monitor may be experiencing an LCD display or video issue usually caused by
+      either the monitor, video card (GPU) or video settings. Some symptoms that
+      indicate LCD display or video issue are blank or black screen, color fade,
+      fuzzy, blurry, distorted or stretched image, light leakage or bleeding, flickering,
+      horizontal or vertical lines, light and dark patches, dead pixel or bright
+      pixel.\r\n\r\n1.Verify display or video issue on a known-good monitor\r\na.
+      A basic way to identify this is to connect the PC to a known-good external
+      monitor or TV and ensure that the display (S-video, VGA, DVI, HDMI or DisplayPort)
+      cables are firmly connected to the video ports on the PC and the monitor.\r\nb.
+      If the issue persists on the monitor, it may be due to the video card or video
+      settings and not the monitor itself.\r\n2. Check for physical Damages\r\na.
+      Performance issues can arise if the display cables or LCD screen are damaged.
+      Symptoms may include the screen not working, intermittent functioning, color
+      mismatches, flickering, or horizontal/vertical lines on the display.\r\n3.
+      Verify display or video issue in Windows Safe Mode\r\na. Windows Safe Mode
+      allows us to identify if the issue is related to the operating system, video
+      settings, device drivers or a 3rd party software.\r\n4. Update the video card
+      (GPU) driver, monitor, chipset driver & BIOS\r\na. It is essential to update
+      the following device drivers for optimal video performance and to resolve common
+      video issues\r\n5. Download and install Microsoft Updates\r\na. Windows updates
+      can support your Windows operating system in many ways. Windows updates can
+      solve specific problems, provide protection from malicious attacks, or even
+      add new features to the operating system.\r\n6. Change the video or display
+      settings and adjust the brightness\r\nDisplay settings like brightness, refresh
+      rate, resolution and power management may affect the performance of your monitor.
+      Changing the display settings can help resolve several types of video issues.\r\n\r\nC.
+      Audio \u2013 Fix no sound and other audio issues on you PC or laptop\r\n1.
+      Check all physical connections, including plugs and jacks. Test any external
+      volume control knobs. Disconnect and reconnect Bluetooth devices.\r\n2. Check
+      the audio player controls. Many audio and video players will have their own
+      separate audio controls. Make sure the sound is turned on and that the volume
+      is turned up in the player.\r\n3. Run the audio troubleshooter to identify,
+      diagnose, and fix problems.\r\n4. Verify that all Windows Updates are installed.
+      Update the sound driver if necessary.\r\n\r\nD. Storage Device \u2013 also
+      known as your hard disk or Solid-State Drive (SSD) for new versions. Storage
+      device problems are often related to loose or incorrect cable connections,
+      incorrect drive and media formats, and incorrect jumper and BIOS settings.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nCommon
+      Problems and Solutions for Storage Devices\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nE.
+      Cooling System \u2013 Common problem is noisy computer\r\n1.Clean out the inside
+      of the computer. The main cause of a noisy computer is usually dust buildup
+      inside. Cleaning out your computer will help keep the heat down and the noise
+      to a minimum. Clean the inside of the computer every six months. Clean more
+      frequently if you have pets or smoke.\r\n2. Replace your case fans. The fans
+      inside your computer keep it cool, but are also the largest source of noise.
+      Replacing your fans with larger, more-efficient ones can keep it quieter and
+      cooler.The fans inside your computer keep it cool, but are also the largest
+      source of noise. Replacing your fans with larger, more-efficient ones can keep
+      it quieter and cooler.\r\n3. Replace your CPU cooler. One of the loudest fans
+      in the computer is usually the CPU fan. This is because the CPU is typically
+      the hottest component, so the CPU\r\nfan is often running at maximum speed.
+      Replacing your CPU fan with a more efficient one can reduce the noise coming
+      from your computer.\r\n\r\nF. Ports/Connectors \u2013 having problems with
+      ports/connectors such as USB, VGA, Mouse and Keyboard ports can be resolved
+      thru different steps.\r\n\r\nBefore troubleshooting any ports/connectors, make
+      sure that the device drivers are already installed. For USB devices such as
+      printers, and scanner are using specific application that needs to be installed
+      to the computer. Follow the installation instructions from the USB Device manufacturer.\r\nSome
+      troubleshooting steps require you to restart your PC. Before you begin troubleshooting,
+      ensure to bookmark open web pages, save any open documents, spreadsheets, or
+      any other unsaved work.\r\nUSB devices must be turned off or ejected before
+      they are disconnected from the PC. Most USB devices support Windows Safely
+      Remove Hardware feature.\r\n\r\nCheck USB ports or cables for physical damage\r\nUSB
+      performance issues may occur if there is any type of damage caused to the USB
+      cable or the USB ports on the PC. You may experience symptoms like a USB device
+      stops working, works intermittently or the device wiggles when you plug it
+      in etc.\r\nUSB cables and ports are exposed to elements that may cause a build-up
+      of dust or even physical damages. If you notice that the port or connector
+      has dust or other contaminants, use a can of compressed air to clean the ports
+      and connectors.\r\nWarning: Do not use any type of cleaning solution, water
+      or even a damp cloth. Disconnect the USB device and the cable before using
+      the can of compressed air to clean the ports and connectors.\r\n\r\nCheck Windows
+      Device Manager for errors\r\nWindows Device Manager can help you identify and
+      troubleshoot any device driver related issues with the USB device.\r\nTo view
+      the USB devices in Windows Device Manager:\r\nPress the Windows logo + R key
+      on the keyboard.\r\nType devmgmt.msc in the run dialog box and press the Enter
+      key.\r\nExpand the Universal Serial Bus controllers section.\r\n\r\nG. Drivers
+      \u2013 sometimes, symptoms may appear such as hardware not working properly
+      may lead to problems with the drivers.\r\n\r\nCheck some solutions to resolve
+      the problem.\r\n1.Check Device Manager - Open Device Manager by right-clicking
+      on the Start menu and selecting \"Device Manager\". Look for devices with a
+      yellow triangle or red cross. These indicate problems with the drivers.\r\n2.
+      Update Drivers - Right-click on the problematic device in Device Manager. Select
+      \"Update driver\" and choose \"Search automatically for updated driver software\".
+      If Windows finds a new driver, it will install it automatically.\r\n3. Roll
+      Back Drivers: Sometimes new driver updates can cause issues. If a device starts
+      malfunctioning after a driver update, you can roll back to the previous driver.
+      Right-click on the device in Device Manager, select \"Properties\", go to the
+      \"Driver\" tab, and click \"Roll Back Driver\".\r\n4. Reinstall Drivers: Uninstall
+      the problematic driver by right-clicking on the device in Device Manager and
+      selecting \"Uninstall device\". Restart your computer. Windows will attempt
+      to reinstall the driver automatically. If Windows does not reinstall the driver,
+      you can download it from the manufacturer's website and install it manually.\r\n5.
+      Check for Operating System Updates: Sometimes, updating your operating system
+      can fix driver issues as updates can include new drivers and patches.\r\nGo
+      to Settings > Update & Security > Windows Update and check for updates.\r\n6.
+      Download Drivers from Manufacturer\u2019s Website: Visit the hardware manufacturer's
+      website and download the latest drivers for your specific hardware model. Install
+      the downloaded driver and restart your computer if necessary.\r\n7. Check Compatibility:
+      Ensure that the driver you are trying to install is compatible with your operating
+      system and hardware. Sometimes, incompatibility can cause driver issues.\r\n8.
+      Scan for Malware: Malware can corrupt or replace legitimate drivers with malicious
+      ones. Run a full system scan using reputable antivirus software to check for
+      malware infections.\r\n9. Seek Professional Help: If you are unable to resolve
+      the issue, consider seeking help from a professional technician or the device
+      manufacturer\u2019s support team.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Steps of Troubleshooting
+
+'
+    description: 'Step 1: Define the Problem
+
+      The first step is the most important.
+      You need to gather information about what unexpected things happened before
+      the problem occurred and what related symptoms and unique circumstances occurred
+      before the incident that led to the problem.
+
+      
+
+      These lists of
+      questions can serve as your guide.
+
+      1.Was the computer working properly
+      before this problem occurred?
+
+      2.When did you first notice the problem
+      or error?
+
+      3.Have you made any changes to the software and hardware?
+
+      4.Has
+      anything happened to the computer? Was it dropped or was something dropped
+      on it? Was coffee or soda spilled on the keyboard?
+
+      5.When exactly does
+      the problem or error occur? Is it during the startup process? After lunch?
+      Only on Monday morning? After using e-mail?
+
+      6.What does the problem
+      or error look like?
+
+      7.Were there any changes in the computer coinciding
+      with the problem such as noise, screen changes, lights, and so forth?
+
+      8.Are
+      there any error message?
+
+      9.Were there any funny noises or smells present
+      at the time the computer failed?
+
+      10.Are there current backups of the
+      system and data files available?
+
+      If one question leads to another question,
+      determine if the question is important. If so, ask a follow-up question. If
+      not, file it for later review.
+
+      At this point examine the computer.
+
+      
+
+      
+
+      Step
+      2: Isolate the Problem/ Types of Errors
+
+      Sometimes a problem can have
+      many possible causes. A trial-and-error method is used to eliminate various
+      options. The best approach is to look for the most straightforward cause first,
+      even when working with a complex system.
+
+      One common testing method
+      is the split-half troubleshooting approach. This technique isolates the source
+      of a problem through a process of elimination. This method works best when
+      the system involved has a number of parts in series. Troubleshooters first
+      test halfway down the line of components. If the middle component works, they
+      know everything before it works. At this point, they move on to the middle
+      of the remaining untested section toward the end of the series. If the test
+      of this second section works, they go on to the midpoint of the remaining section.
+
+      If
+      the problem occurs at any point in this testing, then the troubleshooters do
+      a split back toward the start of the series until the problem part is found.
+      The split-half process can save time in systems that depend on many components.
+
+      
+
+      Step
+      3: Conduct the Repair
+
+      After you isolate the problem and determine the
+      possible source of the problem on a few categories the process of elimination
+      begins.
+
+      
+
+      Make a Diagnostic Plan
+
+      Create a diagnostic
+      plan to further troubleshoot the problem based on your knowledge and experience.
+      Your plan should start with the most obvious and/or the easiest solution to
+      eliminate the possible source of the problem and to move to another.
+
+      
+
+      Diagnostic
+      plan is a simple checklist of what needs to be done based on symptoms and that
+      also includes the tools, materials and equipment necessary for the diagnostic.
+
+      
+
+      Follow
+      the plan from beginning to End
+
+      Once you have the plan, it is important
+      to follow it completely. Unsystematically trying things can result to a more
+      serious problem. Document every action you take as well as its results. If
+      the initial plan is unsuccessful, then create another one based on the result
+      of the previous plan.
+
+      
+
+      
+
+      
+
+      
+
+      After pinpointing
+      the source of the problem, you may either repair or replace the defective component.
+      Again, whether the problem is hardware or software, be sure to record your
+      solution.
+
+      
+
+      
+
+      Step 4: Confirm the Results
+
+      To
+      finish the repair, follow these steps to ensure the job is done right:
+
+      1.Verify
+      the problem is fixed. Ask the user to test the computer and confirm their requirements
+      are met.
+
+      2.Ensure the fix didn''t cause new problems. If you found
+      or caused any other issues during troubleshooting, make sure to fix those too.
+
+      
+
+      Step
+      5: Document the Results
+
+      Write down the problem and the steps taken
+      to fix it. Keeping this information will be helpful if the same issue happens
+      again. You can share these notes with other technicians to learn from each
+      other. Also, this record will be useful if you have questions about the work
+      that was done.
+
+'
+    has3dView: 0

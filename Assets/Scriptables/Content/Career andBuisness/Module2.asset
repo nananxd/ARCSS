@@ -1,0 +1,575 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module2
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Introduction
+    description: 'In Information and Communication Technology (ICT), tools and equipment
+      refer to the physical devices, hardware, and software used for various tasks
+      related to processing, transmitting, storing, and managing information. These
+      tools and equipment play a crucial role in enabling individuals and organizations
+      to work efficiently and effectively in the digital age. Here are some examples
+      of tools and equipment in ICT:
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Hardware
+
+'
+    description: Hardware refers to physical electronic components and devices used
+      in computing and technology systems. These physical components include items
+      such as circuit boards, processors, memory modules, storage devices (like hard
+      drives and solid-state drives), input and output devices (such as keyboards,
+      mice, monitors, and printers), and various other peripherals like graphics
+      cards and network adapters. Hardware is essential for the operation and functionality
+      of computers, servers, smartphones, and other electronic devices.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Computer
+    description: 'A computer is the most fundamental tool for programming. It can
+      be a desktop, laptop, or even a cloud-based virtual machine, depending on the
+      requirements of the project.
+
+      
+
+      Desktop Computer: A desktop computer
+      is a type of personal computer designed to be used on a desk or work surface.
+      It typically consists of several components, including a central processing
+      unit (CPU), Motherboard, HDD/SDD, Memory, PSU, monitor, keyboard, mouse, and
+      various peripherals. Desktop computers are known for their power, expandability,
+      and the ability to perform a wide range of tasks, including gaming, content
+      creation, software development, and office work. They are not portable and
+      are meant to stay in one location.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Keyboard and Mouse
+    description: 'A comfortable keyboard and mouse are essential for efficient typing
+      and navigation while writing code.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Monitor
+    description: ' A good quality monitor with a high resolution provides programmers
+      with more screen real estate for coding, debugging, and testing.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Printer
+    description: 'is a peripheral device commonly used with computers and other digital
+      devices to produce physical copies of digital documents, images, or graphics
+      on paper or other printable materials.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Scanner
+    description: 'is a digital input device that is used to convert physical documents,
+      images, or objects into digital format, which can then be stored, manipulated,
+      and displayed on a computer or other digital devices.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Webcam
+    description: 'is short for "web camera," is a digital camera device typically
+      built into or connected to a computer, laptop, or other digital devices. Webcams
+      are designed for capturing live video and audio and transmitting it in real-time
+      over the internet.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Light Pen
+    description: ' is a handheld input device that was used in the early days of
+      computing and graphical user interfaces (GUIs) to interact with a computer''s
+      display screen.'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Digitize Tablet
+    description: 'also known as a graphics tablet, pen tablet, or drawing tablet,
+      is a specialized input device used by artists, graphic designers, and professionals
+      in creative fields for creating digital illustrations, graphics, and designs.
+      It consists of a flat, rectangular surface (the tablet) and a stylus or pen-like
+      input device.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Speaker '
+    description: 'These speakers are specifically engineered to provide sound output
+      for various multimedia applications, including music, videos, games, and more.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'AVR '
+    description: "stands for Automatic Voltage Regulator. It refers to a device or
+      system that automatically adjusts the voltage output of a generator or electrical
+      source to maintain a stable and consistent voltage level. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Headset '
+    description: 'is a combination of headphones (or earphones) and a microphone,
+      typically integrated into a single device or connected as separate components.
+      Headsets are designed for audio communication, allowing users to both listen
+      to audio and speak into the microphone simultaneously.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'UPS '
+    description: " stands for Uninterruptible Power Supply. It is a device used to
+      provide backup power to electrical devices or systems in the event of a power
+      outage or disruption. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Laptop, short for "notebook computer
+    description: 'is a portable personal computer designed for mobility and convenience.
+      Unlike traditional desktop computers that remain stationary on a desk, a laptop
+      is compact and lightweight, allowing users to carry it with them and use it
+      virtually anywhere.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Minicomputer '
+    description: ' it is referred to as a server, utilized by small to medium-sized
+      enterprises, and typically accommodates the needs of hundreds of users.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Mainframe Computer
+    description: "is a sizable and costly computing system with the capability to
+      accommodate hundreds or even thousands of users. \r\n\r\n\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Supercomputer
+    description: ' is the fastest category of computer designed for specific applications,
+      capable of handling massive volumes of data processing. '
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Storage Device
+    description: A storage device is a hardware component or device that is used
+      to store, save, and retain digital data or information. These devices are essential
+      for preserving and accessing data over extended periods.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Hard Disk Drive (HDD)
+    description: " are mechanical storage devices that use spinning platters to store
+      data. They are commonly found in desktop and laptop computers, as well as external
+      drives. HDDs offer high capacity but are relatively slower than some newer
+      storage technologies. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Solid-State Drive (SSD) '
+    description: ' are a type of storage device that uses NAND flash memory to store
+      data. They are faster and more durable than HDDs and are commonly used in laptops,
+      desktops, and high-performance computing systems.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'USB Flash Drive '
+    description: Also known as thumb drives or USB sticks, these small, portable
+      devices use flash memory to store data. USB drives are highly portable and
+      can be plugged into USB ports on computers and other devices.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: External Hard Drive
+    description: 'These are standalone HDD or SSD storage devices enclosed in an
+      external casing. They connect to computers via USB, Thunderbolt, or other interfaces
+      and are often used for data backup and expansion.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Network Attached Storage (NAS)
+    description: 'devices are specialized storage devices that are connected to a
+      network, allowing multiple users to access and share data. They are commonly
+      used in homes and small businesses for centralized data storage and backup.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Cloud Storage
+    description: ' services allow users to store their data on remote servers accessible
+      over the internet. Popular cloud storage providers include Dropbox, Google
+      Drive, and Microsoft OneDrive.'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Memory Cards
+    description: ' such as SD cards and microSD cards, are used in digital cameras,
+      smartphones, and other portable devices to store photos, videos, and other
+      data.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Network Device
+    description: ' A network device is a hardware component or equipment used in
+      computer networks to facilitate communication, data transfer, and the management
+      of network resources. These devices play essential roles in enabling devices
+      within a network to connect, communicate, and share data efficiently.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Modem '
+    description: 'A modem (short for modulator-demodulator) is a device that modulates
+      digital data from a computer into analog signals for transmission over telephone
+      lines (DSL modem) or cable lines (cable modem) and demodulates incoming analog
+      signals back into digital data.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Router '
+    description: 'are key network devices that connect different networks together,
+      such as a local network to the internet. They determine the best path for data
+      packets to travel between networks, manage IP addresses, and provide security
+      features like firewalls.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Switch '
+    description: 'A network switch is used to connect devices within the same local
+      area network (LAN). It operates at Layer 2 (Data Link Layer) of the OSI model
+      and is responsible for forwarding data frames to the appropriate device based
+      on MAC (Media Access Control) addresses.
+
+
+      Unmanage Switch - An "unmanaged
+      switch" is a type of network switch that operates without the ability for remote
+      configuration and management by a network administrator.
+
+      
+
+      
+
+      
+
+      
+
+      Manage
+      Switch - A managed switch is a type of network switch that offers advanced
+      features and can be configured and controlled by network administrators.
+
+      
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Hub '
+    description: are older network devices that operate at the physical layer (Layer
+      1) of the OSI model. They broadcast data to all devices connected to them,
+      making them less efficient than switches, which selectively forward data.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Access Point (AP)
+    description: 'are used to provide wireless connectivity to devices in a Wi-Fi
+      network. They allow wireless devices like laptops and smartphones to connect
+      to a wired network.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Firewall '
+    description: "are network security devices that filter and control incoming and
+      outgoing network traffic based on predefined security rules. They protect networks
+      from unauthorized access and threats. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Network Interface Card (NIC)
+    description: "are hardware components installed in computers and devices to enable
+      them to connect to a network. They provide the physical connection to the network
+      medium, such as Ethernet or Wi-Fi. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Server Cabinet
+    description: 'also known as a network cabinet, server rack, or data cabinet,
+      is a specialized enclosure designed to house and protect various networking
+      and server equipment within a data center or server room. These cabinets provide
+      a secure and organized environment for servers, networking devices, and other
+      IT equipment.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Patch Panel
+    description: " is a network hardware device that serves as a central point for
+      the organization and management of network cables. It allows network administrators
+      to easily connect, disconnect, and rearrange the various network cables within
+      a data center or network closet. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Cable Manager
+    description: "also known as a cable management system or cable management panel,
+      is an essential component in a server cabinet or network rack that is used
+      to organize and manage network and power cables within the cabinet. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Patch Cable
+    description: is a short, standardized cable with connectors on both ends used
+      to establish a temporary or permanent connection between network devices, such
+      as computers, switches, routers, and patch panels.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Electronic Tester VOM (Voltage-Ohm-Milliammeter) '
+    description: 'VOM is a versatile handheld device used to measure electrical properties
+      in circuits and components. It typically measures voltage (in volts), resistance
+      (in ohms), and current (in milliamperes or amps).
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: LAN Cable Tester
+    description: " A LAN (Local Area Network) cable tester is a specialized tool
+      used to test and troubleshoot Ethernet and networking cables, such as Cat 5e,
+      Cat 6, or Cat 7 cables. It helps verify cable continuity, pin configurations,
+      and detects wiring faults, ensuring that network connections are properly established
+      and free from issues. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Other Tools and Equipment
+    description: 'The following tools and equipment are specifically used in the
+      Computer System Servicing field of ICT.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Screwdriver Standard
+    description: A screwdriver with a flat, blade-like tip used for turning screws
+      with a single, straight-line groove or slot.
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Screwdriver Philips
+    description: 'A screwdriver with a cross-shaped tip used for turning screws with
+      a cross-shaped or Phillips head.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Long Nose Plier
+    description: 'Pliers with elongated, pointed jaws used for gripping, bending,
+      and manipulating small objects or wires in tight spaces.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Mechanical Plier
+    description: ' Pliers designed for mechanical work, such as bending, crimping,
+      or cutting wires and other materials.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Wire Cutter
+    description: ' A tool designed to cut wires and cables cleanly and efficiently.
+
+      
+
+      
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Allen Wrench
+    description: 'Also known as a hex key or hex wrench, it''s a tool with a hexagonal-shaped
+      tip used to turn bolts and screws with hexagonal sockets.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Part Retriever
+    description: "A tool designed to retrieve small parts or objects from tight or
+      hard-to-reach places. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Crimping Tools
+    description: 'Tools used for crimping, or compressing, connectors onto the ends
+      of cables or wires to create secure electrical connections.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Anti-Static Mat
+    description: ' is a specialized mat designed to prevent the buildup and discharge
+      of static electricity, particularly in environments where sensitive electronic
+      components, devices, or equipment are handled or assembled.'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Anti-Static Wrist
+    description: ' A wristband with an attached cord that helps to dissipate static
+      electricity from a person''s body to prevent electrostatic discharge (ESD)
+      when working with sensitive electronic equipment.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Wire Stripper
+    description: "A tool designed to remove the insulation or outer sheath from electrical
+      wires, exposing the conductor for connections. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Precision Screwdrivers
+    description: ' Screwdrivers with very small and precise tips, often used for
+      delicate tasks like working with small electronic components or intricate mechanisms.'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Flashlight
+    description: 'It is commonly used in various fields, including electronics, to
+      provide additional illumination in low-light or confined spaces when working
+      on tasks that require precision and visibility.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Fiber optic (terminated)
+    description: 'Fiber optic cables transmit data using light signals and require
+      precise terminations for optimal performance. Terminated fiber optic cables
+      are ready for use and can be connected to networking equipment, such as switches
+      or transceivers, to establish high-speed data connections over long distances
+      with minimal signal loss.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Ergonomic Computer Tables and Chairs
+    description: ' Ergonomic computer tables and chairs are specially designed furniture
+      pieces that prioritize comfort, efficiency, and well-being for individuals
+      who spend extended periods working or using a computer. These ergonomic furnishings
+      are essential in promoting proper posture, reducing strain, and enhancing overall
+      productivity.
+
+'
+    has3dView: 0

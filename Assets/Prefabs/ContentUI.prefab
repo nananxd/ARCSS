@@ -1550,6 +1550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ContentUI
   view3DBtn: {fileID: 5610367448240916438}
+  viewVidBtn: {fileID: 494738846068727938}
   descriptionTxt: {fileID: 1438898405229846107}
   prevImageParent: {fileID: 7608736311020740564}
   previewImage: {fileID: 498877982515655116}
@@ -1557,6 +1558,7 @@ MonoBehaviour:
   sprites: []
   model3dName: 0
   has3dView: 0
+  hasVid: 0
 --- !u!114 &3455154524569380806
 MonoBehaviour:
   m_ObjectHideFlags: 0

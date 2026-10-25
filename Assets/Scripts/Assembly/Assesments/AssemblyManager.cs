@@ -10,6 +10,7 @@ public class AssemblyManager : MonoBehaviour
     public AssembleAssesment assembleAssesment;
     public AssemblyUIManager assemblyUIManager;
     public AssemblyCameraManager assemblyCameraManager;
+    public CinematicUI cinematicUI;
 
     [SerializeField] private List<CorrectPositionPart> correctPositionParts = new List<CorrectPositionPart>();
     [SerializeField] private List<AssemblySlotTrigger> slotTriggers = new List<AssemblySlotTrigger>();

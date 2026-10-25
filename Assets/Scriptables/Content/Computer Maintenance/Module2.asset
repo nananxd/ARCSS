@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module2
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Introduction
+
+'
+    description: 'A properly maintained computer gives higher speeds, may it be via
+      RAM or on the Internet, regardless of hardware set-up and configurations. This
+      lesson will give some tips on how to maintain computer systems and networks
+      over time.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Routine Maintenance
+    description: "Clean browsers\r\nUse the computer\u2019s Disk Cleanup Utility
+      included in the Windows System. In the same way, you can also download third
+      party, freeware programs such as CCleaner to do the clean-up for you.\r\n\r\n\r\n\r\n\r\nSearch
+      and delete spyware and viruses from the device.\r\nThird party softwares like
+      AVG Anti Virus can be used for maintenance. Or use the Windows Security built
+      in on Windows 10 devices.\r\n\r\n\r\n\r\n\r\nDefragment the hard drive routinely
+      to keep the device running smoothly. \r\nUninstall programs that are no longer
+      used.\r\nDelete files that are no longer needed. The freer space a computer
+      has, the faster it will perform. The computer\u2019s performace will increase.
+      \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nRemove startup programs.\r\nUse the msconfig
+      command in the RUN command prompt to open up a window that will allow you to
+      uncheck startup programs that are no longer used. \r\nDoing this will improve
+      start up and boot down times a lot. Third party softwares such as CCleaner
+      can also be used for this purpose.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nUse
+      your computer\u2019s disk management systems.  \r\nFor Windows, select Performace
+      and Maintenance. Choose \u201CRearrance items on your hard disk\u2026\u201D
+      and \u201CFree up space on your hard disk.\u201D Or simply run Disk Cleanup.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Maintenance Basic
+
+'
+    description: 'How to Perform Disk Clean Up:
+
+      1. Start Menu > Programs
+      > Accessories > System Tools > Disk Clean Up
+
+      2. Select Drive to Clean
+      Up > Click Ok
+
+      3. Check all items that need to be removed > Click Ok
+
+      
+
+      How
+      to Clear Internet History
+
+      1. Start Menu > Settings > Control Panel
+      > Click Internet Options
+
+      2. Click "Clear History"
+
+      3. Click
+      Ok
+
+      
+
+      
+
+      How to Clear Internet "Temporary Internet" Files
+
+      1.
+      Start Menu > Settings > Control Panel > Click Internet Optons
+
+      2. Click
+      "Delete Files"
+
+      3. Check "Delete All Offline Content"
+
+      4. Click
+      Ok
+
+      
+
+      How to Run Scan disk and Disk Defragmenter without Interruption:
+
+      1.
+      Start Menu > Run > In Run, type "MSCONFIG", then click Ok MSCONFIG will appear.
+
+      2.
+      Select "Selective Startup"
+
+      3. Uncheck "Load Startup Group Items". Click
+      Ok.
+
+      4. Click Yes to Restart Computer Upon Restart.
+
+      5. Start
+      Menu > Settings > Control Panel > Click Display
+
+      6. Select the "Screen
+      Saver" tab.
+
+      7. Change the Screen Saver Drop menu to "None". Click Ok.
+
+      
+
+      Then
+      Perform Scan Disk,
+
+      Start Menu > Programs > Accessories > System Tools
+      > Scan Disk
+
+      
+
+      After Scan Disk, Perform Disk Defragmenter
+
+      Start
+      Menu > Programs > Accessories > System Tools > Disk Defragmenter > Select which
+      disk to Defragment. Click Ok.
+
+      
+
+      After  Disk Defragmenter
+
+      Start
+      Menu > Run > In Run, type "MSCONFIG", click Ok. MSCONFIG will appear. Select
+      "Normal Start Up'', click Ok. Click Yes to Restart Computer Upon Restart
+
+      Start
+      Menu > Settings > Control Panel > Click Display
+
+      Select the "Screen
+      Saver" tab.
+
+      Change the Screen Saver Drop menu to "None". Click Ok.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Maintaining Hardware
+
+'
+    description: "1. Always run your computer on an Uninterruptible Power Supply
+      (UPS). \r\nIt is an electrical apparatus that gives emergency power when a
+      computer\u2019s main power fails. This will help protect the device from electric
+      surges. Phone lines for modems and cat 5 or cat 6 network lines also need surge
+      suppression as they can and will take out your network card or modem in an
+      electric storm. \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n2.  Open up your computer.\r\nDust
+      can accumulate in your computer in less than a year, depending on how dusty
+      your house. Check every few months.  Make sure to follow proper computer assembly
+      and disassembly. \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n3 Be careful
+      when plugging peripherals to the computer.\r\nPorts can be easily damaged when
+      mishandled. These repairs can be quite costly.\r\n"
+    has3dView: 0

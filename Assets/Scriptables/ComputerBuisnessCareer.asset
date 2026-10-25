@@ -17,18 +17,45 @@ MonoBehaviour:
   - content: 0
     moduleName: 
     moduleDescription: 
-    videoClipName: 
+    videoClipName: career
+    data: {fileID: 11400000, guid: a4bf7de989fc63148879295f35b95ced, type: 2}
     modelNames: 
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
     isDoneReading: 0
   - content: 0
-    moduleName: 
+    moduleName: tools
     moduleDescription: 
     videoClipName: 
+    data: {fileID: 11400000, guid: a94a74f404f706746ac24e05c17c7ec3, type: 2}
     modelNames: 
     moduleSprite:
     - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
+    isDoneReading: 0
+  - content: 0
+    moduleName: software
+    moduleDescription: 
+    videoClipName: 
+    data: {fileID: 11400000, guid: 8f54ee85b569b36478b633a8a078a75a, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
+    isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
     isDoneReading: 0

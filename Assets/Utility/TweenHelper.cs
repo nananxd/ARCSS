@@ -8,6 +8,14 @@ public  static class TweenHelper
     // POSITION
     // =========================================================
 
+    public static Tween Move(RectTransform target,Vector3 position,float duration = 0.5f, Ease ease = Ease.OutBack)
+    {
+        if (target == null)
+            return null;
+
+        return target.DOAnchorPos(position, duration).SetEase(ease);
+    }
+
     public static Tween Move( Transform target,Vector3 position,float duration = 0.5f,Ease ease = Ease.OutQuad)
     {
         if (target == null)

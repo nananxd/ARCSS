@@ -22,6 +22,7 @@ public class ContentUI : MonoBehaviour,IInitializer
     {
         descriptionTxt.text = $"{data.titleName}\n{data.description}";
         has3dView = data.has3dView;
+        hasVid = data.hasVideo;
         model3dName = data.modelName;
         view3DBtn.gameObject.SetActive(has3dView ? true : false) ;
         viewVidBtn.gameObject.SetActive(hasVid? true: false);

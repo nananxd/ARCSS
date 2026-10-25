@@ -1,0 +1,235 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module3
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Introduction
+
+'
+    description: "Cable is the medium through which information usually moves from
+      one network device to another. \r\n\r\nThere are several types of cables which
+      are commonly used with LANs. In some cases, a network will utilize only one
+      type of cable, while other networks will use a variety of cable types.\r\n\r\nThe
+      type of cable chosen for a network is related to the network's topology, protocol,
+      and size. \r\n\r\nUnderstanding the characteristics of different types of cable
+      and how they relate to other aspects of a network is necessary for the development
+      of a successful network\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Network Media
+    description: "The network can be connected through two types of connections:
+      wired and wireless.\r\n\r\nHaving a wired connection is more reliable than
+      a wireless connection. However, wireless connections are widely used by some
+      devices such as cellphones and laptops for their portability.\r\n\r\n\r\n\r\n\r\n\r\nThe
+      following are different wired connections commonly used in networking. However
+      for this Qualification, we are focusing on UTP and STP Cables which are most
+      common for Local Area Networks.\r\n\r\n1. Unshielded Twisted Pair (UTP) Cable
+      - A popular type of cable that is commonly used for Local Area Networks. It
+      has a two shielded wires twisted around each other.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n2.
+      Shielded Twisted Pair (STP) Cable - The extra covering of the STP Cable provides
+      extra protection to prevent electromagnetic interference.\r\n\r\n\r\n\r\n\r\n3.
+      Coaxial Cable - This the cable commonly used in television industries. The
+      metal shield surrounding the cable helps block interference from fluorescence
+      lights, motors, and other computers. \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n4. Fiber
+      Optic Cable - Transmits light rather than electronic signals which reduce the
+      risks of electrical interference. It is ideal for environments where electrical
+      interference is present.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Wireless Connections
+
+'
+    description: "Wireless connections make use of LANs which allow high frequency
+      radio signals to communicate between work stations, servers, or hubs. \r\n\r\nWireless
+      networks are ideal for allowing laptops, portable devices, and other devices
+      to connect to the LAN. This is also beneficial in establishments where it may
+      be harder to install cables. \r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Wireless Networking
+
+'
+    description: 'A wireless network is any type of computer network that use wireless
+      data connections for connecting network nodes.
+
+      
+
+      Wireless PAN
+      - Stands for Wireless Personal Area Networks (WPANs). This connection interconnect
+      devices within a small area. An example would be bluetooth and infrared.
+
+      
+
+      Wireless
+      LAN - Known as WLANs. This is used to connect to local resources and the internet.
+      It links two or more devices over a short distance using a wireless distribution
+      method - usually through an wireless router/wireless access point for internet
+      access. Wi-Fi falls under WLANs.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Wireless Mesh Networks
+
+'
+    description: 'This is a wireless network made up of radio nodes organized in
+      a mesh topology. It can be a
+
+      Wireless MAN or Wireless Metropolitan
+      Area Network which connects several WLANs.
+
+      Wireless WAN or Wireless
+      Wide Area Network which covers large areas such as cities/towns, branch offices,
+      business, public internet access system, etc.
+
+      Global Area Network (GAN)
+      for used for mobile technology such as texting, calling, etc.
+
+      Space
+      Network which is used between spacecrafts within the vicinity of earth. NASA''s
+      Space Network makes use of this technology.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Cable Installation
+
+'
+    description: 'In network installation, we have to be familiar with the RJ45 (Registered
+      Jack).
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      It is a jack used
+      for Ethernet networking and used for cables. Both T568A and T568B are common
+      wiring standards however the T568B is widely used in the Philippines.
+
+      
+
+      There
+      are two common network cabling namely the straight-through and the crossover
+      cables.
+
+      
+
+      A straight-through cable is also known as the patch
+      cable or Ethernet cable. This is the most common format for network cables.
+      The wires have same pins from either end.  This is used when connecting a computer
+      to a modem, router, or switch. This is also used between networking equipment
+      that are not similar to each other.
+
+      
+
+      A crossover cable crosses
+      the wires from the other end differently to the other. We use these when we
+      connect two devices of the same type like two computers or two similar networking
+      devices. These wirings use two different ends, T568A and T568B.
+
+      
+
+      However,
+      if we use a device between two devices (such as a switch), all cables are straight
+      through.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Ethernet Cable Fabrication Procedure
+    description: '1. Prepare Materials: Gather all the necessary tools and materials
+      needed for the fabrication.
+
+      RJ45
+
+      Cat5 UTP Cable
+
+      Crimping
+      Tools
+
+      Wire Stripper
+
+      Side Cutting Plier
+
+      LAN Tester
+
+      2. 
+      Decide whether you are making a T568B Straight-Through or a Crossover cable.
+      Take note of the specific color coding sequence for your chosen cable type
+      before starting.
+
+      3. Measure and Cut: Pull out 1 meter of Cat 5 UTP
+      (Unshielded Twisted Pair) cable.
+
+      4.  Using a cable stripper, peel approximately
+      1 inch of the outer jacket off the UTP cable to expose the inner twisted wire
+      pairs.
+
+      5. Untwist the pairs and arrange the individual wires into the
+      proper color-coding sequence according to your table (Straight-Through or Crossover).
+
+      6.
+      Trim the ends of the arranged wires evenly to ensure they are all exactly the
+      same length.
+
+      7.  Carefully slide the aligned wires into the RJ45 connector,
+      making sure each wire goes all the way into its correct slot.
+
+      
+
+      8. 
+      Insert the RJ45 plug into the crimping tool and squeeze firmly to lock the
+      pins onto the wires.
+
+      9.  Repeat the stripping, arranging, trimming,
+      and crimping process for both ends of the cable.
+
+      10. Once the cable
+      is complete, plug both ends into a LAN tester to check your work:
+
+      
+
+      For
+      Straight-Through Cables: The lights on both sides of the tester should match
+      up in parallel. They must light up sequentially in the exact same order from
+      1 to 8.
+
+      
+
+      For Crossover Cables: The lights on the receiving
+      end will not match the sequence of the transmitting end (which goes 1 to 8),
+      except for pins 4, 5, 7, and 8, which will remain the same.
+
+'
+    has3dView: 0

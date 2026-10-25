@@ -67,11 +67,12 @@ public class AssemblyUIManager : MonoBehaviour
     public void Confirm()
     {
         AssemblyManager.Instance.assembleAssesment.TryAssemble(AssemblyManager.Instance.currentSelectedPart);
-        AssemblyManager.Instance.assemblyCameraManager.SetMainCamera(AssemblyManager.Instance.currentAssesment.mainCam);
+        AssemblyManager.Instance.cinematicUI.StartCinematic();
+        //AssemblyManager.Instance.assemblyCameraManager.SetMainCamera(AssemblyManager.Instance.currentAssesment.mainCam);
         AssemblyManager.Instance.SetPartAssesmentFinished(AssemblyManager.Instance.currentSelectedPart.partID);
-        AssemblyManager.Instance.ActivateCorrectPart(AssemblyManager.Instance.currentSelectedPart.partID);
-        AssemblyManager.Instance.CheckIfAllAssesmentsFinish();
-        AssemblyManager.Instance.SetNextCurrentAssesment();
+        //AssemblyManager.Instance.ActivateCorrectPart(AssemblyManager.Instance.currentSelectedPart.partID);
+        //AssemblyManager.Instance.CheckIfAllAssesmentsFinish();
+        //AssemblyManager.Instance.SetNextCurrentAssesment();
         
     }
     #endregion
@@ -91,7 +92,7 @@ public class AssemblyUIManager : MonoBehaviour
 
     private IEnumerator FadeCoroutine(bool isVisible)
     {
-        TweenHelper.Fade(faderCanvasGroup, isVisible ? 1f : 0,.05f);
+        TweenHelper.Fade(faderCanvasGroup, isVisible ? 1f : 0,.5f);
         faderCanvasGroup.blocksRaycasts = isVisible;
         faderCanvasGroup.interactable = isVisible;
 

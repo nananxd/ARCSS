@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module3
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Introduction
+
+'
+    description: 'In this module, we are looking at how we are going to diagnose
+      faults that we may find in the computer systems. We may need to identify and
+      isolate these issues especially when the hardware that is having a problem
+      is hard to identify.
+
+
+
+      It is an essential skill especially when we are
+      troubleshooting computers where the user does not know exactly what went wrong.
+
+'
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Identifying and Isolating Faults
+
+'
+    description: "The following are the different ways to diagnose a computer system
+      problem. Make sure to familiarize yourself with these as you will be making
+      use of these when others would not work.\r\n\r\n1. Power On Self Test (POST)
+      \r\nThis stands for Power On Self Test. After turning on the computer\u2019s
+      power, this will be the first screen that will appear before the operating
+      system loads. The POST will display any problems found in the hardware that
+      prevents the computer to boot or not operate in its full capacity during operation.\r\n\r\n2.
+      Operating System Load Time\r\nIf the operating system takes to load than usual,
+      there may be errors in the hardrive.\r\n\r\n3. Graphic Problems \r\nCheck whether
+      the computer graphics are good after the operating system loads. Reduced graphics
+      may indicate that there are hardware failures with the graphic cards.\r\n\r\n4.
+      Perform an auditory test \r\nPlay a short audio clip. When the audio is lagging,
+      it means that the processor is working at an elevated speed. It could also
+      mean that there is no longer enough RAM to keep programs loading. \r\n\r\nChanging
+      the startup sound is a great way to apply this test. Another issue associated
+      with choppy sounds is PIO (Programmed Input/Output) Mode. \r\n\r\nThis affects
+      how the hard drive reads and writes data from a drive. Switching to DMA allows
+      for faster reads and writes, and can sometimes repair choppy audio.\r\n\r\n5.
+      Check for newly installed hardware \r\nMost operating system, especially Windows,
+      can experience conflict with new drivers. However, Windows would usually notify
+      you about drivers that may be causing the issue. This can be checked through
+      Windows Device Manager.\r\n\r\nControl Panel > Click System Icon > Click Hardware
+      Tab > Click on Device Manager\r\n\r\nUse this to check and arrange hardware
+      properties.\r\n\r\n\r\n\r\n6. Check for newly installed software \r\nNew software
+      requires more resources than the system provides. If problem occurs after the
+      software starts, it is most likely caused by the software.\r\n\r\n7. Check
+      RAM and CPU consumption \r\nThis is the most common cause of why a computer
+      lag. Check the computer\u2019s Task Manager, click \r\n\r\n8. Check if hard
+      drive is making scratching or making loud noises\r\nShould this occur, turn
+      off the computer and diagnose the harddrive. If the CPU fan comes off at high
+      speed when the CPU is working hard, it means that the computer is working hard
+      beyond its capacity.\r\n\r\n9. Run a virus and malware scan. \r\nThird party
+      software applications can be used.\r\n\r\n10.\tCheck problems while running
+      safe mode. \r\nSafe mode can be activated by repeatedly tapping F8 during POST.
+      If the issue still occurs even while still in safe mode, then it is an issue
+      of the operating system.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Solving Common Hardware Issues
+    description: "Trial and Error\r\nTry isolating the problem to a specific component
+      by trial-and-error. Trial and error basically means trying and trying again
+      until you find what the problem is. In this technique, it is unavoidable to
+      make mistakes; hence, the \"error\" in trian and error. \r\nTo perform this
+      in hardware issues, you can try swap compatible components with each other.
+      Or try different peripherals. Make one change at a time, but make sure to be
+      careful since this can be harmful if you are recklessly removing components.\r\n\r\nCheck
+      cable issues\r\nMore than 70% of all computer problems are due to cabling and
+      connections. Make sure that all cables are connected properly. \r\nMake sure
+      that all the necessary wires from the power supply give electricity to the
+      different computer components. Again, always consult the manual since this
+      can differ depending on the manufacturer.\r\n\r\n\r\n\r\nDocument Computer
+      Issues\r\nIn order to avoid the same issues in the future, always document
+      when you are troubleshooting. Components that you have repaired several times
+      may likely be more prone to issues and problems. \r\nThat is why you should
+      address this with the proper protocols so that in the future, you could keep
+      track of which hardware are very old or will need replacement soon.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Viruses
+
+'
+    description: "A virus is a destructible executable program that infects the other
+      programs in the system and spreads by replicating itself. \r\n\r\nThis type
+      of programs can damage the victim's computer program. \r\n\r\nThis is made
+      by malicious programmers and programmed to spread without one's permission
+      and knowledge.\r\n\r\nViruses can:\r\nCorrupt files\r\nSlow down computer speed\r\nCause
+      the system to hang frequently\r\nDelete or hide various files\r\n\r\nViruses
+      can come from:\r\nInfected CDs, DVDs, etc\r\nEmail\r\nBrowsing infected sites\r\nDownloading
+      files from the internet\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Removing Virus
+
+'
+    description: "To remove these viruses, you can buy an antivirus software or use
+      your operating system's built-in antivirus software such as the Windows Defender.\r\n\r\nA
+      full system scan is recommended to make sure that your computer is clear of
+      any viruses that are present. Make sure to perform a full scan every so often
+      (e.g. once a week).\r\n\r\nThere are two methods of eliminating viruses:\r\n1.
+      Removing the virus \r\nWhen the virus can be easily identified and removed
+      without affecting other files, then the antivirus removes it from the host
+      place\r\n\r\n2. Quarantine\r\nThis is performed when the virus cannot be easily
+      removed from the file. Usually the removal of the virus means that the complete
+      file is also removed. For this case, the virus is not removed by rendered inactive
+      by moving it into the antivirus' quarantine.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Types of Viruses
+
+'
+    description: "SBoot viruses\r\nThese viruses infect floppy disk boot records
+      or master boot records in hard disks. They replace the boot record program
+      (which is responsible for loading the operating system in memory) copying it
+      elsewhere on the disk or overwriting it. Boot viruses load into memory if the
+      computer tries to read the disk while it is booting.\r\nExamples are Form,
+      Disk Killer, Michelangelo, and Stone virus.\r\n\r\nProgram viruses\r\nThese
+      infect executable program files, such as those with extensions like .BIN, .COM,
+      .EXE, .OVL, .DRV (driver) and .SYS (device driver). These programs are loaded
+      in memory during execution, taking the virus with them. The virus becomes active
+      in memory, making copies of itself and infecting files on disk.\r\nExamples
+      are Sunday and Cascade virus.\r\n\r\nMultipartite viruses\r\nA hybrid of Boot
+      and Program viruses. They infect program files and when the infected program
+      is executed, these viruses infect the boot record.\r\nExamples are Invader,
+      Flip, and Tequila virus.\r\n\r\nStealth viruses\r\nThese viruses use certain
+      techniques to avoid detection. They may either redirect the disk head to read
+      another sector instead of the one in which they reside or they may alter the
+      reading of the infected file\u2019s size shown in the directory listing. size
+      given in the directory.\r\nExamples are Frodo, Joshi, and Whale virus.\r\n\r\nPolymorphic
+      viruses\r\nA virus that can encrypt its code in different ways so that it appears
+      differently in each infection. These viruses are more difficult to detect.\r\nExamples
+      are Involuntary, Stimulate, Cascade, Phoenix, Evil, Proud, and Virus 101 virus.\r\n\r\nMacro
+      viruses\r\nA macro virus is a new type of computer virus that infects the macros
+      within a document or template. When you open a word processing or spreadsheet
+      document, the macro virus is activated and it infects the Normal template.
+      \r\nExamples are DMV, Nuclear, and Word Concept virus.\r\n"
+    has3dView: 0

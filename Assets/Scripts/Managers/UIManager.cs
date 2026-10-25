@@ -365,7 +365,7 @@ public class UIManager : MonoBehaviour
         {
             if (item.topics == currentTopics)
             {
-                item.transform.localEulerAngles = Vector3.one;
+                item.transform.localScale = Vector3.one;
             }
             else
             {

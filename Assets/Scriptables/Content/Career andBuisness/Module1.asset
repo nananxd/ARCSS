@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedcb971d9918c84fb60186450419255, type: 3}
+  m_Name: Module1
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoTextContentData
+  data:
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Introduction
+    description: "ICT stands for \"Information and Communication Technology.\" It
+      is a broad term that encompasses all technologies used to manipulate and communicate
+      information. This includes computers, software, networks, telecommunications,
+      the internet, and various other technologies and tools used for data storage,
+      processing, and communication. The exciting world of Information and Communication
+      Technology, or ICT, is like a big digital playground with lots of different
+      sectors to explore. Imagine it as a giant puzzle with many pieces, and each
+      piece represents a unique career or business opportunity. Whether you're passionate
+      about creating cool apps, designing graphics, establishing network connectivity,
+      being a call center agent, or even starting your own tech company someday,
+      there's a place for you in ICT.\r\n \r\nWe have different sectors of ICT which
+      are: Computer Programming, Digital Arts, Computer System Servicing and Contact
+      Center Services.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Career and Business Opportunities of ICT
+    description: "C. Computer System Servicing \u2013 Is a service that includes
+      installing and configuring computer systems, establishing computer networks
+      and servers, and performing maintenance and repairs on both computer systems
+      and networks."
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: Career Opportunities in Computer System Servicing
+    description: "Computer Assembler \u2013 A person or a technician who is responsible
+      for physically assembling and building computer systems. This involves putting
+      together all the hardware components of a computer, such as the central processing
+      unit (CPU), motherboard, memory (RAM), storage drives, power supply, graphics
+      card, and other peripherals like keyboard, mouse, and monitor.\r\nComputer
+      Service Technician \u2013Also called IT Support Technician, is a professional
+      who specializes in providing technical support and maintenance for computer
+      systems and related equipment. Their primary responsibilities include diagnosing
+      and resolving hardware and software issues, performing system upgrades, installing
+      and configuring computer components, and ensuring that computer systems are
+      running efficiently.\r\nNetwork Technician \u2013 Also known as a Network Support
+      Technician or Network Administrator, is a professional responsible for the
+      installation, configuration, maintenance, and troubleshooting of computer networks
+      within an organization. Their primary role is to ensure that the network infrastructure
+      operates smoothly and securely to facilitate communication and data exchange
+      among various devices and users.\r\n"
+    has3dView: 0
+  - contentName: 0
+    modelName: 0
+    display: []
+    titleName: 'Business Opportunities in Computer System Servicing
+
+'
+    description: 'Business opportunities in Computer System Servicing can be diverse
+      and lucrative, catering to the growing demand for IT services and support.
+      Here are some potential avenues for entrepreneurs and businesses in this field:
+
+      Computer
+      Repair and Maintenance Services
+
+      Start a computer repair and maintenance
+      business, offering on-site or remote technical support to individuals and businesses.
+      This can include diagnosing and fixing hardware and software issues, providing
+      routine maintenance, and offering data recovery services.
+
+      Managed IT
+      Services
+
+      Provide comprehensive IT management services to small and
+      medium-sized businesses. This may include proactive monitoring, network management,
+      security solutions, and regular system updates, all designed to keep clients''
+      IT infrastructure running smoothly.
+
+      Computer Sales and Customization
+
+      Sell
+      computers, laptops, and hardware components. Offer customization services,
+      where customers can choose specific hardware configurations tailored to their
+      needs.
+
+      IT Consultancy
+
+      Offer IT consultancy services to businesses,
+      helping them optimize their IT infrastructure, plan for technology upgrades,
+      and ensure data security and compliance with industry standards.
+
+      Data
+      Backup and Recovery Services
+
+      Specialize in data backup and recovery
+      solutions. Offer automated backup services, data restoration, and disaster
+      recovery planning for businesses concerned about data loss.
+
+      Cybersecurity
+      Services
+
+      With the increasing threat of cyberattacks, provide cybersecurity
+      services such as vulnerability assessments, penetration testing, and the implementation
+      of security measures to protect businesses from data breaches and cyber threats.
+
+      Cloud
+      Computing Solutions
+
+      Offer cloud computing services, including cloud
+      migration, management, and support. Help businesses leverage cloud technology
+      to enhance scalability and reduce infrastructure costs.
+
+      Computer Training
+      and Education
+
+      Provide computer training programs and workshops for
+      individuals and organizations looking to enhance their IT skills. This can
+      include courses on software applications, IT security, and hardware maintenance.
+
+      Computer
+      Networking Services
+
+      Specialize in computer networking solutions, including
+      the design, installation, and maintenance of local area networks (LANs) and
+      wide area networks (WANs) for businesses.
+
+      Remote IT Support
+
+      Offer
+      remote IT support services, providing quick solutions to computer problems
+      and software issues without the need for an on-site visit.
+
+      Computer
+      Accessories and Peripherals
+
+      Sell computer accessories, peripherals,
+      and IT-related products like printers, routers, and external hard drives.
+
+'
+    has3dView: 0

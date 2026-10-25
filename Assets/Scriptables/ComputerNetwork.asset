@@ -14,13 +14,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topic: 2
   modules:
-  - moduleName: 
+  - content: 0
+    moduleName: networkDevices
     moduleDescription: 
-    moduleSprite: {fileID: 0}
+    videoClipName: 
+    data: {fileID: 11400000, guid: 828bc40f3e8759c4d8b17a2d86f3277d, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
     isDoneReading: 0
-  - moduleName: 
+  - content: 0
+    moduleName: lan
     moduleDescription: 
-    moduleSprite: {fileID: 0}
+    videoClipName: 
+    data: {fileID: 11400000, guid: 98b2ff1ff0a8b5f48ad305dbb9023fe4, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
     isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
+    isDoneReading: 0
+  - content: 0
+    moduleName: creatingNetworkCables
+    moduleDescription: 
+    videoClipName: 
+    data: {fileID: 11400000, guid: 72cfbe423ce03d34b89c5c5715c4308a, type: 2}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
+    isAssesment: 0
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 0
+      moduleReference: []
     isDoneReading: 0
