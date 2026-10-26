@@ -770,6 +770,7 @@ Transform:
   - {fileID: 30427163}
   - {fileID: 615908457}
   - {fileID: 1027336966}
+  - {fileID: 1310640706}
   m_Father: {fileID: 2371441352808036594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &353398854
@@ -4149,6 +4150,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304009705}
   m_CullTransparentMesh: 1
+--- !u!1 &1310640705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1310640706}
+  m_Layer: 0
+  m_Name: TestLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1310640706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310640705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.44, y: 14.5, z: -0.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 218770130}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1312802072
 GameObject:
   m_ObjectHideFlags: 0
@@ -14006,6 +14038,7 @@ GameObject:
   - component: {fileID: 4810359733227428751}
   - component: {fileID: 5465121560792183448}
   - component: {fileID: 6712567414847448361}
+  - component: {fileID: 6712567414847448362}
   m_Layer: 0
   m_Name: PC_PowerSupply_4x4Pin EPS/ATX 12v_Plug.001
   m_TagString: Untagged
@@ -20149,6 +20182,20 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &6712567414847448362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798016629988324218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12116ea2c4fe96046ad3ea096572bbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ComponentPartAnimator
+  target: {fileID: 6712567414847448360}
+  location: {fileID: 1310640706}
 --- !u!4 &6727198495943923081
 Transform:
   m_ObjectHideFlags: 0
