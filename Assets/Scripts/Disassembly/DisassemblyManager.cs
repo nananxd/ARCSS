@@ -8,6 +8,7 @@ public class DisassemblyManager : MonoBehaviour
     [Header("Managers")]
     public DisassemblyUIManager uIManager;
     public DisassemblyAssesment assement;
+    public DisassemblyCameraManager cameraManager;
     public List<AssemblyPart> assemblyParts = new List<AssemblyPart>();
 
     public AssemblyPart currentSelected;
@@ -23,10 +24,29 @@ public class DisassemblyManager : MonoBehaviour
        var foundPart = assemblyParts.Find(x =>x.partID ==part);
         if (foundPart != null)
         {
-            foundPart.gameObject.transform.localScale = Vector3.zero;
+            PcPartsAnimation partAnimation = foundPart.gameObject.GetComponent<PcPartsAnimation>();
+            if (partAnimation != null)
+            {
+                partAnimation.AnimateParts();
+            }
+            else
+            {
+                foundPart.gameObject.transform.localScale = Vector3.zero;
+            }
+
+            CheckIfFinished();
         }
     }
 
+
+    private void CheckIfFinished()
+    {
+        if (CheckIfAllDisassemble())
+        {
+            Debug.Log("All components disable");
+            uIManager.OpenGameEndUI();
+        }
+    }
 
     public bool CheckIfAllDisassemble()
     {

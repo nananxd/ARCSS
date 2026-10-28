@@ -26,7 +26,13 @@ public enum PCParts
     RAM2,
     POWERSUPPLY,
     HARDDRIVE,
-    OPTICDISK
+    OPTICDISK,
+    TWENTYFOURPIN,
+    FOURBYFOURPIN,
+    HDDSATA,
+    OPTICSATA,
+    POWERHDDCABLE,
+    POWEROPTICCABLE
 }
 
 public enum PCMainCam

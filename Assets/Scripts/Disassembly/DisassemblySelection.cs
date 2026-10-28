@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 public class DisassemblySelection : MonoBehaviour,IPointerClickHandler
 {
     [SerializeField] private AssemblyPart part;
+    public PCParts cameraId;
 
     void Start()
     {
@@ -18,6 +19,8 @@ public class DisassemblySelection : MonoBehaviour,IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log(part.partID.ToString());
+
+        DisassemblyManager.instance.cameraManager.SetCamera(cameraId);
         DisassemblyManager.instance.uIManager.SetPartNameUI(part.partID.ToString());
         DisassemblyManager.instance.uIManager.OpenAction();
         DisassemblyManager.instance.currentSelected = part;

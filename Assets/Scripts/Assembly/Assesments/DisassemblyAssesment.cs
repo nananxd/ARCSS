@@ -73,6 +73,8 @@ public class DisassemblyAssesment : MonoBehaviour
 
         if (!part.CanDisassemble(out string reason))
         {
+            DisassemblyManager.instance.uIManager.errorFeedback.AnimateFeedback();
+            DisassemblyManager.instance.uIManager.SetErrorTextFeedback();
             Debug.Log(reason);
 
             return;

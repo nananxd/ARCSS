@@ -82,6 +82,7 @@ public class AssemblyPart : MonoBehaviour
 
             if (requiredPart.IsAssembled)
             {
+                
                 reason =
                     $"Cannot disassemble {partID}. " +
                     $"{requiredPart.partID} must be disassembled first.";
