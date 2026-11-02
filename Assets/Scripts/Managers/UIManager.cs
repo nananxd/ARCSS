@@ -376,7 +376,7 @@ public class UIManager : MonoBehaviour
 
     public void EnableDisableCurrentModuleUI(bool isEnable)
     {
-        currentModule.transform.localScale = isEnable ? Vector3.one : Vector3.zero;
+        currentModule.gameObject.transform.localScale = isEnable ? Vector3.one : Vector3.zero;
         //moduleLectureContainerRect.transform.localScale = isEnable ? Vector3.one : Vector3.zero;
     }
     public void ModuleContentBackUI()

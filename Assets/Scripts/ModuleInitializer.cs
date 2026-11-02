@@ -38,7 +38,7 @@ public class ModuleInitializer : MonoBehaviour
         closeButton.onClick.AddListener(CloseTopic);
         if (isArcss)
         {
-            GameManager.instance.accountManager.SetHeaderProfile();
+            //GameManager.instance.accountManager.SetHeaderProfile();
         }
         else
         {
@@ -81,23 +81,24 @@ public class ModuleInitializer : MonoBehaviour
                     //ui.Setup(item);
                 }
 
+               
                 ui.Setup(item);
                 ui.Initialize();               
                 modulesUI.Add(ui);
-
+                
 
 
             }
-
+            
             isModuleInitialize = true;
-            CheckIfModuleDoneReading();
+            
         }
         else
         {
             Debug.Log("Module Already Initialize");
         }
 
-
+        CheckIfModuleDoneReading();
     }
 
     public void CloseTopic()
@@ -129,17 +130,31 @@ public class ModuleInitializer : MonoBehaviour
         foreach (var item in modules)
         {
             var foundModule = currentPlayerLogin.moduleDatas.Find(x => x.moduleName == item.moduleName);
+            
             if (foundModule != null)
             {
                 item.isDoneReading = foundModule.isDoneReading;
                
+               
             }
 
-            GameManager.instance.uiManager.InitializeBadge(item);
+            //GameManager.instance.uiManager.InitializeBadge(item);
+        }
+
+        foreach (var moduleUI in modulesUI)
+        {
+            var foundModuleUI = modules.Find(x => x.moduleName == moduleUI.moduleName);
+            if (foundModuleUI != null) 
+            {
+                moduleUI.isDoneReading = foundModuleUI.isDoneReading;
+                moduleUI.SetReadingStatus();
+            }
         }
 
         LoadAssesmentState();
     }
+
+   
 
     private void InitializeModule(Module module,ArTopics topic)
     {
@@ -156,9 +171,12 @@ public class ModuleInitializer : MonoBehaviour
     public void CompleteModuleReading(string moduleName ,ArTopics topics)
     {
        var foundModule = modules.Find(x=> x.moduleName == moduleName && x.topic == topics.ToString());
+        var foundModuleUI = modulesUI.Find(x => x.moduleName == foundModule.moduleName && x.topic.ToString() == foundModule.topic);
         if (foundModule != null) 
         {
             foundModule.isDoneReading = true;
+            foundModuleUI.isDoneReading = true;
+            foundModuleUI.SetReadingStatus();
             // save
 
             ModuleData progress = GameManager.instance.currentSelectedPlayer.moduleDatas.Find(x => x.moduleName == moduleName);
@@ -269,7 +287,8 @@ public class ModuleInitializer : MonoBehaviour
             bool isCompleted = IsAssessmentCompleted(topics.ToString(), button.quizId.ToString());
 
             //Enable only if unlocked and not already completed.
-            button.SetInteractable(canUnlock && isCompleted);
+            button.SetInteractable(canUnlock /*&& isCompleted*/);
+            button.SetReadingStatus(isCompleted);
         }
     }
 

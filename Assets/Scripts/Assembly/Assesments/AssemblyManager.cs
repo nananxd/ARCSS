@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AssemblyManager : MonoBehaviour
 {
@@ -160,6 +161,11 @@ public class AssemblyManager : MonoBehaviour
     }
 
     #endregion
+
+    public void LoadDisassemble()
+    {
+        SceneManager.LoadScene("Disassemble");
+    }
 }
 
 

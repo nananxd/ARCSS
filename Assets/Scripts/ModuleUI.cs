@@ -54,6 +54,19 @@ public class ModuleUI : MonoBehaviour,IInitializer
         
     }
 
+    public void SetReadingStatus()
+    {
+        moduleUiImage.color = isDoneReading ? readColor : neutralColor;
+        doneReadingIcon.color = isDoneReading ? doneReadingColor : notFinishColor;
+    }
+
+
+    public void SetReadingStatus(bool isDone)
+    {
+        moduleUiImage.color = isDone ? readColor : neutralColor;
+        doneReadingIcon.color = isDone ? doneReadingColor : notFinishColor;
+    }
+
     public void SetInteractable(bool isInteractable)
     {
         moduleBtn.interactable = isInteractable;    

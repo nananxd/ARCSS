@@ -66,7 +66,7 @@ public class MultipleChoiceManager : MonoBehaviour
     {
         if (IsAllQuestionsHaveAnswer())
         {
-            submitButton.transform.localScale = Vector3.zero;
+            submitButton.transform.localScale = Vector3.one;
         }
         else
         {
