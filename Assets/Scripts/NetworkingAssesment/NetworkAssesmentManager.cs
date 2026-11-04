@@ -8,6 +8,7 @@ public class NetworkAssesmentManager : MonoBehaviour
     [Header("Managers")]
     public NetworkCameraManager networkCamera;
     public NetworkUIManager uiManager;
+    public NetworkAssesment networkAssesment;
     
 
     private void Awake()

@@ -3,8 +3,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Splines;
 
-public class LanWireInteraction : MonoBehaviour,IBeginDragHandler, IEndDragHandler,IDragHandler,IDropHandler
+public class LanWireInteraction : MonoBehaviour,IBeginDragHandler, IEndDragHandler,IDragHandler,IDropHandler,IPointerDownHandler
 {
+    public int lanId;
     public Transform location;
     public Collider collider;
     private Camera mainCamera;
@@ -20,12 +21,14 @@ public class LanWireInteraction : MonoBehaviour,IBeginDragHandler, IEndDragHandl
     private void Awake()
     {
         mainCamera = Camera.main;
-        
+        collider = GetComponent<Collider>();
+        originalPosition = transform.localPosition;
+
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        originalPosition = transform.position;
-        collider.enabled = false;
+        //originalPosition = transform.position;
+        //collider.enabled = false;
 
         //dragPlane = new Plane(
         //    Vector3.up,
@@ -42,67 +45,76 @@ public class LanWireInteraction : MonoBehaviour,IBeginDragHandler, IEndDragHandl
 
 
 
-        distanceFromCamera =
-           mainCamera.WorldToScreenPoint(transform.position).z + 1f;
+        //distanceFromCamera =
+        //   mainCamera.WorldToScreenPoint(transform.position).z + 1f;
 
-        Vector3 mousePosition = new Vector3(
-            eventData.position.x,
-            eventData.position.y,
-            distanceFromCamera
-        );
+        //Vector3 mousePosition = new Vector3(
+        //    eventData.position.x,
+        //    eventData.position.y,
+        //    distanceFromCamera
+        //);
 
-        Vector3 worldPosition =
-            mainCamera.ScreenToWorldPoint(mousePosition);
+        //Vector3 worldPosition =
+        //    mainCamera.ScreenToWorldPoint(mousePosition);
 
-        offset = transform.position - worldPosition;
+        //offset = transform.position - worldPosition;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector3 mousePosition = new Vector3(
-            eventData.position.x,
-            eventData.position.y,
-            distanceFromCamera
-        );
+        //Vector3 mousePosition = new Vector3(
+        //    eventData.position.x,
+        //    eventData.position.y,
+        //    distanceFromCamera
+        //);
 
-        Vector3 worldPosition =
-            mainCamera.ScreenToWorldPoint(mousePosition);
+        //Vector3 worldPosition =
+        //    mainCamera.ScreenToWorldPoint(mousePosition);
 
-        transform.position = worldPosition + offset;
+        //transform.position = worldPosition + offset;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        collider.enabled = true;
+        //collider.enabled = true;
     }
 
     public void OnDrop(PointerEventData eventData)
     {
+       
 
+        //// Get the object being dragged
+        //GameObject draggedObject = eventData.pointerDrag;
 
-        // Get the object being dragged
-        GameObject draggedObject = eventData.pointerDrag;
+        //Debug.Log($"Draggable:{draggedObject.name}");
+        //Debug.Log($"Droppable:{gameObject.name}");
 
-        if (draggedObject == null)
-            return;
+        ////var hit = CastRay(draggedObject.transform.position,transform.position);
 
-        LanWireInteraction draggedItem =
-            draggedObject.GetComponent<LanWireInteraction>();
+        //if (draggedObject == null)
+        //    return;
 
-        if (draggedItem == null)
-            return;
+        ////if (hit.collider.CompareTag("Wire"))
+        ////{
+            
+        ////}
 
-        // Save the target's current position
-        Vector3 targetPosition = transform.position;
+        //LanWireInteraction draggedItem = draggedObject.GetComponent<LanWireInteraction>();
 
-        // Get the dragged object's original position
-        Vector3 draggedOriginalPosition =
-            draggedItem.GetOriginalPosition();
+        //if (draggedItem == null)
+        //    return;
 
-        // Swap positions
-        transform.position = draggedOriginalPosition;
+        //// Save the target's current position
+        //Vector3 targetPosition = transform.localPosition;
 
-        draggedItem.SwapPosition(targetPosition);
+        //// Get the dragged object's original position
+        //Vector3 draggedOriginalPosition = draggedItem.transform.localPosition;
+
+        //// Swap positions
+        //draggedItem.transform.localPosition = targetPosition;
+        //gameObject.transform.localPosition = draggedOriginalPosition;
+
+       
 
         Debug.Log("Objects successfully swapped!");
     }
@@ -110,12 +122,29 @@ public class LanWireInteraction : MonoBehaviour,IBeginDragHandler, IEndDragHandl
 
     public void SwapPosition(Vector3 targetPosition)
     {
-        transform.position = targetPosition;
+       gameObject.transform.position = targetPosition;
     }
 
     public Vector3 GetOriginalPosition()
     {
         return originalPosition;
+    }
+
+    private RaycastHit CastRay(Vector3 origin,Vector3 direction)
+    {
+        Vector3 screenMousePosFar = new Vector3( Input.mousePosition.x,Input.mousePosition.y, Camera.main.farClipPlane);
+        Vector3 screenMousePosNear = new Vector3( Input.mousePosition.x,Input.mousePosition.y,Camera.main.nearClipPlane);
+        Vector3 worldMousePosFar = Camera.main.ScreenToWorldPoint(screenMousePosFar);
+        Vector3 worldMousePosNear = Camera.main.ScreenToWorldPoint(screenMousePosNear);
+        RaycastHit hit;
+        Physics.Raycast(origin, direction , out hit);
+
+        return hit;
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        NetworkAssesmentManager.Instance.networkAssesment.SetLanwire(this);
     }
 
     #region
