@@ -10,5 +10,6 @@ public class RJ45Interaction : MonoBehaviour,IPointerDownHandler
         Debug.Log(connectorType.ToString());
         NetworkAssesmentManager.Instance.networkCamera.SwitchCam(cameraType);
         NetworkAssesmentManager.Instance.uiManager.ShowZoomInUI();
+        NetworkAssesmentManager.Instance.uiManager.SetRJConnectorUI(connectorType);
     }
 }

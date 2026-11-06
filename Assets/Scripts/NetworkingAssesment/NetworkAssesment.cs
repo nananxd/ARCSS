@@ -7,22 +7,27 @@ public class NetworkAssesment : MonoBehaviour
 {
     [Header("Straigh through sequence")]
     public List<int> correctStraightSequence;
+    public List<int> correctStraightSequence2;
     [Header("Crossover Correct Sequence")]
     public List<int> crossOverCorrectSequence;
+    public List<int> crossOverCorrectSequence2;
 
     [Header("Straight Through Submitted Answer")]
     public List<int> straightThroughAnswerSequence;
+    
     [Header("Crossover Submitted Answer")]
     public List<int> crossOverAnswerSequence;
 
     public List<int> selectedSequence = new List<int>();
-
+    public List<int> selectedSequence2 = new List<int>();
+         
     public int count = 0;
     public LanWireInteraction firstSelected,secondSelected;
 
 
     [Header("Object References")]
     [SerializeField] private LanWireInteraction [] lanObjects;
+    [SerializeField] private LanWireInteraction[] lanObjects2;
 
 
 
@@ -95,6 +100,12 @@ public class NetworkAssesment : MonoBehaviour
             .Select(obj => obj.lanId)
             .ToArray();
 
+
+        int[] currentSequence2 = lanObjects2
+            .OrderBy(obj => obj.transform.position.x)
+            .Select(obj => obj.lanId)
+            .ToArray();
+
         // Display current sequence
         Debug.Log("Current Sequence: " +
             string.Join("", currentSequence));
@@ -106,24 +117,29 @@ public class NetworkAssesment : MonoBehaviour
                 break;
             case Mode.STRAIGHTTHROUGH:
                 selectedSequence = correctStraightSequence;
+                selectedSequence2 = correctStraightSequence2;
                 break;
             case Mode.CROSSOVER:
                 selectedSequence = crossOverCorrectSequence;
+                selectedSequence2 = crossOverCorrectSequence2;
                 break;
             default:
                 break;
         }
 
         // Compare sequences
-        bool isCorrect = currentSequence .SequenceEqual(selectedSequence);
+        bool isCorrect = currentSequence.SequenceEqual(selectedSequence);
+        bool isCorrect2 = currentSequence2.SequenceEqual(selectedSequence2);
 
-        if (isCorrect)
+        if (isCorrect && isCorrect2)
         {
             Debug.Log("Correct Sequence!");
+            NetworkAssesmentManager.Instance.uiManager.OnGameFinished(false);
         }
         else
         {
             Debug.Log("Incorrect Sequence!");
+            NetworkAssesmentManager.Instance.uiManager.OnGameFinished(true);
         }
     }
 }
