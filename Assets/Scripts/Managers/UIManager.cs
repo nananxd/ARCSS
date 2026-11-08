@@ -71,6 +71,9 @@ public class UIManager : MonoBehaviour
     public GameObject loginPanel;
     public RectTransform accountCreationPopup;
 
+    [Header("Accounts Buttons")]
+    //public Button profileButton;
+
     [Header("Quiz| Assesment")]
     public RectTransform assesmentRect;
     public RectTransform assesmentResultRect;

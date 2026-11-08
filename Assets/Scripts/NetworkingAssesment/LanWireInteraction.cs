@@ -1,7 +1,6 @@
 
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Splines;
 
 public class LanWireInteraction : MonoBehaviour,IBeginDragHandler, IEndDragHandler,IDragHandler,IDropHandler,IPointerDownHandler
 {
@@ -12,6 +11,7 @@ public class LanWireInteraction : MonoBehaviour,IBeginDragHandler, IEndDragHandl
 
     private Plane dragPlane;
 
+    [SerializeField] private Outline modelOutline;
     [SerializeField] private LanWireInteraction target;
     [SerializeField] private Vector3 originalPosition;
     private float distanceFromCamera;
@@ -21,9 +21,19 @@ public class LanWireInteraction : MonoBehaviour,IBeginDragHandler, IEndDragHandl
     private void Awake()
     {
         mainCamera = Camera.main;
+        modelOutline = GetComponent<Outline>();
         collider = GetComponent<Collider>();
         originalPosition = transform.localPosition;
+    }
 
+    private void Start()
+    {
+        modelOutline.enabled = false;
+    }
+
+    public void SetLanOutline(bool isEnable)
+    {
+        modelOutline.enabled = isEnable;
     }
     public void OnBeginDrag(PointerEventData eventData)
     {

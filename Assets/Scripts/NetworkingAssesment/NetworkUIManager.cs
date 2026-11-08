@@ -67,6 +67,7 @@ public class NetworkUIManager : MonoBehaviour
     {
         ShowOrHideZoomInScreen(false);
         NetworkAssesmentManager.Instance.networkCamera.SwitchCam(CameraType.MAINCAM);
+        NetworkAssesmentManager.Instance.networkAssesment.EnableRj45Collider(true);
     }
 
     private void ShowOrHideZoomInScreen(bool isShown)

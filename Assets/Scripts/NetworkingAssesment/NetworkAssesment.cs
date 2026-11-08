@@ -23,6 +23,7 @@ public class NetworkAssesment : MonoBehaviour
          
     public int count = 0;
     public LanWireInteraction firstSelected,secondSelected;
+    public RJ45Interaction firstRj45, secondRj45;
 
 
     [Header("Object References")]
@@ -37,11 +38,22 @@ public class NetworkAssesment : MonoBehaviour
         CheckStraightThroughAnswer(correctStraightSequence,straightThroughAnswerSequence);
     }
 
+    public void EnableRj45Collider(bool isEnable)
+    {
+        firstRj45.rj45Collider.enabled = isEnable;
+        secondRj45.rj45Collider.enabled = isEnable;
+
+        firstRj45.EnableCollider(!isEnable);
+        secondRj45.EnableCollider(!isEnable);
+
+    }
+
     public void SetLanwire(LanWireInteraction lanwire)
     {
         if (firstSelected == null)
         {
             firstSelected = lanwire;
+            firstSelected.SetLanOutline(true);
             return;
         }
 
@@ -54,6 +66,7 @@ public class NetworkAssesment : MonoBehaviour
         }
 
         secondSelected = lanwire;
+        secondSelected.SetLanOutline(true);
         //StartCoroutine(DelaySwap());
         Swap();
     }
@@ -61,21 +74,23 @@ public class NetworkAssesment : MonoBehaviour
     private IEnumerator DelaySwap()
     {
         yield return new WaitForSeconds(1f);
-        Swap();
+
+        firstSelected.SetLanOutline(false);
+        secondSelected.SetLanOutline(false);
+
+        firstSelected = null;
+        secondSelected = null;
+        
     }
 
     public void Swap()
     {
         Vector3 firstPosition = firstSelected.gameObject.transform.position;
 
-        //firstSelected.gameObject.transform.position =  secondSelected.transform.position;
-        //secondSelected.gameObject.transform.position =  firstPosition;
-
         TweenHelper.Move(firstSelected.transform,secondSelected.transform.position);
         TweenHelper.Move(secondSelected.transform, firstPosition);
 
-        firstSelected = null;
-        secondSelected = null;
+        StartCoroutine(DelaySwap());
     }
 
     
