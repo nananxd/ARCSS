@@ -13,6 +13,7 @@ public class PhotoTextContent
 {
     public PhotoTextName contentName;
     public ModelsName modelName;
+    public VideoClipName videoName;
     public List<Sprite> display;
     [TextArea(5, 1)]
     public string titleName;

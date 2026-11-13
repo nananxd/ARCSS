@@ -99,6 +99,9 @@ public class UIManager : MonoBehaviour
     public Transform warningTransform;
     public TextMeshProUGUI warningTxt;
 
+    [Header("Raw Image for Video and 3d Models")]
+    public RectTransform videoRect, modelRect;
+
 
 
     public void TestDebug()
@@ -419,11 +422,30 @@ public class UIManager : MonoBehaviour
     {
         Debug.Log("Opening3dView");
         threeDContentRect.transform.localScale = Vector3.one;
+        modelRect.localScale = Vector3.one;
+        videoRect.localScale = Vector3.zero;
     }
 
     public void Close3DView()
     {
         threeDContentRect.transform.localScale = Vector3.zero;
+        modelRect.localScale = Vector3.zero;
+        videoRect.localScale = Vector3.zero;
+        GameManager.instance.videoManager.PauseVideoClip();
+    }
+
+    public void OpenVideoView()
+    {
+        threeDContentRect.transform.localScale = Vector3.one;
+        videoRect.localScale = Vector3.one;
+        modelRect.localScale = Vector3.zero;
+        GameManager.instance.videoManager.PlayVideoClip();
+    }
+
+    public void CloseVideoView()
+    {
+        threeDContentRect.transform.localScale = Vector3.zero;
+        videoRect.localScale = Vector3.zero;
     }
 
 

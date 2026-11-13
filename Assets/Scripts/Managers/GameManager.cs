@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public UIManager uiManager;
     public AccountManager accountManager;
     public MultipleChoiceManager multipleChoiceManager;
+    public VideoManager videoManager;
 
     [Header("Controller")]
     public ModelController modelController;

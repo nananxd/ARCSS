@@ -83,3 +83,9 @@ public enum ModelsName
     opticDisk,
     powerSupply
 }
+
+public enum VideoClipName
+{
+    none,
+    networking
+}

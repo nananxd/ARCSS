@@ -14,6 +14,7 @@ public class ContentUI : MonoBehaviour,IInitializer
     [SerializeField] private Sprite prevSprite;
     [SerializeField] private List<Sprite> sprites = new List<Sprite>();
     public ModelsName model3dName;
+    public VideoClipName videoName;
     public bool has3dView;
     public bool hasVid;
 
@@ -24,6 +25,7 @@ public class ContentUI : MonoBehaviour,IInitializer
         has3dView = data.has3dView;
         hasVid = data.hasVideo;
         model3dName = data.modelName;
+        videoName = data.videoName;
         view3DBtn.gameObject.SetActive(has3dView ? true : false) ;
         viewVidBtn.gameObject.SetActive(hasVid? true: false);
         foreach (var item in data.display)
@@ -76,6 +78,7 @@ public class ContentUI : MonoBehaviour,IInitializer
 
     public void OnViewVideo()
     {
-
+        GameManager.instance.videoManager.SetVideoClip(videoName);
+        GameManager.instance.uiManager.OpenVideoView();
     }
 }
