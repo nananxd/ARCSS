@@ -48,7 +48,7 @@ public class ModuleUI : MonoBehaviour,IInitializer
 
         if (isAssesment)
         {
-            SetInteractable(false);
+            //SetInteractable(false);
         }
        
         

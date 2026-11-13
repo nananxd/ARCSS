@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         saveFile.players.Add(player);
 
         currentSelectedPlayer = player;
-
+        accountManager.AddAccount(player);
 
         Save();
     }

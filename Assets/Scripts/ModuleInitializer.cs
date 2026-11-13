@@ -20,20 +20,29 @@ public class ModuleInitializer : MonoBehaviour
     [SerializeField] private List<ModuleData> modules = new List<ModuleData>();
     [SerializeField] private List<GameObject> spawnedModules = new List<GameObject>();
     [SerializeField] private List<GameObject> spawnedAssesment = new List<GameObject>();
-    
+
+    [Header("Animation Data")]
+    public RectTransform rect;
+    public CanvasGroup canvas;
+    public Vector3 initialPos, targetPos;
+
 
     [SerializeField] private bool isModuleInitialize;
 
 
     private void Start()
     {
+        initialPos = rect.anchoredPosition;
         //InitializeModules();
     }
 
     public void InitializeModules() //
     {
+        //SlideIn();
         transform.localScale = Vector3.one;
         transform.rotation = Quaternion.identity;
+       
+       
         closeButton.onClick.AddListener(CloseTopic);
         if (isArcss)
         {
@@ -102,7 +111,9 @@ public class ModuleInitializer : MonoBehaviour
 
     public void CloseTopic()
     {
+        //SlideOut();
         transform.localScale = Vector3.zero;
+       
         //ClearModules();
     }
 
@@ -325,6 +336,27 @@ public class ModuleInitializer : MonoBehaviour
             button.SetInteractable(canUnlock);
         }
     }
+
+    #region Animation
+
+    public void SlideIn()
+    {
+       
+        UITweener.SlideFade(rect, canvas, targetPos);
+        canvas.blocksRaycasts = true;
+        canvas.interactable = true;
+    }
+
+    public void SlideOut()
+    {
+        UITweener.SlideFade(rect, canvas, initialPos, 0);
+        canvas.blocksRaycasts = false;
+        canvas.interactable = false;
+       
+    }
+   
+
+    #endregion
 
 
 }

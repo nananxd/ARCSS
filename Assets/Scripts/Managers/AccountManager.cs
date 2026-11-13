@@ -79,6 +79,21 @@ public class AccountManager : MonoBehaviour
         }
     }
 
+    public void AddAccount(PlayerSaveData player)
+    {
+        var playerGo = Instantiate(loginAccountPrefab);
+        playerGo.transform.SetParent(loginAccountParent, false);
+        playerGo.SetActive(true);
+
+        LoginAccountUI accountUI = playerGo.GetComponent<LoginAccountUI>();
+
+        if (accountUI != null)
+        {
+            accountUI.Setup(player.playerName, player.playerId, player.profilePhotoName);
+            accountUI.Initialize();
+        }
+    }
+
     #region Top/Header Profile
     public void SetHeaderProfile()
     {
@@ -152,6 +167,11 @@ public class AccountManager : MonoBehaviour
             GameManager.instance.currentSelectedPlayer = currentPlayerProfile;
             PlayerPrefs.SetString(GeneralUtility.LOCAL_SAVE_PLAYERID,currentPlayerProfile.playerId);
             SetHeaderProfile();
+            SetSelectedAccount(currentPlayerProfile.playerName,currentPlayerProfile.profilePhotoName);
+        }
+        else
+        {
+            GameManager.instance.uiManager.ShowAccountWarning(true,WarningMessagesKeys.NoAccount);
         }
     }
 

@@ -95,6 +95,9 @@ public class UIManager : MonoBehaviour
     public RectTransform badgeUIRect;
     public GameObject badgePrefab;
     public List<BadgesUI> badgesUIs = new List<BadgesUI>();
+    [Header("Warning UI")]
+    public Transform warningTransform;
+    public TextMeshProUGUI warningTxt;
 
 
 
@@ -126,6 +129,17 @@ public class UIManager : MonoBehaviour
         selectedModule.Setup();
         this.currentModule = selectedModule;
         currentSelectedTopic = currentModule;
+    }
+
+    public void ShowAccountWarning(bool isShown,WarningMessagesKeys msgKey)
+    {
+        warningTxt.text = GetWarningMessages(msgKey);
+        warningTransform.localScale = isShown ? Vector3.one : Vector3.zero;
+    }
+
+    public void HideAccountWarning(bool isShown)
+    {
+        warningTransform.localScale = isShown ? Vector3.one : Vector3.zero;
     }
 
     #region ARCSS 
@@ -167,12 +181,21 @@ public class UIManager : MonoBehaviour
 
     public void OnProfileClick()
     {
-        profilePanel.transform.localScale = Vector3.one;
-        if (GameManager.instance.currentSelectedPlayer != null)
+
+        
+        if (GameManager.instance.currentSelectedPlayer != null && !string.IsNullOrEmpty(GameManager.instance.currentSelectedPlayer.playerId))
         {
+            Debug.Log("Account");
+            profilePanel.transform.localScale = Vector3.one;
             profileName.text = GameManager.instance.currentSelectedPlayer.playerName;
             profilePhoto.sprite = GameManager.instance.accountManager.GetProfilePhoto(GameManager.instance.currentSelectedPlayer.profilePhotoName);
             // load profile details
+        }
+        else
+        {
+            Debug.Log("No-Account");
+            //prevent from showing the profile section
+            ShowAccountWarning(true,WarningMessagesKeys.NoProfile);
         }
 
 
@@ -532,4 +555,37 @@ public class UIManager : MonoBehaviour
 
     #endregion
 
+
+    #region Warning Messages
+
+    public string GetWarningMessages(WarningMessagesKeys messageType)
+    {
+        string message = "";
+        switch (messageType)
+        {
+            case WarningMessagesKeys.None:
+                break;
+            case WarningMessagesKeys.NoAccount:
+                message = "No account is currently logged in. Your progress will not be saved. Please log in to an account to save your progress.";
+                break;
+            case WarningMessagesKeys.NoProfile:
+                message = "No account is currently logged in. No profile to show.";
+                break;
+            default:
+                break;
+        }
+
+        return message;
+    }
+
+    #endregion
+
+}
+
+
+public enum WarningMessagesKeys
+{
+    None,
+    NoAccount,
+    NoProfile
 }
