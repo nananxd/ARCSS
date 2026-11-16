@@ -18,6 +18,7 @@ public class NetworkUIManager : MonoBehaviour
     [SerializeField] private RectTransform endScreen;
     [SerializeField] private Button endScreenBtn;
     [SerializeField] private TextMeshProUGUI endScreenTxt;
+    [SerializeField] private EndScreenUI endScreenUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,6 +39,14 @@ public class NetworkUIManager : MonoBehaviour
     {
         endScreenTxt.text = isGameOver ? "Assesment Failed" : "Assesment Completed";
         endScreen.localScale = Vector3.one;
+        if (isGameOver)
+        {
+            endScreenUI.SlideIn();
+        }
+        else
+        {
+            endScreenUI.SlideOut();
+        }
     }
 
 

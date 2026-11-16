@@ -195,15 +195,4 @@ These are code-level observations, not runtime test results:
 -   `NetworkAssesment.CheckCrossOverAnswer()` is empty in the scanned
     source; final validation is handled by `CheckSequence()`.
 
-## 9. Limits of this scan
 
--   No Unity Editor execution or play-mode test was performed.
--   Inspector references, prefab overrides, runtime event wiring, and
-    platform-specific build behavior are not fully validated by this
-    text scan.
--   Third-party package internals and imported art/model assets are not
-    documented line by line.
--   Some scenes/assets may be examples, recovery copies, or unused;
-    presence in Assets does not prove they are used.
--   The project contains spelling variants such as `Assesment`; names
-    are preserved as authored in source.
