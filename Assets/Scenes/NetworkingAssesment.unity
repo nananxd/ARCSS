@@ -2681,8 +2681,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AssesmentSaveManager
   topic: 2
-  assesmentName: 
-  score: 0
+  assesmentName: NetworkAssesment
+  score: 10
   saveFile:
     players: []
   currentSelectedPlayer:

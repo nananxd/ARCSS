@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class AssesmentSaveManager : MonoBehaviour
@@ -11,6 +12,11 @@ public class AssesmentSaveManager : MonoBehaviour
     private void Awake()
     {
         LoadFile();
+    }
+
+    private void Start()
+    {
+        LoadLocalSavePlayer();
     }
 
     public void CompleteAssesment()
@@ -35,7 +41,7 @@ public class AssesmentSaveManager : MonoBehaviour
         //    progress.isCompleted = true;
         //}
         #endregion
-        GeneralUtility.SaveAssesmentProgress(currentSelectedPlayer,assesmentName,topic,10);
+        GeneralUtility.SaveAssesmentProgress(currentSelectedPlayer,assesmentName,topic,score);
         Save();
         
     }
@@ -53,4 +59,14 @@ public class AssesmentSaveManager : MonoBehaviour
             saveFile = new SaveData();
         }
     }
+
+    public void LoadLocalSavePlayer()
+    {
+        var saveID = PlayerPrefs.GetString(GeneralUtility.LOCAL_SAVE_PLAYERID);
+        //SetCurrentPlayer(saveID);
+
+        currentSelectedPlayer = saveFile.players.Find(x => x.playerId == saveID);
+    }
+
+   
 }

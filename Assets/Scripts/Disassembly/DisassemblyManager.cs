@@ -9,6 +9,7 @@ public class DisassemblyManager : MonoBehaviour
     public DisassemblyUIManager uIManager;
     public DisassemblyAssesment assement;
     public DisassemblyCameraManager cameraManager;
+    public AssesmentSaveManager saveManager;
     public List<AssemblyPart> assemblyParts = new List<AssemblyPart>();
 
     public AssemblyPart currentSelected;
@@ -45,6 +46,7 @@ public class DisassemblyManager : MonoBehaviour
         {
             Debug.Log("All components disable");
             uIManager.OpenGameEndUI();
+ 
         }
     }
 

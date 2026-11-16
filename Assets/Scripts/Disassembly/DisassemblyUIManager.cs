@@ -15,6 +15,7 @@ public class DisassemblyUIManager : MonoBehaviour
     public RectTransform gameEndRectranform;
     [SerializeField] private TextMeshProUGUI gameEndText;
     [SerializeField] private Button mainMenuBtn;
+    [SerializeField] private EndScreenUI endScreenUI;
 
     [Header("Error Feedback UI")]
     public ErrorFeedbackUI errorFeedback;
@@ -55,11 +56,13 @@ public class DisassemblyUIManager : MonoBehaviour
     public void OpenGameEndUI()
     {
         gameEndRectranform.localScale = Vector3.one;
+        endScreenUI.SlideIn();
     }
 
     public void CloseGameEndUI() 
     {
         gameEndRectranform.localScale = Vector3.zero;
+        endScreenUI.SlideOut();
     }
 
     public void GoToMainMenu()

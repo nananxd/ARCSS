@@ -20,6 +20,8 @@ public class AssemblyUIManager : MonoBehaviour
     [Header("Fader")]
     [SerializeField] private CanvasGroup faderCanvasGroup;
 
+    [SerializeField] private EndScreenUI endScreen;
+
 
 
     public ErrorFeedbackUI errorFeedbackUI;
@@ -81,6 +83,7 @@ public class AssemblyUIManager : MonoBehaviour
     public void ShowEndScreenUI()
     {
         endScreenUI.transform.localScale = Vector3.one;
+        endScreen.SlideIn();
     }
     #endregion
 
