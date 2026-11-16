@@ -30,6 +30,5 @@ public enum QuizId
 {
     None,
     ComputerSystem1,
-    ComputerSystem2, 
-    ComputerSystem3,
+   
 }
