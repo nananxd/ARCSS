@@ -15,6 +15,7 @@ MonoBehaviour:
   data:
   - contentName: 0
     modelName: 0
+    videoName: 0
     display: []
     titleName: 'DISASSEMBLING AND ASSEMBLING A COMPUTER
 
@@ -30,8 +31,10 @@ MonoBehaviour:
       have taken and reviewed the prerequisite module (Intro to CSS) before going
       into this hands-on MODULE.\r\n"
     has3dView: 0
+    hasVideo: 0
   - contentName: 0
     modelName: 0
+    videoName: 1
     display:
     - {fileID: 21300000, guid: 8256683e3102f354f9f6a4352d4e6faa, type: 3}
     titleName: 'Preparing for Disassembly
@@ -42,8 +45,10 @@ MonoBehaviour:
 
 '
     has3dView: 0
+    hasVideo: 1
   - contentName: 0
     modelName: 0
+    videoName: 0
     display: []
     titleName: 'Computer Disassembly Procedure
 
@@ -77,8 +82,10 @@ MonoBehaviour:
       the socket.\r\n \r\nm. Final steps: Once you've safely removed these components,
       document the state of each component for storage or cleaning.\r\n"
     has3dView: 0
+    hasVideo: 0
   - contentName: 0
     modelName: 0
+    videoName: 0
     display:
     - {fileID: 21300000, guid: 26a98c76641dda14199b8c581c51901e, type: 3}
     - {fileID: 21300000, guid: 4ab2aea5d4852694385b4b0546dc633c, type: 3}
@@ -89,8 +96,10 @@ MonoBehaviour:
       might be able to help you if you've done the job correctly.\r\n \r\nCheck the
       following if you've met the criteria:\r\n"
     has3dView: 0
+    hasVideo: 0
   - contentName: 0
     modelName: 0
+    videoName: 0
     display:
     - {fileID: 21300000, guid: 24db688d7cfd19b43bd85ce50fb6a1e0, type: 3}
     titleName: 'Assembling a Computer
@@ -105,8 +114,10 @@ MonoBehaviour:
       it.\r\n \r\nBefore going into the assembly proper, you will have to prepare
       all the materials that you will need.\r\n"
     has3dView: 0
+    hasVideo: 0
   - contentName: 0
     modelName: 0
+    videoName: 0
     display:
     - {fileID: 21300000, guid: 24db688d7cfd19b43bd85ce50fb6a1e0, type: 3}
     titleName: 'Computer Assembly Procedure
@@ -179,8 +190,10 @@ MonoBehaviour:
       Once verified, you have successfully assembled the computer and can proceed
       to configure the BIOS and install the operating system.\r\n"
     has3dView: 0
+    hasVideo: 0
   - contentName: 0
     modelName: 0
+    videoName: 0
     display:
     - {fileID: 21300000, guid: 850b9183b843d31498fefd1e257b4120, type: 3}
     titleName: 'Performance Checklist
@@ -190,3 +203,4 @@ MonoBehaviour:
       might be able to help you if you've done the job correctly.\r\n \r\nCheck the
       following if you've met the criteria:\r\n"
     has3dView: 0
+    hasVideo: 0

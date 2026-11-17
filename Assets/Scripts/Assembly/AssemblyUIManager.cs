@@ -22,6 +22,9 @@ public class AssemblyUIManager : MonoBehaviour
 
     [SerializeField] private EndScreenUI endScreen;
 
+    [Header("Loading Screen UI")]
+    public RectTransform loadingRect;
+
 
 
     public ErrorFeedbackUI errorFeedbackUI;

@@ -11,6 +11,7 @@ public class AssemblyManager : MonoBehaviour
     public AssembleAssesment assembleAssesment;
     public AssemblyUIManager assemblyUIManager;
     public AssemblyCameraManager assemblyCameraManager;
+    public SceneLoaderManager sceneLoaderManager;
     public CinematicUI cinematicUI;
 
     [SerializeField] private List<CorrectPositionPart> correctPositionParts = new List<CorrectPositionPart>();
@@ -164,7 +165,8 @@ public class AssemblyManager : MonoBehaviour
 
     public void LoadDisassemble()
     {
-        SceneManager.LoadScene("Disassemble");
+        //SceneManager.LoadScene("Disassemble");
+        sceneLoaderManager.LoadScene("Disassemble",assemblyUIManager.loadingRect);
     }
 }
 

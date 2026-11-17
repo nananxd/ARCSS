@@ -20,6 +20,9 @@ public class DisassemblyUIManager : MonoBehaviour
     [Header("Error Feedback UI")]
     public ErrorFeedbackUI errorFeedback;
     public TextMeshProUGUI errorText;
+
+    [Header("Loading UI")]
+    public RectTransform loadingRect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

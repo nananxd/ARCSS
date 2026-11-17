@@ -101,6 +101,8 @@ public class UIManager : MonoBehaviour
 
     [Header("Raw Image for Video and 3d Models")]
     public RectTransform videoRect, modelRect;
+    [Header("Loading UI")]
+    public RectTransform loadingRect;
 
 
 
@@ -600,6 +602,13 @@ public class UIManager : MonoBehaviour
         return message;
     }
 
+    #endregion
+
+    #region Loading UI
+    public void ShowLoadingUI(bool isShown)
+    {
+        loadingRect.localScale = isShown ? Vector3.one : Vector3.zero;
+    }
     #endregion
 
 }

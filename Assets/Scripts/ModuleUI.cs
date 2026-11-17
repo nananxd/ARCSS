@@ -99,7 +99,8 @@ public class ModuleUI : MonoBehaviour,IInitializer
         }
         else
         {
-            SceneManager.LoadScene(sceneName.ToString().Replace(" ",""));
+            //SceneManager.LoadScene(sceneName.ToString().Replace(" ",""));
+            GameManager.instance.sceneLoaderManager.LoadScene(sceneName.ToString().Replace(" ",""),GameManager.instance.uiManager.loadingRect);
         }
     }
 

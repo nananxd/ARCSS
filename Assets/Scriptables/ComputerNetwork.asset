@@ -59,3 +59,18 @@ MonoBehaviour:
       sceneName: 0
       moduleReference: []
     isDoneReading: 0
+  - content: 0
+    moduleName: creatingNetworkCables
+    moduleDescription: 
+    videoClipName: 
+    data: {fileID: 0}
+    modelNames: 
+    moduleSprite:
+    - {fileID: 0}
+    isAssesment: 1
+    assesmentDetails:
+      isQuizAssesment: 0
+      quizId: 0
+      sceneName: 2
+      moduleReference: []
+    isDoneReading: 0

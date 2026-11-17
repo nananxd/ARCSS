@@ -1,12 +1,16 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.Multiplayer.PlayMode;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public Camera modelCamera;
+
+   
 
     [Header("Managers")]
     public TopicManager topicManager;
@@ -14,6 +18,7 @@ public class GameManager : MonoBehaviour
     public AccountManager accountManager;
     public MultipleChoiceManager multipleChoiceManager;
     public VideoManager videoManager;
+    public SceneLoaderManager sceneLoaderManager;
 
     [Header("Controller")]
     public ModelController modelController;
@@ -76,6 +81,10 @@ public class GameManager : MonoBehaviour
             saveFile = new SaveData();
         }
     }
+
+   
+
+  
 }
 
 

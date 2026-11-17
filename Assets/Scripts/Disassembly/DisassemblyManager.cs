@@ -10,6 +10,7 @@ public class DisassemblyManager : MonoBehaviour
     public DisassemblyAssesment assement;
     public DisassemblyCameraManager cameraManager;
     public AssesmentSaveManager saveManager;
+    public SceneLoaderManager sceneLoaderManager;
     public List<AssemblyPart> assemblyParts = new List<AssemblyPart>();
 
     public AssemblyPart currentSelected;
